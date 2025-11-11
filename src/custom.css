@@ -1,0 +1,8 @@
+:root {
+  --sl-content-width: 50rem;
+  --sl-text-base: 1.25rem;
+}
+
+.sl-markdown-content {
+  font-size:  1.1rem;
+}
