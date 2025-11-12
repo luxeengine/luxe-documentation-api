@@ -4,3 +4,16 @@ description: An overview of the tutorials.
 sidebar:
   order: 0
 ---
+
+The following series of tutorials aim to teach a wide range of concepts, tools, and workflows in luxe.
+
+## How to use the tutorials
+
+There's no particular order, and they are foundations for the game tutorials that will reference them.
+The tutorials will sometimes use modules, and sometimes teach concepts from scratch.
+
+It can be useful to skim tutorials ahead to get a feel for what tools luxe has, and how we use it.
+
+## Reference Manual
+These are designed to work as tutorials, introductions.
+[The manual](/manual/overview) is where you would find full details of any particular system.

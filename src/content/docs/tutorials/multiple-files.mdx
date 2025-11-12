@@ -1,0 +1,22 @@
+---
+title: Multiple wren files
+description: Using import for multiple wren files
+sidebar:
+  order: 3
+---
+
+In your project, you can make more files to separate your code.
+Project scripts are imported as an absolute id, relative to the project root.
+
+If you create a file called `player.wren` inside the root of your project, 
+you can import it with `import "player" for Player` at the top of `game.wren`.
+
+:::note
+- There's no `wren`extension
+- There's no _luxe module_ prefx (`luxe: string`) 
+- There's no dot-slash like `./player`, imports are project relative
+:::
+
+If you created that file inside of a folder, like `player/logic/backpack.wren`, you would use `import "player/logic/backpack" for Backpack`. 
+
+You always use that import id, even if you were inside a script in the `player/logic/` folder. 
