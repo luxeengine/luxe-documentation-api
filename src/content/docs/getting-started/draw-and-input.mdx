@@ -6,6 +6,7 @@ sidebar:
 ---
 
 import { Kbd } from 'starlight-kbd/components'
+import { Card } from '@astrojs/starlight/components';
 
 :::tip[Outcome / Goals]{icon="puzzle"}
 In this tutorial we'll **use the Draw api** to put something on screen.   
@@ -199,6 +200,16 @@ A variable is **a container for a value**.
 We can give them a name, and they're like slots that we create using `var`, which is short for variable!
 
 We can have variables for our class, or inside each function.
+
+## API: what does that mean?
+
+Officially, it stands for "Application Programming Interface". That's a fancy way of saying "functions we call to do stuff".
+
+We're the programmer, and we're talking to the application! The way we communicate is through an interace. Like a user interface, this is a code interface.
+
+The API is a tool we use to call functions, e.g the `Transform` system provides a `Transform API` to do transform related stuff.
+
+So any time you see API, you can say tool.
 
 ## Classes: what are they?
 
@@ -678,25 +689,26 @@ update_player() {
 
 ## Try this on your own
 
-:::tip[Add score]{icon="random"}
+
+<Card title="Add score" icon="up-arrow">
 Add a `score` variable to the game class, add `1` to it each time a pebble is collected. Display the score using `Draw.text` and `Asset.font("luxe: font/lato")`.
-:::
+</Card>
 
-:::tip[Add pause]{icon="random"}
+<Card title="Add pause" icon="seti:lock">
 Add a `var paused = false` boolean. This can stop the pebbles from moving and pause the game e.g `if(paused) return`. You can stop the player moving and display the paused state on screen.
-:::
+</Card>
 
-:::tip[Add game over]{icon="random"}
+<Card title="Add game over" icon="moon">
 Add a losing condition, like if you have 5 lives and each time you miss, you lose one. When you have 0, display a game over message. You'll probably want to want make <Kbd other="Space" /> key restart the game, which will require resetting the state and `pebbles.clear()` 
-:::
+</Card>
 
-:::tip[Add win state]{icon="random"}
+<Card title="Add win state" icon="star">
 Add a win condition, like if you collect 20 pebbles or survive for a certain amount of time. You can use `IO.timestamp()` to get a time in seconds and display it (once at the beginning of the game and then `now - start`)
-:::
+</Card>
 
-:::tip[Automatic pebbles]{icon="random"}
+<Card title="Automatic pebbles" icon="down-arrow">
 Try making a `var timer = 0` and `if(timer_ready) { create_pebble() }` with a random time value each time. The random time can get faster the more you play. 
-:::
+</Card>
 
 ## Full code 
 
