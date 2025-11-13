@@ -18,6 +18,7 @@
     "starlight-kbd": "^0.2.1"
   },
   "devDependencies": {
+    "@shikijs/rehype": "^3.15.0",
     "gh-pages": "^6.3.0"
   }
 }

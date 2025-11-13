@@ -3,11 +3,26 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import catppuccin from "@catppuccin/starlight";
 import starlightKbd from 'starlight-kbd';
+
+import luxeGrammar from "./src/grammars/luxe.tmLanguage.json";
+
 // https://astro.build/config
 export default defineConfig({
+  markdown: {
+    shikiConfig: {
+			langs: [{
+        ...luxeGrammar,
+				aliases: ["lx"],
+      }]
+    },
+  },	
 	integrations: [
 		starlight({
 			title: 'luxe game engine',
+			expressiveCode: {
+				useStarlightDarkModeSwitch: true,
+				useStarlightUiThemeColors: true,
+			},
 			logo: {
 				src: './src/assets/image/luxe-dark.svg',
 			},
@@ -17,32 +32,19 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
 			sidebar: [
 				{
-					label: 'Welcome',
-					autogenerate: { directory: 'welcome' },
+					label: 'API overview',
+					autogenerate: { directory: 'overview' },
 				},
 				{
-					label: 'Getting Started',
-					autogenerate: { directory: 'getting-started' },
-				},
-				{
-					label: 'Tutorials',
-					autogenerate: { directory: 'tutorials' },
-				},
-				{
-					label: 'Game Tutorials',
-					autogenerate: { directory: 'tutorials-games' },
-				},
-				{
-					label: 'Manual',
-					autogenerate: { directory: 'manual' },
-				},
-				{
-					label: 'API reference',
-					link: "https://api.luxeengine.com/"
-				},
+					label: 'Versions',
+					autogenerate: { directory: 'versions/latest' },
+				}
 			],
 			plugins: [
-				catppuccin(),
+				catppuccin({
+          dark: { flavor: "frappe", accent: "mauve" },
+          light: { flavor: "latte", accent: "pink" }
+        }),
 				starlightKbd({
 					types: [
 						{ id: 'default', label: 'Default Keys', default: true  },
@@ -53,12 +55,4 @@ export default defineConfig({
 			]
 		}),
 	],
-	vite: {
-		resolve: {
-			alias: {
-				'@': new URL('./src', import.meta.url).pathname,
-				'@components': new URL('./src/components', import.meta.url).pathname,
-			},
-		},
-	},
 });

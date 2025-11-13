@@ -3,9 +3,21 @@
   --sl-text-base: 1.25rem;
 }
 
+.headerlink { font-size: 1rem; margin-left: 0.5em; }
+.signature-arity {  vertical-align: super; font-size: 1rem; margin-left:0.5em; }
+signature {
+  --sl-text-code-sm: 1.1rem;
+}
+
 .sl-markdown-content {
   font-size:  1.1rem;
 }
+
+.signature_head {
+	display: inline-block;
+	margin-bottom: 0.5em;
+}
+
 
 [data-theme='dark'] starlight-theme-select {
 	& select,
