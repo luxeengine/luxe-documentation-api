@@ -13,7 +13,7 @@ export default defineConfig({
     shikiConfig: {
 			langs: [{
         ...luxeGrammar,
-				aliases: ["lx"],
+				aliases: ["lx", "wren"],
       }]
     },
 	},
