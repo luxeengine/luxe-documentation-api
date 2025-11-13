@@ -1,0 +1,49 @@
+---
+title: "luxe: editor"
+description: API version 2025.11.1
+slug: "v/2025.11.1/editor"
+---
+- [Editor](#editor)   
+
+---
+
+
+## Editor
+```lx
+import "luxe: editor" for Editor
+```
+> Access to information about the editor, _if the game is currently running in the editor_.
+> Please note this API is new and heavily work in progress.
+
+<endpoint module="luxe: editor" class="Editor" signature="get"></endpoint>
+### Editor.get
+```lx
+Editor.get : unknown
+```
+> Returns the editor API for access to the editor   
+
+<endpoint module="luxe: editor" class="Editor" signature="get(context_id : Any)"></endpoint>
+### Editor.get(.)
+```lx
+Editor.get(context_id : Any) : unknown
+```
+> Returns the editor context with the given ID.
+> Examples include `luxe.editor.world` for the world editor, or `luxe.editor.tiles`.
+> 
+>   ```js
+>   //We can check if a world is in edit mode via the `edit` tag.
+>   //For example, a scene being previewed in editor is still running in 
+>   //the editor, but we don't want to act as if it's being edited.
+>   var is_world_editable = World.tag_has(world, "edit")
+>   if(!is_world_editable) return
+> 
+>   //if we're in the editor, we can access the world editor and do some things
+>   var world_editor = Editor.get("luxe.editor.world-editor")
+>   if(world_editor) {
+>     //simple example, make sure the gizmo matches the transform
+>     //if there's no gizmo, the function returns null
+>     var gizmo = world_editor.gizmo
+>     if(gizmo) gizmo.refresh()
+>   }
+>   ```   
+

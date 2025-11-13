@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import catppuccin from "@catppuccin/starlight";
 import starlightKbd from 'starlight-kbd';
+import starlightAutoSidebar from 'starlight-auto-sidebar';
 
 import luxeGrammar from "./src/grammars/luxe.tmLanguage.json";
 
@@ -15,10 +16,10 @@ export default defineConfig({
 				aliases: ["lx"],
       }]
     },
-  },	
+	},
 	integrations: [
 		starlight({
-			title: 'luxe game engine',
+			title: 'luxe API',
 			expressiveCode: {
 				useStarlightDarkModeSwitch: true,
 				useStarlightUiThemeColors: true,
@@ -37,14 +38,15 @@ export default defineConfig({
 				},
 				{
 					label: 'Versions',
-					autogenerate: { directory: 'versions/latest' },
+					autogenerate: { directory: 'v' },
 				}
 			],
 			plugins: [
+				starlightAutoSidebar(),
 				catppuccin({
           dark: { flavor: "frappe", accent: "mauve" },
           light: { flavor: "latte", accent: "pink" }
-        }),
+				}),
 				starlightKbd({
 					types: [
 						{ id: 'default', label: 'Default Keys', default: true  },
