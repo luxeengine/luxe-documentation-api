@@ -9,13 +9,13 @@ slug: "v/2025.11.1/debug/alloc.block"
 
 
 ## AllocMeta
-```lx
+```wren
 import "luxe: debug/alloc.block" for AllocMeta
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var kind : String = "script"
 var context : String = "<unknown.wren>"
 var note : String = ""

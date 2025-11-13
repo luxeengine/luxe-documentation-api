@@ -11,39 +11,39 @@ slug: "v/2025.11.1/system/physics/physics2D.modifier"
 
 
 ## Data
-```lx
+```wren
 import "luxe: system/physics/physics2D.modifier" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var gravity : Float2 = [0, -9.8]
 ```
 
 ## Physics2D
-```lx
+```wren
 import "luxe: system/physics/physics2D.modifier" for Physics2D
 ```
 > no docs found
 
 
 ## System
-```lx
+```wren
 import "luxe: system/physics/physics2D.modifier" for System
 ```
 > no docs found
 
 <endpoint module="luxe: system/physics/physics2D.modifier" class="System" signature="new(world : World)"></endpoint>
 ### System.new(.)
-```lx
+```wren
 System.new(world : World) : System
 ```
 > no docs found   
 
 <endpoint module="luxe: system/physics/physics2D.modifier" class="System" signature="init(world : World)"></endpoint>
 ### System.init(.)
-```lx
+```wren
 System.init(world : World) : unknown
 ```
 > no docs found   

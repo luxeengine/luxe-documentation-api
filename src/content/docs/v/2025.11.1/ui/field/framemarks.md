@@ -10,32 +10,32 @@ slug: "v/2025.11.1/ui/field/framemarks"
 
 
 ## UIFrameMarks
-```lx
+```wren
 import "luxe: ui/field/framemarks" for UIFrameMarks
 ```
 > no docs found
 
 <endpoint module="luxe: ui/field/framemarks" class="UIFrameMarks" signature="create(ui : Entity)"></endpoint>
 ### UIFrameMarks.create(.)
-```lx
+```wren
 UIFrameMarks.create(ui : Entity) : unknown
 ```
 > no docs found   
 
 
 ## UIFrameMarksState
-```lx
+```wren
 import "luxe: ui/field/framemarks" for UIFrameMarksState
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var style : null = PathStyle.new
 ```
 <endpoint module="luxe: ui/field/framemarks" class="UIFrameMarksState" signature="new(ui : Entity, ctrl : Control)"></endpoint>
 ### UIFrameMarksState.new(..)
-```lx
+```wren
 UIFrameMarksState.new(ui : Entity, ctrl : Control) : UIFrameMarksState
 ```
 > no docs found   

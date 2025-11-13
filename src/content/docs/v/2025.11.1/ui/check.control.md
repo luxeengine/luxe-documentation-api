@@ -10,19 +10,19 @@ slug: "v/2025.11.1/ui/check.control"
 
 
 ## Data
-```lx
+```wren
 import "luxe: ui/check.control" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var state : Bool = false
 var override : Object = Object
 ```
 
 ## UICheck
-```lx
+```wren
 import "luxe: ui/check.control" for UICheck
 ```
 > `UICheck` is a `Control` that represents a boolean toggle.
@@ -39,21 +39,21 @@ import "luxe: ui/check.control" for UICheck
 
 <endpoint module="luxe: ui/check.control" class="UICheck" signature="create(ui_entity : Entity)"></endpoint>
 ### UICheck.create(.)
-```lx
+```wren
 UICheck.create(ui_entity : Entity) : UICheck
 ```
 > Create a new check control.   
 
 <endpoint module="luxe: ui/check.control" class="UICheck" signature="set_state(control : UICheck, state : Bool)"></endpoint>
 ### UICheck.set_state(..)
-```lx
+```wren
 UICheck.set_state(control : UICheck, state : Bool) : None
 ```
 > Set the current state of a check.   
 
 <endpoint module="luxe: ui/check.control" class="UICheck" signature="get_state(control : UICheck)"></endpoint>
 ### UICheck.get_state(.)
-```lx
+```wren
 UICheck.get_state(control : UICheck) : Bool
 ```
 > Get whether a check is toggled on or off.   

@@ -12,294 +12,294 @@ slug: "v/2025.11.1/ui/scroll.control.api"
 
 
 ## API
-```lx
+```wren
 import "luxe: ui/scroll.control.api" for API
 ```
 > no docs found
 
 <endpoint module="luxe: ui/scroll.control.api" class="API" signature="id"></endpoint>
 ### API.id
-```lx
+```wren
 API.id : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="API" signature="create(ui : Entity)"></endpoint>
 ### API.create(.)
-```lx
+```wren
 API.create(ui : Entity) : Control
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="API" signature="has(control : Control)"></endpoint>
 ### API.has(.)
-```lx
+```wren
 API.has(control : Control) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="API" signature="get(control : Control)"></endpoint>
 ### API.get(.)
-```lx
+```wren
 API.get(control : Control) : Data
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="API" signature="get"></endpoint>
 ### API.get
-```lx
+```wren
 API.get : APIGet
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="API" signature="set"></endpoint>
 ### API.set
-```lx
+```wren
 API.set : APISet
 ```
 > no docs found   
 
 
 ## APIGet
-```lx
+```wren
 import "luxe: ui/scroll.control.api" for APIGet
 ```
 > no docs found
 
 <endpoint module="luxe: ui/scroll.control.api" class="APIGet" signature="new()"></endpoint>
 ### APIGet.new(.)
-```lx
+```wren
 APIGet.new() : APIGet
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APIGet" signature="units(control : Control)"></endpoint>
 ### APIGet.units(.)
-```lx
+```wren
 APIGet.units(control : Control) : Float2
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APIGet" signature="scroll(control : Control)"></endpoint>
 ### APIGet.scroll(.)
-```lx
+```wren
 APIGet.scroll(control : Control) : Float2
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APIGet" signature="drag(control : Control)"></endpoint>
 ### APIGet.drag(.)
-```lx
+```wren
 APIGet.drag(control : Control) : Float2
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APIGet" signature="containerb(control : Control)"></endpoint>
 ### APIGet.containerb(.)
-```lx
+```wren
 APIGet.containerb(control : Control) : Float4
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APIGet" signature="handle_v(control : Control)"></endpoint>
 ### APIGet.handle_v(.)
-```lx
+```wren
 APIGet.handle_v(control : Control) : Float4
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APIGet" signature="handle_h(control : Control)"></endpoint>
 ### APIGet.handle_h(.)
-```lx
+```wren
 APIGet.handle_h(control : Control) : Float4
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APIGet" signature="dragging_h(control : Control)"></endpoint>
 ### APIGet.dragging_h(.)
-```lx
+```wren
 APIGet.dragging_h(control : Control) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APIGet" signature="dragging_v(control : Control)"></endpoint>
 ### APIGet.dragging_v(.)
-```lx
+```wren
 APIGet.dragging_v(control : Control) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APIGet" signature="in_handle_v(control : Control)"></endpoint>
 ### APIGet.in_handle_v(.)
-```lx
+```wren
 APIGet.in_handle_v(control : Control) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APIGet" signature="in_handle_h(control : Control)"></endpoint>
 ### APIGet.in_handle_h(.)
-```lx
+```wren
 APIGet.in_handle_h(control : Control) : Bool
 ```
 > no docs found   
 
 
 ## APISet
-```lx
+```wren
 import "luxe: ui/scroll.control.api" for APISet
 ```
 > no docs found
 
 <endpoint module="luxe: ui/scroll.control.api" class="APISet" signature="new()"></endpoint>
 ### APISet.new(.)
-```lx
+```wren
 APISet.new() : APISet
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APISet" signature="units(control : Control, value : Float2)"></endpoint>
 ### APISet.units(..)
-```lx
+```wren
 APISet.units(control : Control, value : Float2) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APISet" signature="scroll(control : Control, value : Float2)"></endpoint>
 ### APISet.scroll(..)
-```lx
+```wren
 APISet.scroll(control : Control, value : Float2) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APISet" signature="drag(control : Control, value : Float2)"></endpoint>
 ### APISet.drag(..)
-```lx
+```wren
 APISet.drag(control : Control, value : Float2) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APISet" signature="containerb(control : Control, value : Float4)"></endpoint>
 ### APISet.containerb(..)
-```lx
+```wren
 APISet.containerb(control : Control, value : Float4) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APISet" signature="handle_v(control : Control, value : Float4)"></endpoint>
 ### APISet.handle_v(..)
-```lx
+```wren
 APISet.handle_v(control : Control, value : Float4) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APISet" signature="handle_h(control : Control, value : Float4)"></endpoint>
 ### APISet.handle_h(..)
-```lx
+```wren
 APISet.handle_h(control : Control, value : Float4) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APISet" signature="dragging_h(control : Control, value : Bool)"></endpoint>
 ### APISet.dragging_h(..)
-```lx
+```wren
 APISet.dragging_h(control : Control, value : Bool) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APISet" signature="dragging_v(control : Control, value : Bool)"></endpoint>
 ### APISet.dragging_v(..)
-```lx
+```wren
 APISet.dragging_v(control : Control, value : Bool) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APISet" signature="in_handle_v(control : Control, value : Bool)"></endpoint>
 ### APISet.in_handle_v(..)
-```lx
+```wren
 APISet.in_handle_v(control : Control, value : Bool) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="APISet" signature="in_handle_h(control : Control, value : Bool)"></endpoint>
 ### APISet.in_handle_h(..)
-```lx
+```wren
 APISet.in_handle_h(control : Control, value : Bool) : unknown
 ```
 > no docs found   
 
 
 ## Fields
-```lx
+```wren
 import "luxe: ui/scroll.control.api" for Fields
 ```
 > no docs found
 
 <endpoint module="luxe: ui/scroll.control.api" class="Fields" signature="units"></endpoint>
 ### Fields.units
-```lx
+```wren
 Fields.units : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="Fields" signature="scroll"></endpoint>
 ### Fields.scroll
-```lx
+```wren
 Fields.scroll : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="Fields" signature="drag"></endpoint>
 ### Fields.drag
-```lx
+```wren
 Fields.drag : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="Fields" signature="containerb"></endpoint>
 ### Fields.containerb
-```lx
+```wren
 Fields.containerb : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="Fields" signature="handle_v"></endpoint>
 ### Fields.handle_v
-```lx
+```wren
 Fields.handle_v : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="Fields" signature="handle_h"></endpoint>
 ### Fields.handle_h
-```lx
+```wren
 Fields.handle_h : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="Fields" signature="dragging_h"></endpoint>
 ### Fields.dragging_h
-```lx
+```wren
 Fields.dragging_h : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="Fields" signature="dragging_v"></endpoint>
 ### Fields.dragging_v
-```lx
+```wren
 Fields.dragging_v : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="Fields" signature="in_handle_v"></endpoint>
 ### Fields.in_handle_v
-```lx
+```wren
 Fields.in_handle_v : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/scroll.control.api" class="Fields" signature="in_handle_h"></endpoint>
 ### Fields.in_handle_h
-```lx
+```wren
 Fields.in_handle_h : String
 ```
 > no docs found   

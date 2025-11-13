@@ -12,84 +12,84 @@ slug: "v/2025.11.1/ui/list.control.api"
 
 
 ## API
-```lx
+```wren
 import "luxe: ui/list.control.api" for API
 ```
 > no docs found
 
 <endpoint module="luxe: ui/list.control.api" class="API" signature="id"></endpoint>
 ### API.id
-```lx
+```wren
 API.id : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/list.control.api" class="API" signature="create(ui : Entity)"></endpoint>
 ### API.create(.)
-```lx
+```wren
 API.create(ui : Entity) : Control
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/list.control.api" class="API" signature="has(control : Control)"></endpoint>
 ### API.has(.)
-```lx
+```wren
 API.has(control : Control) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/list.control.api" class="API" signature="get(control : Control)"></endpoint>
 ### API.get(.)
-```lx
+```wren
 API.get(control : Control) : Data
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/list.control.api" class="API" signature="get"></endpoint>
 ### API.get
-```lx
+```wren
 API.get : APIGet
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/list.control.api" class="API" signature="set"></endpoint>
 ### API.set
-```lx
+```wren
 API.set : APISet
 ```
 > no docs found   
 
 
 ## APIGet
-```lx
+```wren
 import "luxe: ui/list.control.api" for APIGet
 ```
 > no docs found
 
 <endpoint module="luxe: ui/list.control.api" class="APIGet" signature="new()"></endpoint>
 ### APIGet.new(.)
-```lx
+```wren
 APIGet.new() : APIGet
 ```
 > no docs found   
 
 
 ## APISet
-```lx
+```wren
 import "luxe: ui/list.control.api" for APISet
 ```
 > no docs found
 
 <endpoint module="luxe: ui/list.control.api" class="APISet" signature="new()"></endpoint>
 ### APISet.new(.)
-```lx
+```wren
 APISet.new() : APISet
 ```
 > no docs found   
 
 
 ## Fields
-```lx
+```wren
 import "luxe: ui/list.control.api" for Fields
 ```
 > no docs found

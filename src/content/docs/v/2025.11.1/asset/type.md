@@ -13,609 +13,609 @@ slug: "v/2025.11.1/asset/type"
 
 
 ## AssetArtifact
-```lx
+```wren
 import "luxe: asset/type" for AssetArtifact
 ```
 > no docs found
 
 <endpoint module="luxe: asset/type" class="AssetArtifact" signature="id"></endpoint>
 ### AssetArtifact.id
-```lx
+```wren
 AssetArtifact.id : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetArtifact" signature="type"></endpoint>
 ### AssetArtifact.type
-```lx
+```wren
 AssetArtifact.type : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetArtifact" signature="path"></endpoint>
 ### AssetArtifact.path
-```lx
+```wren
 AssetArtifact.path : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetArtifact" signature="new(type : String, id : String, path : String)"></endpoint>
 ### AssetArtifact.new(...)
-```lx
+```wren
 AssetArtifact.new(type : String, id : String, path : String) : AssetArtifact
 ```
 > no docs found   
 
 
 ## AssetContext
-```lx
+```wren
 import "luxe: asset/type" for AssetContext
 ```
 > no docs found
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="id"></endpoint>
 ### AssetContext.id
-```lx
+```wren
 AssetContext.id : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="db"></endpoint>
 ### AssetContext.db
-```lx
+```wren
 AssetContext.db : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="artifacts"></endpoint>
 ### AssetContext.artifacts
-```lx
+```wren
 AssetContext.artifacts : Map
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="ast_for_asset"></endpoint>
 ### AssetContext.ast_for_asset
-```lx
+```wren
 AssetContext.ast_for_asset : Map
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="errors"></endpoint>
 ### AssetContext.errors
-```lx
+```wren
 AssetContext.errors : List
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="error(info : String)"></endpoint>
 ### AssetContext.error(.)
-```lx
+```wren
 AssetContext.error(info : String) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="artifacts_for(type_id : String)"></endpoint>
 ### AssetContext.artifacts_for(.)
-```lx
+```wren
 AssetContext.artifacts_for(type_id : String) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="ast_for(asset : AssetID)"></endpoint>
 ### AssetContext.ast_for(.)
-```lx
+```wren
 AssetContext.ast_for(asset : AssetID) : Result
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="find_class_with_meta(ast : Module, tag : String, value : String)"></endpoint>
 ### AssetContext.find_class_with_meta(...)
-```lx
+```wren
 AssetContext.find_class_with_meta(ast : Module, tag : String, value : String) : ClassStmt
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="find_class_with_meta(ast : Module, tag : String)"></endpoint>
 ### AssetContext.find_class_with_meta(..)
-```lx
+```wren
 AssetContext.find_class_with_meta(ast : Module, tag : String) : ClassStmt
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="find_class_with_name(ast : Module, name : String)"></endpoint>
 ### AssetContext.find_class_with_name(..)
-```lx
+```wren
 AssetContext.find_class_with_name(ast : Module, name : String) : ClassStmt
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="emit_block_def_for(asset : AssetID, block_tag : String, from : String)"></endpoint>
 ### AssetContext.emit_block_def_for(...)
-```lx
+```wren
 AssetContext.emit_block_def_for(asset : AssetID, block_tag : String, from : String) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="emit_block_def_for(asset : AssetID, block_type_id : String, block_tag : String, from : String)"></endpoint>
 ### AssetContext.emit_block_def_for(....)
-```lx
+```wren
 AssetContext.emit_block_def_for(asset : AssetID, block_type_id : String, block_tag : String, from : String) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="tagged(tag : String)"></endpoint>
 ### AssetContext.tagged(.)
-```lx
+```wren
 AssetContext.tagged(tag : String) : Any
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="tag(tag : String, value : Any)"></endpoint>
 ### AssetContext.tag(..)
-```lx
+```wren
 AssetContext.tag(tag : String, value : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="TYPE"></endpoint>
 ### AssetContext.TYPE
-```lx
+```wren
 AssetContext.TYPE : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="DEV"></endpoint>
 ### AssetContext.DEV
-```lx
+```wren
 AssetContext.DEV : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="RELEASE"></endpoint>
 ### AssetContext.RELEASE
-```lx
+```wren
 AssetContext.RELEASE : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="new(id : String, db : Any, artifact_root : String)"></endpoint>
 ### AssetContext.new(...)
-```lx
+```wren
 AssetContext.new(id : String, db : Any, artifact_root : String) : AssetContext
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="set_modified(type : String, modified : List)"></endpoint>
 ### AssetContext.set_modified(..)
-```lx
+```wren
 AssetContext.set_modified(type : String, modified : List) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="get_modified(type : String)"></endpoint>
 ### AssetContext.get_modified(.)
-```lx
+```wren
 AssetContext.get_modified(type : String) : List
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="get_modified()"></endpoint>
 ### AssetContext.get_modified(.)
-```lx
+```wren
 AssetContext.get_modified() : Map
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="skip(id : String)"></endpoint>
 ### AssetContext.skip(.)
-```lx
+```wren
 AssetContext.skip(id : String) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="skipped(id : String)"></endpoint>
 ### AssetContext.skipped(.)
-```lx
+```wren
 AssetContext.skipped(id : String) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="emit_path(id : String)"></endpoint>
 ### AssetContext.emit_path(.)
-```lx
+```wren
 AssetContext.emit_path(id : String) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="emit_path(id : String, extra : String)"></endpoint>
 ### AssetContext.emit_path(..)
-```lx
+```wren
 AssetContext.emit_path(id : String, extra : String) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetContext" signature="emit(type_id : String, artifact_id : String, artifact_path : String)"></endpoint>
 ### AssetContext.emit(...)
-```lx
+```wren
 AssetContext.emit(type_id : String, artifact_id : String, artifact_path : String) : unknown
 ```
 > no docs found   
 
 
 ## AssetID
-```lx
+```wren
 import "luxe: asset/type" for AssetID
 ```
 > no docs found
 
 <endpoint module="luxe: asset/type" class="AssetID" signature="type_id"></endpoint>
 ### AssetID.type_id
-```lx
+```wren
 AssetID.type_id : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetID" signature="id"></endpoint>
 ### AssetID.id
-```lx
+```wren
 AssetID.id : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetID" signature="asset"></endpoint>
 ### AssetID.asset
-```lx
+```wren
 AssetID.asset : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetID" signature="path"></endpoint>
 ### AssetID.path
-```lx
+```wren
 AssetID.path : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetID" signature="ext"></endpoint>
 ### AssetID.ext
-```lx
+```wren
 AssetID.ext : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetID" signature="subtype"></endpoint>
 ### AssetID.subtype
-```lx
+```wren
 AssetID.subtype : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetID" signature="prefix"></endpoint>
 ### AssetID.prefix
-```lx
+```wren
 AssetID.prefix : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetID" signature="root"></endpoint>
 ### AssetID.root
-```lx
+```wren
 AssetID.root : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetID" signature="meta_uuid"></endpoint>
 ### AssetID.meta_uuid
-```lx
+```wren
 AssetID.meta_uuid : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetID" signature="new(type_id : String, map : Map)"></endpoint>
 ### AssetID.new(..)
-```lx
+```wren
 AssetID.new(type_id : String, map : Map) : AssetID
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetID" signature="from_id(type_id : String, asset_id : String)"></endpoint>
 ### AssetID.from_id(..)
-```lx
+```wren
 AssetID.from_id(type_id : String, asset_id : String) : AssetID
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetID" signature="from_id(db : AssetDB, type_id : String, asset_id : String)"></endpoint>
 ### AssetID.from_id(...)
-```lx
+```wren
 AssetID.from_id(db : AssetDB, type_id : String, asset_id : String) : AssetID
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetID" signature="refresh()"></endpoint>
 ### AssetID.refresh(.)
-```lx
+```wren
 AssetID.refresh() : unknown
 ```
 > no docs found   
 
 
 ## AssetType
-```lx
+```wren
 import "luxe: asset/type" for AssetType
 ```
 > no docs found
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="type_id"></endpoint>
 ### AssetType.type_id
-```lx
+```wren
 AssetType.type_id : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="version_id"></endpoint>
 ### AssetType.version_id
-```lx
+```wren
 AssetType.version_id : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="ext"></endpoint>
 ### AssetType.ext
-```lx
+```wren
 AssetType.ext : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="subtype"></endpoint>
 ### AssetType.subtype
-```lx
+```wren
 AssetType.subtype : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="ctx"></endpoint>
 ### AssetType.ctx
-```lx
+```wren
 AssetType.ctx : AssetContext
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="is_loader"></endpoint>
 ### AssetType.is_loader
-```lx
+```wren
 AssetType.is_loader : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="is_data"></endpoint>
 ### AssetType.is_data
-```lx
+```wren
 AssetType.is_data : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="is_handle"></endpoint>
 ### AssetType.is_handle
-```lx
+```wren
 AssetType.is_handle : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="version"></endpoint>
 ### AssetType.version
-```lx
+```wren
 AssetType.version : Num
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="load_before"></endpoint>
 ### AssetType.load_before
-```lx
+```wren
 AssetType.load_before : List
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="load_after"></endpoint>
 ### AssetType.load_after
-```lx
+```wren
 AssetType.load_after : List
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="before"></endpoint>
 ### AssetType.before
-```lx
+```wren
 AssetType.before : List
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="after"></endpoint>
 ### AssetType.after
-```lx
+```wren
 AssetType.after : List
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="pre_early"></endpoint>
 ### AssetType.pre_early
-```lx
+```wren
 AssetType.pre_early : Num
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="pre_late"></endpoint>
 ### AssetType.pre_late
-```lx
+```wren
 AssetType.pre_late : Num
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="new(type_id : String, ctx : AssetContext)"></endpoint>
 ### AssetType.new(..)
-```lx
+```wren
 AssetType.new(type_id : String, ctx : AssetContext) : AssetType
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="remap(asset : AssetID, new_id : String)"></endpoint>
 ### AssetType.remap(..)
-```lx
+```wren
 AssetType.remap(asset : AssetID, new_id : String) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="get_remap(map : Map)"></endpoint>
 ### AssetType.get_remap(.)
-```lx
+```wren
 AssetType.get_remap(map : Map) : Map
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="modify_affected(asset : AssetID)"></endpoint>
 ### AssetType.modify_affected(.)
-```lx
+```wren
 AssetType.modify_affected(asset : AssetID) : unknown
 ```
 > modify all assets that refer to this one   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="modify(asset : AssetID)"></endpoint>
 ### AssetType.modify(.)
-```lx
+```wren
 AssetType.modify(asset : AssetID) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="unmodify(asset : AssetID)"></endpoint>
 ### AssetType.unmodify(.)
-```lx
+```wren
 AssetType.unmodify(asset : AssetID) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="emit_path(asset : AssetID)"></endpoint>
 ### AssetType.emit_path(.)
-```lx
+```wren
 AssetType.emit_path(asset : AssetID) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="skip(asset : AssetID)"></endpoint>
 ### AssetType.skip(.)
-```lx
+```wren
 AssetType.skip(asset : AssetID) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="get_data(id : String)"></endpoint>
 ### AssetType.get_data(.)
-```lx
+```wren
 AssetType.get_data(id : String) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="set_handle(id : String, handle : Num)"></endpoint>
 ### AssetType.set_handle(..)
-```lx
+```wren
 AssetType.set_handle(id : String, handle : Num) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="init(assets : List)"></endpoint>
 ### AssetType.init(.)
-```lx
+```wren
 AssetType.init(assets : List) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="pre(assets : List)"></endpoint>
 ### AssetType.pre(.)
-```lx
+```wren
 AssetType.pre(assets : List) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="process(assets : List, each : Fn)"></endpoint>
 ### AssetType.process(..)
-```lx
+```wren
 AssetType.process(assets : List, each : Fn) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetType" signature="loader(assets : List, artifacts : List)"></endpoint>
 ### AssetType.loader(..)
-```lx
+```wren
 AssetType.loader(assets : List, artifacts : List) : None
 ```
 > no docs found   
 
 
 ## AssetTypeID
-```lx
+```wren
 import "luxe: asset/type" for AssetTypeID
 ```
 > no docs found
 
 <endpoint module="luxe: asset/type" class="AssetTypeID" signature="block"></endpoint>
 ### AssetTypeID.block
-```lx
+```wren
 AssetTypeID.block : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetTypeID" signature="block=(v : Any)"></endpoint>
 ### AssetTypeID.block
-```lx
+```wren
 AssetTypeID.block=(v : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetTypeID" signature="block_class"></endpoint>
 ### AssetTypeID.block_class
-```lx
+```wren
 AssetTypeID.block_class : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetTypeID" signature="block_class=(v : Any)"></endpoint>
 ### AssetTypeID.block_class
-```lx
+```wren
 AssetTypeID.block_class=(v : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetTypeID" signature="loader"></endpoint>
 ### AssetTypeID.loader
-```lx
+```wren
 AssetTypeID.loader : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetTypeID" signature="loader=(v : Any)"></endpoint>
 ### AssetTypeID.loader
-```lx
+```wren
 AssetTypeID.loader=(v : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetTypeID" signature="handler"></endpoint>
 ### AssetTypeID.handler
-```lx
+```wren
 AssetTypeID.handler : AssetType
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetTypeID" signature="handler=(v : Any)"></endpoint>
 ### AssetTypeID.handler
-```lx
+```wren
 AssetTypeID.handler=(v : Any) : AssetType
 ```
 > no docs found   
 
 <endpoint module="luxe: asset/type" class="AssetTypeID" signature="new(map : Map)"></endpoint>
 ### AssetTypeID.new(.)
-```lx
+```wren
 AssetTypeID.new(map : Map) : AssetTypeID
 ```
 > no docs found   

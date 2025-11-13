@@ -10,32 +10,32 @@ slug: "v/2025.11.1/pose/blend.pose_node"
 
 
 ## BlendLayer
-```lx
+```wren
 import "luxe: pose/blend.pose_node" for BlendLayer
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var pose : Num = 0
 var weight : Num = 0
 ```
 
 ## BlendNode
-```lx
+```wren
 import "luxe: pose/blend.pose_node" for BlendNode
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var layers : List = []
 var threshold : Num = 0.01
 var ratio_1D : Num = -1
 ```
 <endpoint module="luxe: pose/blend.pose_node" class="BlendNode" signature="id"></endpoint>
 ### BlendNode.id
-```lx
+```wren
 BlendNode.id : unknown
 ```
 > no docs found   

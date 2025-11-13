@@ -10,24 +10,24 @@ slug: "v/2025.11.1/system/vfx/spawn.burst.vfx_module"
 
 
 ## Inputs
-```lx
+```wren
 import "luxe: system/vfx/spawn.burst.vfx_module" for Inputs
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var count : Num = 100
 ```
 
 ## SpawnBurst
-```lx
+```wren
 import "luxe: system/vfx/spawn.burst.vfx_module" for SpawnBurst
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var display : String = "Spawn Burst"
 var module : Asset = "luxe: system/vfx/spawn.burst.fx"
 var inputs : Inputs = Object

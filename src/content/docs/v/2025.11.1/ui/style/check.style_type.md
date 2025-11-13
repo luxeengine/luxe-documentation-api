@@ -9,13 +9,13 @@ slug: "v/2025.11.1/ui/style/check.style_type"
 
 
 ## Data
-```lx
+```wren
 import "luxe: ui/style/check.style_type" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var accent_on : Color = [1, 1, 1, 1]
 var accent_off : Color = [0.6, 0.6, 0.6, 1]
 var base_scale : Float2 = [0.925, 0.85]

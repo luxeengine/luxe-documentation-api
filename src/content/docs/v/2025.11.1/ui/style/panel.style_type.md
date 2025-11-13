@@ -10,13 +10,13 @@ slug: "v/2025.11.1/ui/style/panel.style_type"
 
 
 ## Data
-```lx
+```wren
 import "luxe: ui/style/panel.style_type" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var normal : PanelState = Object
 var hover : PanelState = Object
 var press : PanelState = Object
@@ -28,13 +28,13 @@ var smoothness : Float4 = [6, 6, 6, 6]
 ```
 
 ## PanelState
-```lx
+```wren
 import "luxe: ui/style/panel.style_type" for PanelState
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var used : Bool = true
 var color : Color = [0.125, 0.125, 0.133, 1]
 var border_color : Color = [0.2, 0.2, 0.214, 1]

@@ -9,13 +9,13 @@ slug: "v/2025.11.1/pose/look_at_ik.pose_node"
 
 
 ## LookAtIKNode
-```lx
+```wren
 import "luxe: pose/look_at_ik.pose_node" for LookAtIKNode
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var input_pose : Num = 0
 var bone : String = null
 var target : Float3 = [0, 0, 2]
@@ -28,7 +28,7 @@ var pole_vector : Float3 = [0, 0, 1]
 ```
 <endpoint module="luxe: pose/look_at_ik.pose_node" class="LookAtIKNode" signature="id"></endpoint>
 ### LookAtIKNode.id
-```lx
+```wren
 LookAtIKNode.id : unknown
 ```
 > no docs found   

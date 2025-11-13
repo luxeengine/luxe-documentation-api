@@ -14,13 +14,13 @@ slug: "v/2025.11.1/ui/label.control"
 
 
 ## Data
-```lx
+```wren
 import "luxe: ui/label.control" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var text : String = ""
 var align : LabelAlignH = LabelAlignH.left
 var align_vertical : LabelAlignV = LabelAlignV.center
@@ -31,349 +31,349 @@ var override : Object = Object
 ```
 
 ## LabelAlignH
-```lx
+```wren
 import "luxe: ui/label.control" for LabelAlignH
 ```
 > no docs found
 
 <endpoint module="luxe: ui/label.control" class="LabelAlignH" signature="left"></endpoint>
 ### LabelAlignH.left
-```lx
+```wren
 LabelAlignH.left : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="LabelAlignH" signature="center"></endpoint>
 ### LabelAlignH.center
-```lx
+```wren
 LabelAlignH.center : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="LabelAlignH" signature="right"></endpoint>
 ### LabelAlignH.right
-```lx
+```wren
 LabelAlignH.right : unknown
 ```
 > no docs found   
 
 
 ## LabelAlignV
-```lx
+```wren
 import "luxe: ui/label.control" for LabelAlignV
 ```
 > no docs found
 
 <endpoint module="luxe: ui/label.control" class="LabelAlignV" signature="top"></endpoint>
 ### LabelAlignV.top
-```lx
+```wren
 LabelAlignV.top : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="LabelAlignV" signature="center"></endpoint>
 ### LabelAlignV.center
-```lx
+```wren
 LabelAlignV.center : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="LabelAlignV" signature="bottom"></endpoint>
 ### LabelAlignV.bottom
-```lx
+```wren
 LabelAlignV.bottom : unknown
 ```
 > no docs found   
 
 
 ## Localization
-```lx
+```wren
 import "luxe: ui/label.control" for Localization
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var key : String = null
 var space : String = "game"
 var args : List = []
 ```
 
 ## UIAutoSize
-```lx
+```wren
 import "luxe: ui/label.control" for UIAutoSize
 ```
 > no docs found
 
 <endpoint module="luxe: ui/label.control" class="UIAutoSize" signature="none"></endpoint>
 ### UIAutoSize.none
-```lx
+```wren
 UIAutoSize.none : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UIAutoSize" signature="width"></endpoint>
 ### UIAutoSize.width
-```lx
+```wren
 UIAutoSize.width : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UIAutoSize" signature="height"></endpoint>
 ### UIAutoSize.height
-```lx
+```wren
 UIAutoSize.height : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UIAutoSize" signature="both"></endpoint>
 ### UIAutoSize.both
-```lx
+```wren
 UIAutoSize.both : unknown
 ```
 > no docs found   
 
 
 ## UILabel
-```lx
+```wren
 import "luxe: ui/label.control" for UILabel
 ```
 > no docs found
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="create(ui_entity : Any)"></endpoint>
 ### UILabel.create(.)
-```lx
+```wren
 UILabel.create(ui_entity : Any) : UILabel
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="override(label : Control)"></endpoint>
 ### UILabel.override(.)
-```lx
+```wren
 UILabel.override(label : Control) : LabelInfo
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="get_render_text(label : Control)"></endpoint>
 ### UILabel.get_render_text(.)
-```lx
+```wren
 UILabel.get_render_text(label : Control) : RenderText
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="get_text_extents(label : Control)"></endpoint>
 ### UILabel.get_text_extents(.)
-```lx
+```wren
 UILabel.get_text_extents(label : Control) : Float2
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="get_text_extents(label : Control, offset : Num, count : Num)"></endpoint>
 ### UILabel.get_text_extents(...)
-```lx
+```wren
 UILabel.get_text_extents(label : Control, offset : Num, count : Num) : Float2
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_text(label : Control, text : String)"></endpoint>
 ### UILabel.set_text(..)
-```lx
+```wren
 UILabel.set_text(label : Control, text : String) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="get_text(label : Control)"></endpoint>
 ### UILabel.get_text(.)
-```lx
+```wren
 UILabel.get_text(label : Control) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="get_font(label : Control)"></endpoint>
 ### UILabel.get_font(.)
-```lx
+```wren
 UILabel.get_font(label : Control) : Font
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_font(label : Control, font : Font)"></endpoint>
 ### UILabel.set_font(..)
-```lx
+```wren
 UILabel.set_font(label : Control, font : Font) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="get_text_style(label : Control)"></endpoint>
 ### UILabel.get_text_style(.)
-```lx
+```wren
 UILabel.get_text_style(label : Control) : TextStyle
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_text_style(label : Control, style : TextStyle)"></endpoint>
 ### UILabel.set_text_style(..)
-```lx
+```wren
 UILabel.set_text_style(label : Control, style : TextStyle) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_color(label : Control, color : Color)"></endpoint>
 ### UILabel.set_color(..)
-```lx
+```wren
 UILabel.set_color(label : Control, color : Color) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="get_color(label : Control)"></endpoint>
 ### UILabel.get_color(.)
-```lx
+```wren
 UILabel.get_color(label : Control) : Color
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_color_hover(label : Control, color : Color)"></endpoint>
 ### UILabel.set_color_hover(..)
-```lx
+```wren
 UILabel.set_color_hover(label : Control, color : Color) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="get_color_hover(label : Control)"></endpoint>
 ### UILabel.get_color_hover(.)
-```lx
+```wren
 UILabel.get_color_hover(label : Control) : Color
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_wrap(label : Control, wrap : UITextWrapMode)"></endpoint>
 ### UILabel.set_wrap(..)
-```lx
+```wren
 UILabel.set_wrap(label : Control, wrap : UITextWrapMode) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="get_wrap(label : Control)"></endpoint>
 ### UILabel.get_wrap(.)
-```lx
+```wren
 UILabel.get_wrap(label : Control) : UITextWrapMode
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_text_size(label : Control, size : Num)"></endpoint>
 ### UILabel.set_text_size(..)
-```lx
+```wren
 UILabel.set_text_size(label : Control, size : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="get_text_size(label : Control)"></endpoint>
 ### UILabel.get_text_size(.)
-```lx
+```wren
 UILabel.get_text_size(label : Control) : Num
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_align(label : Control, align : TextAlign)"></endpoint>
 ### UILabel.set_align(..)
-```lx
+```wren
 UILabel.set_align(label : Control, align : TextAlign) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="get_align(label : Control)"></endpoint>
 ### UILabel.get_align(.)
-```lx
+```wren
 UILabel.get_align(label : Control) : TextAlign
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_align_vertical(label : Control, align : TextAlign)"></endpoint>
 ### UILabel.set_align_vertical(..)
-```lx
+```wren
 UILabel.set_align_vertical(label : Control, align : TextAlign) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="get_align_vertical(label : Control)"></endpoint>
 ### UILabel.get_align_vertical(.)
-```lx
+```wren
 UILabel.get_align_vertical(label : Control) : TextAlign
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_max_visible(label : Control, visible_count : Num)"></endpoint>
 ### UILabel.set_max_visible(..)
-```lx
+```wren
 UILabel.set_max_visible(label : Control, visible_count : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="get_max_visible(label : Control)"></endpoint>
 ### UILabel.get_max_visible(.)
-```lx
+```wren
 UILabel.get_max_visible(label : Control) : Num
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_auto_size(label : Control, state : UIAutoSize)"></endpoint>
 ### UILabel.set_auto_size(..)
-```lx
+```wren
 UILabel.set_auto_size(label : Control, state : UIAutoSize) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_overflow_scroll(label : Control, speed : Num, wait : Num, pause : Num)"></endpoint>
 ### UILabel.set_overflow_scroll(....)
-```lx
+```wren
 UILabel.set_overflow_scroll(label : Control, speed : Num, wait : Num, pause : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_overflow_scroll(label : Control, type : UIOverflowScroll, speed : Num, wait : Num, pause : Num)"></endpoint>
 ### UILabel.set_overflow_scroll(.....)
-```lx
+```wren
 UILabel.set_overflow_scroll(label : Control, type : UIOverflowScroll, speed : Num, wait : Num, pause : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_loc(label : Control, space : String, key : String)"></endpoint>
 ### UILabel.set_loc(...)
-```lx
+```wren
 UILabel.set_loc(label : Control, space : String, key : String) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_loc(label : Control, key : String)"></endpoint>
 ### UILabel.set_loc(..)
-```lx
+```wren
 UILabel.set_loc(label : Control, key : String) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_loc_with_args(label : Control, space : String, key : String, args : List)"></endpoint>
 ### UILabel.set_loc_with_args(....)
-```lx
+```wren
 UILabel.set_loc_with_args(label : Control, space : String, key : String, args : List) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_loc_with_args(label : Control, key : String, args : List)"></endpoint>
 ### UILabel.set_loc_with_args(...)
-```lx
+```wren
 UILabel.set_loc_with_args(label : Control, key : String, args : List) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_outline(label : Control, radius : Num, softness : Num, color : Color, offset : Float2)"></endpoint>
 ### UILabel.set_outline(.....)
-```lx
+```wren
 UILabel.set_outline(label : Control, radius : Num, softness : Num, color : Color, offset : Float2) : None
 ```
 > Set the text outline parameters.   
 
 <endpoint module="luxe: ui/label.control" class="UILabel" signature="set_shadow(label : Control, radius : Num, softness : Num, color : Color, offset : Float2)"></endpoint>
 ### UILabel.set_shadow(.....)
-```lx
+```wren
 UILabel.set_shadow(label : Control, radius : Num, softness : Num, color : Color, offset : Float2) : None
 ```
 > Set the text shadow parameters.   

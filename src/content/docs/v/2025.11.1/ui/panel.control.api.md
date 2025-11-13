@@ -12,105 +12,105 @@ slug: "v/2025.11.1/ui/panel.control.api"
 
 
 ## API
-```lx
+```wren
 import "luxe: ui/panel.control.api" for API
 ```
 > no docs found
 
 <endpoint module="luxe: ui/panel.control.api" class="API" signature="id"></endpoint>
 ### API.id
-```lx
+```wren
 API.id : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/panel.control.api" class="API" signature="create(ui : Entity)"></endpoint>
 ### API.create(.)
-```lx
+```wren
 API.create(ui : Entity) : Control
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/panel.control.api" class="API" signature="has(control : Control)"></endpoint>
 ### API.has(.)
-```lx
+```wren
 API.has(control : Control) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/panel.control.api" class="API" signature="get(control : Control)"></endpoint>
 ### API.get(.)
-```lx
+```wren
 API.get(control : Control) : Data
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/panel.control.api" class="API" signature="get"></endpoint>
 ### API.get
-```lx
+```wren
 API.get : APIGet
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/panel.control.api" class="API" signature="set"></endpoint>
 ### API.set
-```lx
+```wren
 API.set : APISet
 ```
 > no docs found   
 
 
 ## APIGet
-```lx
+```wren
 import "luxe: ui/panel.control.api" for APIGet
 ```
 > no docs found
 
 <endpoint module="luxe: ui/panel.control.api" class="APIGet" signature="new()"></endpoint>
 ### APIGet.new(.)
-```lx
+```wren
 APIGet.new() : APIGet
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/panel.control.api" class="APIGet" signature="override(control : Control)"></endpoint>
 ### APIGet.override(.)
-```lx
+```wren
 APIGet.override(control : Control) : Any
 ```
 > no docs found   
 
 
 ## APISet
-```lx
+```wren
 import "luxe: ui/panel.control.api" for APISet
 ```
 > no docs found
 
 <endpoint module="luxe: ui/panel.control.api" class="APISet" signature="new()"></endpoint>
 ### APISet.new(.)
-```lx
+```wren
 APISet.new() : APISet
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/panel.control.api" class="APISet" signature="override(control : Control, value : Any)"></endpoint>
 ### APISet.override(..)
-```lx
+```wren
 APISet.override(control : Control, value : Any) : unknown
 ```
 > no docs found   
 
 
 ## Fields
-```lx
+```wren
 import "luxe: ui/panel.control.api" for Fields
 ```
 > no docs found
 
 <endpoint module="luxe: ui/panel.control.api" class="Fields" signature="override"></endpoint>
 ### Fields.override
-```lx
+```wren
 Fields.override : String
 ```
 > no docs found   

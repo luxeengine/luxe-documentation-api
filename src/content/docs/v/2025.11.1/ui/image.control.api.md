@@ -12,231 +12,231 @@ slug: "v/2025.11.1/ui/image.control.api"
 
 
 ## API
-```lx
+```wren
 import "luxe: ui/image.control.api" for API
 ```
 > no docs found
 
 <endpoint module="luxe: ui/image.control.api" class="API" signature="id"></endpoint>
 ### API.id
-```lx
+```wren
 API.id : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="API" signature="create(ui : Entity)"></endpoint>
 ### API.create(.)
-```lx
+```wren
 API.create(ui : Entity) : Control
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="API" signature="has(control : Control)"></endpoint>
 ### API.has(.)
-```lx
+```wren
 API.has(control : Control) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="API" signature="get(control : Control)"></endpoint>
 ### API.get(.)
-```lx
+```wren
 API.get(control : Control) : Data
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="API" signature="get"></endpoint>
 ### API.get
-```lx
+```wren
 API.get : APIGet
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="API" signature="set"></endpoint>
 ### API.set
-```lx
+```wren
 API.set : APISet
 ```
 > no docs found   
 
 
 ## APIGet
-```lx
+```wren
 import "luxe: ui/image.control.api" for APIGet
 ```
 > no docs found
 
 <endpoint module="luxe: ui/image.control.api" class="APIGet" signature="new()"></endpoint>
 ### APIGet.new(.)
-```lx
+```wren
 APIGet.new() : APIGet
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="APIGet" signature="image(control : Control)"></endpoint>
 ### APIGet.image(.)
-```lx
+```wren
 APIGet.image(control : Control) : Asset
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="APIGet" signature="color(control : Control)"></endpoint>
 ### APIGet.color(.)
-```lx
+```wren
 APIGet.color(control : Control) : Color
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="APIGet" signature="angle(control : Control)"></endpoint>
 ### APIGet.angle(.)
-```lx
+```wren
 APIGet.angle(control : Control) : Num
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="APIGet" signature="pixelated(control : Control)"></endpoint>
 ### APIGet.pixelated(.)
-```lx
+```wren
 APIGet.pixelated(control : Control) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="APIGet" signature="fit(control : Control)"></endpoint>
 ### APIGet.fit(.)
-```lx
+```wren
 APIGet.fit(control : Control) : Any
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="APIGet" signature="uv(control : Control)"></endpoint>
 ### APIGet.uv(.)
-```lx
+```wren
 APIGet.uv(control : Control) : Float4
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="APIGet" signature="material(control : Control)"></endpoint>
 ### APIGet.material(.)
-```lx
+```wren
 APIGet.material(control : Control) : Asset
 ```
 > no docs found   
 
 
 ## APISet
-```lx
+```wren
 import "luxe: ui/image.control.api" for APISet
 ```
 > no docs found
 
 <endpoint module="luxe: ui/image.control.api" class="APISet" signature="new()"></endpoint>
 ### APISet.new(.)
-```lx
+```wren
 APISet.new() : APISet
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="APISet" signature="image(control : Control, value : Asset)"></endpoint>
 ### APISet.image(..)
-```lx
+```wren
 APISet.image(control : Control, value : Asset) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="APISet" signature="color(control : Control, value : Color)"></endpoint>
 ### APISet.color(..)
-```lx
+```wren
 APISet.color(control : Control, value : Color) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="APISet" signature="angle(control : Control, value : Num)"></endpoint>
 ### APISet.angle(..)
-```lx
+```wren
 APISet.angle(control : Control, value : Num) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="APISet" signature="pixelated(control : Control, value : Bool)"></endpoint>
 ### APISet.pixelated(..)
-```lx
+```wren
 APISet.pixelated(control : Control, value : Bool) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="APISet" signature="fit(control : Control, value : Any)"></endpoint>
 ### APISet.fit(..)
-```lx
+```wren
 APISet.fit(control : Control, value : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="APISet" signature="uv(control : Control, value : Float4)"></endpoint>
 ### APISet.uv(..)
-```lx
+```wren
 APISet.uv(control : Control, value : Float4) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="APISet" signature="material(control : Control, value : Asset)"></endpoint>
 ### APISet.material(..)
-```lx
+```wren
 APISet.material(control : Control, value : Asset) : unknown
 ```
 > no docs found   
 
 
 ## Fields
-```lx
+```wren
 import "luxe: ui/image.control.api" for Fields
 ```
 > no docs found
 
 <endpoint module="luxe: ui/image.control.api" class="Fields" signature="image"></endpoint>
 ### Fields.image
-```lx
+```wren
 Fields.image : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="Fields" signature="color"></endpoint>
 ### Fields.color
-```lx
+```wren
 Fields.color : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="Fields" signature="angle"></endpoint>
 ### Fields.angle
-```lx
+```wren
 Fields.angle : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="Fields" signature="pixelated"></endpoint>
 ### Fields.pixelated
-```lx
+```wren
 Fields.pixelated : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="Fields" signature="fit"></endpoint>
 ### Fields.fit
-```lx
+```wren
 Fields.fit : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="Fields" signature="uv"></endpoint>
 ### Fields.uv
-```lx
+```wren
 Fields.uv : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/image.control.api" class="Fields" signature="material"></endpoint>
 ### Fields.material
-```lx
+```wren
 Fields.material : String
 ```
 > no docs found   

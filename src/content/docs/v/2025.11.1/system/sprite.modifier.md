@@ -18,13 +18,13 @@ slug: "v/2025.11.1/system/sprite.modifier"
 
 
 ## Advanced
-```lx
+```wren
 import "luxe: system/sprite.modifier" for Advanced
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var auto_size : Bool = true
 var material_input : String = "sprite.image"
 var HSV : HSV = Object
@@ -35,13 +35,13 @@ var shine : Shine = Object
 ```
 
 ## Data
-```lx
+```wren
 import "luxe: system/sprite.modifier" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var image : Asset = "luxe: image/logo"
 var size : Float2 = [64, 64]
 var origin : Float2 = [0.5, 0.5]
@@ -60,13 +60,13 @@ var advanced : Advanced = Object
 ```
 
 ## Dissolve
-```lx
+```wren
 import "luxe: system/sprite.modifier" for Dissolve
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var enabled : Bool = false
 var image : Asset = null
 var uv : Float4 = [0, 0, 1, 1]
@@ -74,13 +74,13 @@ var value : Num = 1
 ```
 
 ## HSV
-```lx
+```wren
 import "luxe: system/sprite.modifier" for HSV
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var enabled : Bool = false
 var hue_change : Num = 0
 var saturation : Num = 1
@@ -88,26 +88,26 @@ var value : Num = 1
 ```
 
 ## Outline
-```lx
+```wren
 import "luxe: system/sprite.modifier" for Outline
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var enabled : Bool = false
 var color : Color = [1, 1, 1, 1]
 var thickness : Num = 0
 ```
 
 ## Shadow
-```lx
+```wren
 import "luxe: system/sprite.modifier" for Shadow
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var enabled : Bool = false
 var offset : Float2 = [0, 0]
 var color : Color = [0, 0, 0, 1]
@@ -115,13 +115,13 @@ var softness : Num = 0
 ```
 
 ## Shine
-```lx
+```wren
 import "luxe: system/sprite.modifier" for Shine
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var enabled : Bool = false
 var color : Color = [1, 0.92, 0.16, 1]
 var direction : Float2 = [0, 0]
@@ -131,7 +131,7 @@ var spacing : Num = 0
 ```
 
 ## Sprite
-```lx
+```wren
 import "luxe: system/sprite.modifier" for Sprite
 ```
 > A sprite is an image attached to an entity.   
@@ -146,7 +146,7 @@ import "luxe: system/sprite.modifier" for Sprite
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="create(entity : Entity, image : Image, width : Num, height : Num)"></endpoint>
 ### Sprite.create(....)
-```lx
+```wren
 Sprite.create(entity : Entity, image : Image, width : Num, height : Num) : None
 ```
 > Attach a `Sprite` modifier to `entity`, drawn using `image`,
@@ -160,7 +160,7 @@ Sprite.create(entity : Entity, image : Image, width : Num, height : Num) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="create(entity : Entity, image : Image)"></endpoint>
 ### Sprite.create(..)
-```lx
+```wren
 Sprite.create(entity : Entity, image : Image) : None
 ```
 > Attach a `Sprite` modifier to `entity`, drawn using `image`.
@@ -174,7 +174,7 @@ Sprite.create(entity : Entity, image : Image) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="create(entity : Entity)"></endpoint>
 ### Sprite.create(.)
-```lx
+```wren
 Sprite.create(entity : Entity) : None
 ```
 > Attach a `Sprite` modifier to `entity`, drawn using a default `image`.
@@ -187,7 +187,7 @@ Sprite.create(entity : Entity) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="create_with(entity : Entity, material : Material, width : Num, height : Num)"></endpoint>
 ### Sprite.create_with(....)
-```lx
+```wren
 Sprite.create_with(entity : Entity, material : Material, width : Num, height : Num) : None
 ```
 > Attach a `Sprite` modifier to `entity`, drawn using `material`,
@@ -201,7 +201,7 @@ Sprite.create_with(entity : Entity, material : Material, width : Num, height : N
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="create_with(entity : Entity, material : Material)"></endpoint>
 ### Sprite.create_with(..)
-```lx
+```wren
 Sprite.create_with(entity : Entity, material : Material) : None
 ```
 > Attach a `Sprite` modifier to `entity`, drawn using `material`.
@@ -215,7 +215,7 @@ Sprite.create_with(entity : Entity, material : Material) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="create(entity : Entity, atlas : Atlas, atlas_image : String)"></endpoint>
 ### Sprite.create(...)
-```lx
+```wren
 Sprite.create(entity : Entity, atlas : Atlas, atlas_image : String) : None
 ```
 > Attach a `Sprite` modifier to `entity`, drawn using the `atlas`, 
@@ -231,7 +231,7 @@ Sprite.create(entity : Entity, atlas : Atlas, atlas_image : String) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="destroy(entity : Entity)"></endpoint>
 ### Sprite.destroy(.)
-```lx
+```wren
 Sprite.destroy(entity : Entity) : None
 ```
 > Detach and destroy the `Sprite` attached to `entity`
@@ -242,7 +242,7 @@ Sprite.destroy(entity : Entity) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="has(entity : Entity)"></endpoint>
 ### Sprite.has(.)
-```lx
+```wren
 Sprite.has(entity : Entity) : Bool
 ```
 > Returns true if `entity` has a `Sprite` modifier attached.
@@ -255,7 +255,7 @@ Sprite.has(entity : Entity) : Bool
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="contains(entity : Entity, x : Num, y : Num)"></endpoint>
 ### Sprite.contains(...)
-```lx
+```wren
 Sprite.contains(entity : Entity, x : Num, y : Num) : Bool
 ```
 > Returns true if the `Sprite` attached to `entity` contains the point at `x`,`y` (in world units).
@@ -275,7 +275,7 @@ Sprite.contains(entity : Entity, x : Num, y : Num) : Bool
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_material(entity : Entity, material : Material)"></endpoint>
 ### Sprite.set_material(..)
-```lx
+```wren
 Sprite.set_material(entity : Entity, material : Material) : None
 ```
 > Change the material that the `Sprite` attached to `entity` is drawn with, so it will draw with `material` instead.
@@ -287,7 +287,7 @@ Sprite.set_material(entity : Entity, material : Material) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_material(entity : Entity)"></endpoint>
 ### Sprite.get_material(.)
-```lx
+```wren
 Sprite.get_material(entity : Entity) : Material
 ```
 > Returns the current material that the `Sprite` attached to `entity` is drawn with.
@@ -298,7 +298,7 @@ Sprite.get_material(entity : Entity) : Material
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_image(entity : Entity, image : Image)"></endpoint>
 ### Sprite.set_image(..)
-```lx
+```wren
 Sprite.set_image(entity : Entity, image : Image) : None
 ```
 > Change the image that the `Sprite` attached to `entity` is drawn with.
@@ -310,7 +310,7 @@ Sprite.set_image(entity : Entity, image : Image) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_image(entity : Entity)"></endpoint>
 ### Sprite.get_image(.)
-```lx
+```wren
 Sprite.get_image(entity : Entity) : Image
 ```
 > Returns the current image that the `Sprite` attached to `entity` is drawn with.
@@ -321,7 +321,7 @@ Sprite.get_image(entity : Entity) : Image
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_origin(entity : Entity, x : Num, y : Num)"></endpoint>
 ### Sprite.set_origin(...)
-```lx
+```wren
 Sprite.set_origin(entity : Entity, x : Num, y : Num) : None
 ```
 > Sets the origin of the sprite in relation to the `Transform` on `entity`. The `x` and `y` values are `0...1` range, where `0, 0` is bottom left, and `1, 1` is top right. A centered sprite is `0.5, 0.5`. To set the origin to the center, bottom you'd use `0.5, 0`.
@@ -337,7 +337,7 @@ Sprite.set_origin(entity : Entity, x : Num, y : Num) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_origin(entity : Entity)"></endpoint>
 ### Sprite.get_origin(.)
-```lx
+```wren
 Sprite.get_origin(entity : Entity) : Float2
 ```
 > Returns the current origin for the Sprite attached to `entity`.
@@ -349,7 +349,7 @@ Sprite.get_origin(entity : Entity) : Float2
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_flip_h(entity : Entity, flipped : Bool)"></endpoint>
 ### Sprite.set_flip_h(..)
-```lx
+```wren
 Sprite.set_flip_h(entity : Entity, flipped : Bool) : None
 ```
 > Set whether the `Sprite` attached to `entity` is `flipped` horizontally.
@@ -360,7 +360,7 @@ Sprite.set_flip_h(entity : Entity, flipped : Bool) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_flip_h(entity : Entity)"></endpoint>
 ### Sprite.get_flip_h(.)
-```lx
+```wren
 Sprite.get_flip_h(entity : Entity) : Bool
 ```
 > Returns true if the `Sprite` attached to `entity` is flipped horizontally.
@@ -371,7 +371,7 @@ Sprite.get_flip_h(entity : Entity) : Bool
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_flip_v(entity : Entity, flipped : Bool)"></endpoint>
 ### Sprite.set_flip_v(..)
-```lx
+```wren
 Sprite.set_flip_v(entity : Entity, flipped : Bool) : None
 ```
 > Set whether the `Sprite` attached to `entity` is `flipped` vertically.
@@ -382,7 +382,7 @@ Sprite.set_flip_v(entity : Entity, flipped : Bool) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_flip_v(entity : Entity)"></endpoint>
 ### Sprite.get_flip_v(.)
-```lx
+```wren
 Sprite.get_flip_v(entity : Entity) : Bool
 ```
 > Returns true if the `Sprite` attached to `entity` is flipped vertically.
@@ -393,7 +393,7 @@ Sprite.get_flip_v(entity : Entity) : Bool
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_billboard(entity : Entity, kind : SpriteBillboard, lock : Float3)"></endpoint>
 ### Sprite.set_billboard(...)
-```lx
+```wren
 Sprite.set_billboard(entity : Entity, kind : SpriteBillboard, lock : Float3) : None
 ```
 > Set how the `Sprite` attached to `entity` behaves as a `billboard` sprite.
@@ -405,7 +405,7 @@ Sprite.set_billboard(entity : Entity, kind : SpriteBillboard, lock : Float3) : N
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_billboard(entity : Entity)"></endpoint>
 ### Sprite.get_billboard(.)
-```lx
+```wren
 Sprite.get_billboard(entity : Entity) : SpriteBillboard
 ```
 > Get how the `Sprite` attached to `entity` behaves as a `billboard` sprite.
@@ -417,7 +417,7 @@ Sprite.get_billboard(entity : Entity) : SpriteBillboard
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_size(entity : Entity, width : Num, height : Num)"></endpoint>
 ### Sprite.set_size(...)
-```lx
+```wren
 Sprite.set_size(entity : Entity, width : Num, height : Num) : None
 ```
 > Resize the `Sprite` attached to `entity` to be `width`x`height`.
@@ -428,7 +428,7 @@ Sprite.set_size(entity : Entity, width : Num, height : Num) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_width(entity : Entity, width : Num)"></endpoint>
 ### Sprite.set_width(..)
-```lx
+```wren
 Sprite.set_width(entity : Entity, width : Num) : None
 ```
 > Resize the `Sprite` attached to `entity` to have a new `width`.
@@ -439,7 +439,7 @@ Sprite.set_width(entity : Entity, width : Num) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_width(entity : Entity)"></endpoint>
 ### Sprite.get_width(.)
-```lx
+```wren
 Sprite.get_width(entity : Entity) : Num
 ```
 > Returns the width of the `Sprite` attached to `entity`.
@@ -450,7 +450,7 @@ Sprite.get_width(entity : Entity) : Num
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_height(entity : Entity, height : Num)"></endpoint>
 ### Sprite.set_height(..)
-```lx
+```wren
 Sprite.set_height(entity : Entity, height : Num) : None
 ```
 > Resize the `Sprite` attached to `entity` to have a new `height`.
@@ -461,7 +461,7 @@ Sprite.set_height(entity : Entity, height : Num) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_height(entity : Entity)"></endpoint>
 ### Sprite.get_height(.)
-```lx
+```wren
 Sprite.get_height(entity : Entity) : Num
 ```
 > Returns the height of the `Sprite` attached to `entity`.
@@ -472,7 +472,7 @@ Sprite.get_height(entity : Entity) : Num
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_alpha(entity : Entity, alpha : Num)"></endpoint>
 ### Sprite.set_alpha(..)
-```lx
+```wren
 Sprite.set_alpha(entity : Entity, alpha : Num) : None
 ```
 > Change the alpha (transparency) of the `Sprite` attached to `entity` to be `alpha`. Modifies the color.
@@ -483,7 +483,7 @@ Sprite.set_alpha(entity : Entity, alpha : Num) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_alpha(entity : Entity)"></endpoint>
 ### Sprite.get_alpha(.)
-```lx
+```wren
 Sprite.get_alpha(entity : Entity) : Num
 ```
 > Returns the current alpha of the `Sprite` attached to `entity`.
@@ -494,7 +494,7 @@ Sprite.get_alpha(entity : Entity) : Num
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_color(entity : Entity, color : Color)"></endpoint>
 ### Sprite.set_color(..)
-```lx
+```wren
 Sprite.set_color(entity : Entity, color : Color) : None
 ```
 > Set the color of the `Sprite` attached to `entity` to be a color. 
@@ -507,7 +507,7 @@ Sprite.set_color(entity : Entity, color : Color) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_color(entity : Entity, r : Num, g : Num, b : Num, a : Num)"></endpoint>
 ### Sprite.set_color(.....)
-```lx
+```wren
 Sprite.set_color(entity : Entity, r : Num, g : Num, b : Num, a : Num) : None
 ```
 > Set the color of the `Sprite` attached to `entity` to be a color of `r`,`g`,`b`,`a`. 
@@ -519,7 +519,7 @@ Sprite.set_color(entity : Entity, r : Num, g : Num, b : Num, a : Num) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_color(entity : Entity)"></endpoint>
 ### Sprite.get_color(.)
-```lx
+```wren
 Sprite.get_color(entity : Entity) : Color
 ```
 > Returns the current color of the `Sprite` attached to `entity`.
@@ -530,7 +530,7 @@ Sprite.get_color(entity : Entity) : Color
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_uv(entity : Entity, x0 : Num, y0 : Num, x1 : Num, y1 : Num)"></endpoint>
 ### Sprite.set_uv(.....)
-```lx
+```wren
 Sprite.set_uv(entity : Entity, x0 : Num, y0 : Num, x1 : Num, y1 : Num) : None
 ```
 > Set the UV coordinates for the `Sprite` attached to `entity` with top left at `x0`,`y0` and bottom right `x1`,`y1`. The default is `0, 0, 1, 1`, a full rectangle in UV coordinate space. If you want to tile the image on a sprite, set it to values > 1.
@@ -542,7 +542,7 @@ Sprite.set_uv(entity : Entity, x0 : Num, y0 : Num, x1 : Num, y1 : Num) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_uv(entity : Entity)"></endpoint>
 ### Sprite.get_uv(.)
-```lx
+```wren
 Sprite.get_uv(entity : Entity) : Float4
 ```
 > Returns the current uv of the `Sprite` attached to `entity`.
@@ -553,7 +553,7 @@ Sprite.get_uv(entity : Entity) : Float4
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_skew(entity : Entity, x : Num, y : Num)"></endpoint>
 ### Sprite.set_skew(...)
-```lx
+```wren
 Sprite.set_skew(entity : Entity, x : Num, y : Num) : None
 ```
 > Set the skew amounts for the `Sprite` attached to `entity`. The values of `x` and `y` are between `0 ... 1`, where 1 is the most skew and 0 is none.
@@ -564,7 +564,7 @@ Sprite.set_skew(entity : Entity, x : Num, y : Num) : None
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_skew(entity : Entity)"></endpoint>
 ### Sprite.get_skew(.)
-```lx
+```wren
 Sprite.get_skew(entity : Entity) : Float2
 ```
 > Return the skew for the `Sprite` attached to `entity`.
@@ -575,7 +575,7 @@ Sprite.get_skew(entity : Entity) : Float2
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_geometry(entity : Entity)"></endpoint>
 ### Sprite.get_geometry(.)
-```lx
+```wren
 Sprite.get_geometry(entity : Entity) : Geometry
 ```
 > Returns the render [Geometry](#geometry) for the `Sprite` attached to `entity`. The geometry is owned by the sprite, so be aware when modifying it.
@@ -586,7 +586,7 @@ Sprite.get_geometry(entity : Entity) : Geometry
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_geometry(entity : Entity, geo : Geometry)"></endpoint>
 ### Sprite.set_geometry(..)
-```lx
+```wren
 Sprite.set_geometry(entity : Entity, geo : Geometry) : unknown
 ```
 > Sets the render [Geometry](#geometry) for the `Sprite` attached to `entity`.
@@ -597,56 +597,56 @@ Sprite.set_geometry(entity : Entity, geo : Geometry) : unknown
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_auto_size(entity : Entity)"></endpoint>
 ### Sprite.get_auto_size(.)
-```lx
+```wren
 Sprite.get_auto_size(entity : Entity) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_auto_size(entity : Entity, value : Bool)"></endpoint>
 ### Sprite.set_auto_size(..)
-```lx
+```wren
 Sprite.set_auto_size(entity : Entity, value : Bool) : None
 ```
 > When setting an image or material, resize the sprite to the image size   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_pixelated(entity : Entity)"></endpoint>
 ### Sprite.get_pixelated(.)
-```lx
+```wren
 Sprite.get_pixelated(entity : Entity) : Bool
 ```
 > Displaying as pixelated or not   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_pixelated(entity : Entity, value : Bool)"></endpoint>
 ### Sprite.set_pixelated(..)
-```lx
+```wren
 Sprite.set_pixelated(entity : Entity, value : Bool) : None
 ```
 > Display as pixelated or not   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_material_input(entity : Entity)"></endpoint>
 ### Sprite.get_material_input(.)
-```lx
+```wren
 Sprite.get_material_input(entity : Entity) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_material_input(entity : Entity, value : Bool)"></endpoint>
 ### Sprite.set_material_input(..)
-```lx
+```wren
 Sprite.set_material_input(entity : Entity, value : Bool) : None
 ```
 > For custom materials, the material input ID for the image.   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_hsv_adjust(entity : Entity)"></endpoint>
 ### Sprite.get_hsv_adjust(.)
-```lx
+```wren
 Sprite.get_hsv_adjust(entity : Entity) : HSV
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_hsv_adjust(entity : Entity, enabled : Bool, hue_change : Num, saturation : Num, value : Num)"></endpoint>
 ### Sprite.set_hsv_adjust(.....)
-```lx
+```wren
 Sprite.set_hsv_adjust(entity : Entity, enabled : Bool, hue_change : Num, saturation : Num, value : Num) : None
 ```
 > Set the values for the hsv adjustment effect.
@@ -655,126 +655,126 @@ Sprite.set_hsv_adjust(entity : Entity, enabled : Bool, hue_change : Num, saturat
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_HSV_enabled(entity : Entity, enabled : Bool)"></endpoint>
 ### Sprite.set_effect_HSV_enabled(..)
-```lx
+```wren
 Sprite.set_effect_HSV_enabled(entity : Entity, enabled : Bool) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_HSV_enabled(entity : Entity, enabled : Bool)"></endpoint>
 ### Sprite.get_effect_HSV_enabled(..)
-```lx
+```wren
 Sprite.get_effect_HSV_enabled(entity : Entity, enabled : Bool) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_HSV_hue_change(entity : Entity, hue_change : Num)"></endpoint>
 ### Sprite.set_effect_HSV_hue_change(..)
-```lx
+```wren
 Sprite.set_effect_HSV_hue_change(entity : Entity, hue_change : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_HSV_hue_change(entity : Entity, hue_change : Num)"></endpoint>
 ### Sprite.get_effect_HSV_hue_change(..)
-```lx
+```wren
 Sprite.get_effect_HSV_hue_change(entity : Entity, hue_change : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_HSV_saturation(entity : Entity, saturation : Num)"></endpoint>
 ### Sprite.set_effect_HSV_saturation(..)
-```lx
+```wren
 Sprite.set_effect_HSV_saturation(entity : Entity, saturation : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_HSV_saturation(entity : Entity, saturation : Num)"></endpoint>
 ### Sprite.get_effect_HSV_saturation(..)
-```lx
+```wren
 Sprite.get_effect_HSV_saturation(entity : Entity, saturation : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_HSV_value(entity : Entity, value : Num)"></endpoint>
 ### Sprite.set_effect_HSV_value(..)
-```lx
+```wren
 Sprite.set_effect_HSV_value(entity : Entity, value : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_HSV_value(entity : Entity, value : Num)"></endpoint>
 ### Sprite.get_effect_HSV_value(..)
-```lx
+```wren
 Sprite.get_effect_HSV_value(entity : Entity, value : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_outline(entity : Entity)"></endpoint>
 ### Sprite.get_outline(.)
-```lx
+```wren
 Sprite.get_outline(entity : Entity) : Outline
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_outline(entity : Entity, enabled : Bool, color : Color, thickness : Num)"></endpoint>
 ### Sprite.set_outline(....)
-```lx
+```wren
 Sprite.set_outline(entity : Entity, enabled : Bool, color : Color, thickness : Num) : None
 ```
 > Set the values of the outline effect.   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_outline_enabled(entity : Entity, enabled : Bool)"></endpoint>
 ### Sprite.set_effect_outline_enabled(..)
-```lx
+```wren
 Sprite.set_effect_outline_enabled(entity : Entity, enabled : Bool) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_outline_enabled(entity : Entity, enabled : Bool)"></endpoint>
 ### Sprite.get_effect_outline_enabled(..)
-```lx
+```wren
 Sprite.get_effect_outline_enabled(entity : Entity, enabled : Bool) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_outline_color(entity : Entity, color : Color)"></endpoint>
 ### Sprite.set_effect_outline_color(..)
-```lx
+```wren
 Sprite.set_effect_outline_color(entity : Entity, color : Color) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_outline_color(entity : Entity, color : Color)"></endpoint>
 ### Sprite.get_effect_outline_color(..)
-```lx
+```wren
 Sprite.get_effect_outline_color(entity : Entity, color : Color) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_outline_thickness(entity : Entity, thickness : Num)"></endpoint>
 ### Sprite.set_effect_outline_thickness(..)
-```lx
+```wren
 Sprite.set_effect_outline_thickness(entity : Entity, thickness : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_outline_thickness(entity : Entity, thickness : Num)"></endpoint>
 ### Sprite.get_effect_outline_thickness(..)
-```lx
+```wren
 Sprite.get_effect_outline_thickness(entity : Entity, thickness : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_shadow(entity : Entity)"></endpoint>
 ### Sprite.get_shadow(.)
-```lx
+```wren
 Sprite.get_shadow(entity : Entity) : Shadow
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_shadow(entity : Entity, enabled : Bool, offset : Num, color : Color, softness : Num)"></endpoint>
 ### Sprite.set_shadow(.....)
-```lx
+```wren
 Sprite.set_shadow(entity : Entity, enabled : Bool, offset : Num, color : Color, softness : Num) : None
 ```
 > Set the values for the shadow effect.
@@ -782,56 +782,56 @@ Sprite.set_shadow(entity : Entity, enabled : Bool, offset : Num, color : Color, 
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_shadow_enabled(entity : Entity, enabled : Bool)"></endpoint>
 ### Sprite.set_effect_shadow_enabled(..)
-```lx
+```wren
 Sprite.set_effect_shadow_enabled(entity : Entity, enabled : Bool) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_shadow_enabled(entity : Entity, enabled : Bool)"></endpoint>
 ### Sprite.get_effect_shadow_enabled(..)
-```lx
+```wren
 Sprite.get_effect_shadow_enabled(entity : Entity, enabled : Bool) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_shadow_offset(entity : Entity, offset : Vector2)"></endpoint>
 ### Sprite.set_effect_shadow_offset(..)
-```lx
+```wren
 Sprite.set_effect_shadow_offset(entity : Entity, offset : Vector2) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_shadow_offset(entity : Entity, offset : Vector2)"></endpoint>
 ### Sprite.get_effect_shadow_offset(..)
-```lx
+```wren
 Sprite.get_effect_shadow_offset(entity : Entity, offset : Vector2) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_shadow_color(entity : Entity, color : Color)"></endpoint>
 ### Sprite.set_effect_shadow_color(..)
-```lx
+```wren
 Sprite.set_effect_shadow_color(entity : Entity, color : Color) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_shadow_color(entity : Entity, color : Color)"></endpoint>
 ### Sprite.get_effect_shadow_color(..)
-```lx
+```wren
 Sprite.get_effect_shadow_color(entity : Entity, color : Color) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_dissolve(entity : Entity)"></endpoint>
 ### Sprite.get_dissolve(.)
-```lx
+```wren
 Sprite.get_dissolve(entity : Entity) : Dissolve
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_dissolve(entity : Entity, enabled : Bool, image : Image, uv : List, value : Num)"></endpoint>
 ### Sprite.set_dissolve(.....)
-```lx
+```wren
 Sprite.set_dissolve(entity : Entity, enabled : Bool, image : Image, uv : List, value : Num) : None
 ```
 > Set the values for the hsv adjustment effect.
@@ -840,70 +840,70 @@ Sprite.set_dissolve(entity : Entity, enabled : Bool, image : Image, uv : List, v
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_dissolve_enabled(entity : Entity, enabled : Bool)"></endpoint>
 ### Sprite.set_effect_dissolve_enabled(..)
-```lx
+```wren
 Sprite.set_effect_dissolve_enabled(entity : Entity, enabled : Bool) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_dissolve_enabled(entity : Entity, enabled : Bool)"></endpoint>
 ### Sprite.get_effect_dissolve_enabled(..)
-```lx
+```wren
 Sprite.get_effect_dissolve_enabled(entity : Entity, enabled : Bool) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_dissolve_image(entity : Entity, image : Image)"></endpoint>
 ### Sprite.set_effect_dissolve_image(..)
-```lx
+```wren
 Sprite.set_effect_dissolve_image(entity : Entity, image : Image) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_dissolve_image(entity : Entity, image : Image)"></endpoint>
 ### Sprite.get_effect_dissolve_image(..)
-```lx
+```wren
 Sprite.get_effect_dissolve_image(entity : Entity, image : Image) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_dissolve_uv(entity : Entity, uv : Vector4)"></endpoint>
 ### Sprite.set_effect_dissolve_uv(..)
-```lx
+```wren
 Sprite.set_effect_dissolve_uv(entity : Entity, uv : Vector4) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_dissolve_uv(entity : Entity, uv : Vector4)"></endpoint>
 ### Sprite.get_effect_dissolve_uv(..)
-```lx
+```wren
 Sprite.get_effect_dissolve_uv(entity : Entity, uv : Vector4) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_dissolve_value(entity : Entity, value : Num)"></endpoint>
 ### Sprite.set_effect_dissolve_value(..)
-```lx
+```wren
 Sprite.set_effect_dissolve_value(entity : Entity, value : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_dissolve_value(entity : Entity, value : Num)"></endpoint>
 ### Sprite.get_effect_dissolve_value(..)
-```lx
+```wren
 Sprite.get_effect_dissolve_value(entity : Entity, value : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_shine(entity : Entity)"></endpoint>
 ### Sprite.get_shine(.)
-```lx
+```wren
 Sprite.get_shine(entity : Entity) : Shine
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_shine(entity : Entity, enabled : Bool, color : Num, direction : Vector2, width : Num, speed : Num, spacing : Num)"></endpoint>
 ### Sprite.set_shine(.......)
-```lx
+```wren
 Sprite.set_shine(entity : Entity, enabled : Bool, color : Num, direction : Vector2, width : Num, speed : Num, spacing : Num) : None
 ```
 > Set the values for the hsv adjustment effect.
@@ -912,133 +912,133 @@ Sprite.set_shine(entity : Entity, enabled : Bool, color : Num, direction : Vecto
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_shine_enabled(entity : Entity, enabled : Bool)"></endpoint>
 ### Sprite.set_effect_shine_enabled(..)
-```lx
+```wren
 Sprite.set_effect_shine_enabled(entity : Entity, enabled : Bool) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_shine_enabled(entity : Entity, enabled : Bool)"></endpoint>
 ### Sprite.get_effect_shine_enabled(..)
-```lx
+```wren
 Sprite.get_effect_shine_enabled(entity : Entity, enabled : Bool) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_shine_color(entity : Entity, color : Color)"></endpoint>
 ### Sprite.set_effect_shine_color(..)
-```lx
+```wren
 Sprite.set_effect_shine_color(entity : Entity, color : Color) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_shine_color(entity : Entity, color : Color)"></endpoint>
 ### Sprite.get_effect_shine_color(..)
-```lx
+```wren
 Sprite.get_effect_shine_color(entity : Entity, color : Color) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_shine_direction(entity : Entity, direction : Vector2)"></endpoint>
 ### Sprite.set_effect_shine_direction(..)
-```lx
+```wren
 Sprite.set_effect_shine_direction(entity : Entity, direction : Vector2) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_shine_direction(entity : Entity, direction : Vector2)"></endpoint>
 ### Sprite.get_effect_shine_direction(..)
-```lx
+```wren
 Sprite.get_effect_shine_direction(entity : Entity, direction : Vector2) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_shine_width(entity : Entity, width : Num)"></endpoint>
 ### Sprite.set_effect_shine_width(..)
-```lx
+```wren
 Sprite.set_effect_shine_width(entity : Entity, width : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_shine_width(entity : Entity, width : Num)"></endpoint>
 ### Sprite.get_effect_shine_width(..)
-```lx
+```wren
 Sprite.get_effect_shine_width(entity : Entity, width : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_shine_speed(entity : Entity, speed : Num)"></endpoint>
 ### Sprite.set_effect_shine_speed(..)
-```lx
+```wren
 Sprite.set_effect_shine_speed(entity : Entity, speed : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_shine_speed(entity : Entity, speed : Num)"></endpoint>
 ### Sprite.get_effect_shine_speed(..)
-```lx
+```wren
 Sprite.get_effect_shine_speed(entity : Entity, speed : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="set_effect_shine_spacing(entity : Entity, spacing : Num)"></endpoint>
 ### Sprite.set_effect_shine_spacing(..)
-```lx
+```wren
 Sprite.set_effect_shine_spacing(entity : Entity, spacing : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="Sprite" signature="get_effect_shine_spacing(entity : Entity, spacing : Num)"></endpoint>
 ### Sprite.get_effect_shine_spacing(..)
-```lx
+```wren
 Sprite.get_effect_shine_spacing(entity : Entity, spacing : Num) : None
 ```
 > no docs found   
 
 
 ## SpriteBillboard
-```lx
+```wren
 import "luxe: system/sprite.modifier" for SpriteBillboard
 ```
 > no docs found
 
 <endpoint module="luxe: system/sprite.modifier" class="SpriteBillboard" signature="none"></endpoint>
 ### SpriteBillboard.none
-```lx
+```wren
 SpriteBillboard.none : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="SpriteBillboard" signature="billboard"></endpoint>
 ### SpriteBillboard.billboard
-```lx
+```wren
 SpriteBillboard.billboard : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="SpriteBillboard" signature="fixed_scale"></endpoint>
 ### SpriteBillboard.fixed_scale
-```lx
+```wren
 SpriteBillboard.fixed_scale : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/sprite.modifier" class="SpriteBillboard" signature="fixed_screen_scale"></endpoint>
 ### SpriteBillboard.fixed_screen_scale
-```lx
+```wren
 SpriteBillboard.fixed_screen_scale : unknown
 ```
 > no docs found   
 
 
 ## System
-```lx
+```wren
 import "luxe: system/sprite.modifier" for System
 ```
 > no docs found
 
 <endpoint module="luxe: system/sprite.modifier" class="System" signature="new(world : World)"></endpoint>
 ### System.new(.)
-```lx
+```wren
 System.new(world : World) : System
 ```
 > no docs found   

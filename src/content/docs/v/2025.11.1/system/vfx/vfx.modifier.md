@@ -14,26 +14,26 @@ slug: "v/2025.11.1/system/vfx/vfx.modifier"
 
 
 ## Data
-```lx
+```wren
 import "luxe: system/vfx/vfx.modifier" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var play_count : Num = 0
 var duration : Num = 2
 var emitters : List = []
 ```
 
 ## Emitter
-```lx
+```wren
 import "luxe: system/vfx/vfx.modifier" for Emitter
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var emitter_id : String = "emitter"
 var start : Num = 0
 var duration : Num = -1
@@ -42,47 +42,47 @@ var renderers : List = []
 ```
 
 ## Module
-```lx
+```wren
 import "luxe: system/vfx/vfx.modifier" for Module
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var module_id : String = "module"
 var module : Asset = null
 var inputs : Object = Object
 ```
 
 ## Renderer
-```lx
+```wren
 import "luxe: system/vfx/vfx.modifier" for Renderer
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var render_id : String = "render"
 var kind : Asset = null
 var inputs : Object = Object
 ```
 
 ## System
-```lx
+```wren
 import "luxe: system/vfx/vfx.modifier" for System
 ```
 > no docs found
 
 <endpoint module="luxe: system/vfx/vfx.modifier" class="System" signature="new(world : World)"></endpoint>
 ### System.new(.)
-```lx
+```wren
 System.new(world : World) : System
 ```
 > no docs found   
 
 
 ## Vfx
-```lx
+```wren
 import "luxe: system/vfx/vfx.modifier" for Vfx
 ```
 > no docs found

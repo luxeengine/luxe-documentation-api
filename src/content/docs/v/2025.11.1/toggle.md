@@ -9,7 +9,7 @@ slug: "v/2025.11.1/toggle"
 
 
 ## Toggle
-```lx
+```wren
 import "luxe: toggle" for Toggle
 ```
 > ```js
@@ -34,28 +34,28 @@ import "luxe: toggle" for Toggle
 
 <endpoint module="luxe: toggle" class="Toggle" signature="create()"></endpoint>
 ### Toggle.create(.)
-```lx
+```wren
 Toggle.create() : Toggle
 ```
 > Create a new `Toggle` instance.   
 
 <endpoint module="luxe: toggle" class="Toggle" signature="valid(toggle : Toggle)"></endpoint>
 ### Toggle.valid(.)
-```lx
+```wren
 Toggle.valid(toggle : Toggle) : Bool
 ```
 > Does the toggle instance exists.   
 
 <endpoint module="luxe: toggle" class="Toggle" signature="destroy(toggle : Toggle)"></endpoint>
 ### Toggle.destroy(.)
-```lx
+```wren
 Toggle.destroy(toggle : Toggle) : None
 ```
 > Destroy the toggle instance and associated data.   
 
 <endpoint module="luxe: toggle" class="Toggle" signature="set(toggle : Toggle, handle : Num, state : Bool)"></endpoint>
 ### Toggle.set(...)
-```lx
+```wren
 Toggle.set(toggle : Toggle, handle : Num, state : Bool) : None
 ```
 > Turn the value associated with a handle on or off.
@@ -67,28 +67,28 @@ Toggle.set(toggle : Toggle, handle : Num, state : Bool) : None
 
 <endpoint module="luxe: toggle" class="Toggle" signature="get(toggle : Toggle, handle : Num)"></endpoint>
 ### Toggle.get(..)
-```lx
+```wren
 Toggle.get(toggle : Toggle, handle : Num) : Bool
 ```
 > Check the state of the handle.   
 
 <endpoint module="luxe: toggle" class="Toggle" signature="get(toggle : Toggle)"></endpoint>
 ### Toggle.get(.)
-```lx
+```wren
 Toggle.get(toggle : Toggle) : Bool
 ```
 > Get if *all* handles are `true`/`on`. Returns `false` if any are `false`.   
 
 <endpoint module="luxe: toggle" class="Toggle" signature="filter(toggle : Toggle, handles : List)"></endpoint>
 ### Toggle.filter(..)
-```lx
+```wren
 Toggle.filter(toggle : Toggle, handles : List) : List
 ```
 > Takes a list of handles and returns those that are `true` in the `Toggle`.   
 
 <endpoint module="luxe: toggle" class="Toggle" signature="link(toggle : Toggle, from_handle : Num, to_handle : Num)"></endpoint>
 ### Toggle.link(...)
-```lx
+```wren
 Toggle.link(toggle : Toggle, from_handle : Num, to_handle : Num) : None
 ```
 > Links two values, so that the `from_handle` value will be considered `false` if any of the `to_handle` values associated with it are `false`.

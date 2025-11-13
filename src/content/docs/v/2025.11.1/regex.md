@@ -11,119 +11,119 @@ slug: "v/2025.11.1/regex"
 
 
 ## RegexInfo
-```lx
+```wren
 import "luxe: regex" for RegexInfo
 ```
 > A regular expression result, containing one or more matches
 
 <endpoint module="luxe: regex" class="RegexInfo" signature="matched"></endpoint>
 ### RegexInfo.matched
-```lx
+```wren
 RegexInfo.matched : Bool
 ```
 > True if there was any match   
 
 <endpoint module="luxe: regex" class="RegexInfo" signature="match"></endpoint>
 ### RegexInfo.match
-```lx
+```wren
 RegexInfo.match : List
 ```
 > Returns the match results, a List of `RegexMatch`. Only valid if `matched` is true   
 
 <endpoint module="luxe: regex" class="RegexInfo" signature="[index : Num]"></endpoint>
 ### RegexInfo [index : Num](.)
-```lx
+```wren
 RegexInfo [index : Num] : RegexMatch
 ```
 > Convenience to access a specific match by index   
 
 
 ## RegexMatch
-```lx
+```wren
 import "luxe: regex" for RegexMatch
 ```
 > A single match in a regular expression result.
 
 <endpoint module="luxe: regex" class="RegexMatch" signature="subcount"></endpoint>
 ### RegexMatch.subcount
-```lx
+```wren
 RegexMatch.subcount : Num
 ```
 > Number of sub matches (groups), not including 0 which is the full match   
 
 <endpoint module="luxe: regex" class="RegexMatch" signature="string"></endpoint>
 ### RegexMatch.string
-```lx
+```wren
 RegexMatch.string : String
 ```
 > The matched string   
 
 <endpoint module="luxe: regex" class="RegexMatch" signature="offset"></endpoint>
 ### RegexMatch.offset
-```lx
+```wren
 RegexMatch.offset : Num
 ```
 > The offset of the match in the original string   
 
 <endpoint module="luxe: regex" class="RegexMatch" signature="count"></endpoint>
 ### RegexMatch.count
-```lx
+```wren
 RegexMatch.count : Num
 ```
 > The length of the match string   
 
 <endpoint module="luxe: regex" class="RegexMatch" signature="index"></endpoint>
 ### RegexMatch.index
-```lx
+```wren
 RegexMatch.index : Num
 ```
 > Index of this match in the match results   
 
 <endpoint module="luxe: regex" class="RegexMatch" signature="[index : Num]"></endpoint>
 ### RegexMatch [index : Num](.)
-```lx
+```wren
 RegexMatch [index : Num] : RegexSubMatch
 ```
 > Access to a specific group/sub match by index. 0 is the full match, groups are 1-indexed   
 
 
 ## RegexSubMatch
-```lx
+```wren
 import "luxe: regex" for RegexSubMatch
 ```
 > A single group/sub match in a regular expression match.
 
 <endpoint module="luxe: regex" class="RegexSubMatch" signature="count"></endpoint>
 ### RegexSubMatch.count
-```lx
+```wren
 RegexSubMatch.count : Num
 ```
 > The length of the sub/group   
 
 <endpoint module="luxe: regex" class="RegexSubMatch" signature="offset"></endpoint>
 ### RegexSubMatch.offset
-```lx
+```wren
 RegexSubMatch.offset : Num
 ```
 > The offset of the sub/group in the original match   
 
 <endpoint module="luxe: regex" class="RegexSubMatch" signature="string"></endpoint>
 ### RegexSubMatch.string
-```lx
+```wren
 RegexSubMatch.string : String
 ```
 > The string of the sub/group   
 
 <endpoint module="luxe: regex" class="RegexSubMatch" signature="index"></endpoint>
 ### RegexSubMatch.index
-```lx
+```wren
 RegexSubMatch.index : Num
 ```
 > The index of this sub/group in the match   
 
 <endpoint module="luxe: regex" class="RegexSubMatch" signature="[index : Num]"></endpoint>
 ### RegexSubMatch [index : Num](.)
-```lx
+```wren
 RegexSubMatch [index : Num] : Any
 ```
 > Returns info about this sub match by index. 0 returns `count`, 1 returns `offset`, 2 returns `string`   

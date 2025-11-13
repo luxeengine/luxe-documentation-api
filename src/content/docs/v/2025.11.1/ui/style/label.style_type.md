@@ -13,13 +13,13 @@ slug: "v/2025.11.1/ui/style/label.style_type"
 
 
 ## Data
-```lx
+```wren
 import "luxe: ui/style/label.style_type" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var style : Asset = null
 var size : Num = 14
 var colors : LabelColors = Object
@@ -31,26 +31,26 @@ var shadow : Object = Object
 ```
 
 ## LabelColors
-```lx
+```wren
 import "luxe: ui/style/label.style_type" for LabelColors
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var normal : Color = [1, 1, 1, 1]
 var hover : Color = [1, 0, 0.487, 1]
 var select : Color = [1, 1, 1, 0.15]
 ```
 
 ## Scroll
-```lx
+```wren
 import "luxe: ui/style/label.style_type" for Scroll
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var mode : UIOverflowScroll = UIOverflowScroll.none
 var speed : Num = 16
 var wait : Num = 2
@@ -58,56 +58,56 @@ var pause : Num = 2
 ```
 
 ## UIOverflowScroll
-```lx
+```wren
 import "luxe: ui/style/label.style_type" for UIOverflowScroll
 ```
 > no docs found
 
 <endpoint module="luxe: ui/style/label.style_type" class="UIOverflowScroll" signature="none"></endpoint>
 ### UIOverflowScroll.none
-```lx
+```wren
 UIOverflowScroll.none : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/style/label.style_type" class="UIOverflowScroll" signature="always"></endpoint>
 ### UIOverflowScroll.always
-```lx
+```wren
 UIOverflowScroll.always : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/style/label.style_type" class="UIOverflowScroll" signature="width_overflow"></endpoint>
 ### UIOverflowScroll.width_overflow
-```lx
+```wren
 UIOverflowScroll.width_overflow : unknown
 ```
 > no docs found   
 
 
 ## UITextWrapMode
-```lx
+```wren
 import "luxe: ui/style/label.style_type" for UITextWrapMode
 ```
 > no docs found
 
 <endpoint module="luxe: ui/style/label.style_type" class="UITextWrapMode" signature="unknown"></endpoint>
 ### UITextWrapMode.unknown
-```lx
+```wren
 UITextWrapMode.unknown : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/style/label.style_type" class="UITextWrapMode" signature="none"></endpoint>
 ### UITextWrapMode.none
-```lx
+```wren
 UITextWrapMode.none : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/style/label.style_type" class="UITextWrapMode" signature="word"></endpoint>
 ### UITextWrapMode.word
-```lx
+```wren
 UITextWrapMode.word : unknown
 ```
 > no docs found   

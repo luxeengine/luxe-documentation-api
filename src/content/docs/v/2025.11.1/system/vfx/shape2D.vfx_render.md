@@ -11,74 +11,74 @@ slug: "v/2025.11.1/system/vfx/shape2D.vfx_render"
 
 
 ## Inputs
-```lx
+```wren
 import "luxe: system/vfx/shape2D.vfx_render" for Inputs
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var kind : ShapeKind = ShapeKind.poly
 var sides : Num = 3
 ```
 
 ## Shape2DRender
-```lx
+```wren
 import "luxe: system/vfx/shape2D.vfx_render" for Shape2DRender
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var display : String = "Shape2D"
 var desc : String = "Displays particles as a simple 2D shape (using Draw api)"
 var inputs : Inputs = Object
 ```
 
 ## ShapeKind
-```lx
+```wren
 import "luxe: system/vfx/shape2D.vfx_render" for ShapeKind
 ```
 > no docs found
 
 <endpoint module="luxe: system/vfx/shape2D.vfx_render" class="ShapeKind" signature="box"></endpoint>
 ### ShapeKind.box
-```lx
+```wren
 ShapeKind.box : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/vfx/shape2D.vfx_render" class="ShapeKind" signature="circle"></endpoint>
 ### ShapeKind.circle
-```lx
+```wren
 ShapeKind.circle : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/vfx/shape2D.vfx_render" class="ShapeKind" signature="ngon"></endpoint>
 ### ShapeKind.ngon
-```lx
+```wren
 ShapeKind.ngon : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/vfx/shape2D.vfx_render" class="ShapeKind" signature="rect"></endpoint>
 ### ShapeKind.rect
-```lx
+```wren
 ShapeKind.rect : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/vfx/shape2D.vfx_render" class="ShapeKind" signature="ring"></endpoint>
 ### ShapeKind.ring
-```lx
+```wren
 ShapeKind.ring : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/vfx/shape2D.vfx_render" class="ShapeKind" signature="poly"></endpoint>
 ### ShapeKind.poly
-```lx
+```wren
 ShapeKind.poly : unknown
 ```
 > no docs found   

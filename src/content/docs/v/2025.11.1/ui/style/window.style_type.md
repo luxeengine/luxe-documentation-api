@@ -9,13 +9,13 @@ slug: "v/2025.11.1/ui/style/window.style_type"
 
 
 ## Data
-```lx
+```wren
 import "luxe: ui/style/window.style_type" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var base : Object = Object
 var header : Object = Object
 var text : Object = Object

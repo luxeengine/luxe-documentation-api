@@ -12,13 +12,13 @@ slug: "v/2025.11.1/system/nav/nav.modifier"
 
 
 ## Data
-```lx
+```wren
 import "luxe: system/nav/nav.modifier" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var rebuild : Num = 1
 var mesh : Asset = null
 var tile_size : Num = 32
@@ -44,70 +44,70 @@ var keep_debug_data : Bool = false
 ```
 
 ## Nav
-```lx
+```wren
 import "luxe: system/nav/nav.modifier" for Nav
 ```
 > no docs found
 
 <endpoint module="luxe: system/nav/nav.modifier" class="Nav" signature="raycast(entity : Entity, start : Float3, end : Float3, extents : Float3)"></endpoint>
 ### Nav.raycast(....)
-```lx
+```wren
 Nav.raycast(entity : Entity, start : Float3, end : Float3, extents : Float3) : Float3
 ```
 > no docs found   
 
 <endpoint module="luxe: system/nav/nav.modifier" class="Nav" signature="nearest_point(entity : Entity, start : Float3, extents : Float3)"></endpoint>
 ### Nav.nearest_point(...)
-```lx
+```wren
 Nav.nearest_point(entity : Entity, start : Float3, extents : Float3) : Float3
 ```
 > no docs found   
 
 <endpoint module="luxe: system/nav/nav.modifier" class="Nav" signature="get_path(entity : Entity, start : Float3, end : Float3, extents : Float3)"></endpoint>
 ### Nav.get_path(....)
-```lx
+```wren
 Nav.get_path(entity : Entity, start : Float3, end : Float3, extents : Float3) : List
 ```
 > no docs found   
 
 
 ## Partition
-```lx
+```wren
 import "luxe: system/nav/nav.modifier" for Partition
 ```
 > no docs found
 
 <endpoint module="luxe: system/nav/nav.modifier" class="Partition" signature="watershed"></endpoint>
 ### Partition.watershed
-```lx
+```wren
 Partition.watershed : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/nav/nav.modifier" class="Partition" signature="monotone"></endpoint>
 ### Partition.monotone
-```lx
+```wren
 Partition.monotone : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/nav/nav.modifier" class="Partition" signature="layers"></endpoint>
 ### Partition.layers
-```lx
+```wren
 Partition.layers : unknown
 ```
 > no docs found   
 
 
 ## System
-```lx
+```wren
 import "luxe: system/nav/nav.modifier" for System
 ```
 > no docs found
 
 <endpoint module="luxe: system/nav/nav.modifier" class="System" signature="new(world : World)"></endpoint>
 ### System.new(.)
-```lx
+```wren
 System.new(world : World) : System
 ```
 > no docs found   

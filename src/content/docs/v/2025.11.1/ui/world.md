@@ -18,529 +18,529 @@ slug: "v/2025.11.1/ui/world"
 
 
 ## BucketedNodes
-```lx
+```wren
 import "luxe: ui/world" for BucketedNodes
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var count : Num = 0
 var bucket_size : Num = 64
 var buckets : List = [[]]
 ```
 <endpoint module="luxe: ui/world" class="BucketedNodes" signature="new(size : Num)"></endpoint>
 ### BucketedNodes.new(.)
-```lx
+```wren
 BucketedNodes.new(size : Num) : BucketedNodes
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="BucketedNodes" signature="clear()"></endpoint>
 ### BucketedNodes.clear(.)
-```lx
+```wren
 BucketedNodes.clear() : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="BucketedNodes" signature="insert(node : TreeNode)"></endpoint>
 ### BucketedNodes.insert(.)
-```lx
+```wren
 BucketedNodes.insert(node : TreeNode) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="BucketedNodes" signature="remove(node : TreeNode)"></endpoint>
 ### BucketedNodes.remove(.)
-```lx
+```wren
 BucketedNodes.remove(node : TreeNode) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="BucketedNodes" signature="find_bucket(display : String)"></endpoint>
 ### BucketedNodes.find_bucket(.)
-```lx
+```wren
 BucketedNodes.find_bucket(display : String) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="BucketedNodes" signature="toList"></endpoint>
 ### BucketedNodes.toList
-```lx
+```wren
 BucketedNodes.toList : unknown
 ```
 > no docs found   
 
 
 ## LabelCache
-```lx
+```wren
 import "luxe: ui/world" for LabelCache
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var ui : Entity = Entity.none
 var cache : List = []
 var used : List = []
 ```
 <endpoint module="luxe: ui/world" class="LabelCache" signature="new(in_ui : Entity)"></endpoint>
 ### LabelCache.new(.)
-```lx
+```wren
 LabelCache.new(in_ui : Entity) : LabelCache
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="LabelCache" signature="reset()"></endpoint>
 ### LabelCache.reset(.)
-```lx
+```wren
 LabelCache.reset() : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="LabelCache" signature="create()"></endpoint>
 ### LabelCache.create(.)
-```lx
+```wren
 LabelCache.create() : unknown
 ```
 > no docs found   
 
 
 ## TreeNodeIter
-```lx
+```wren
 import "luxe: ui/world" for TreeNodeIter
 ```
 > no docs found
 
 <endpoint module="luxe: ui/world" class="TreeNodeIter" signature="node"></endpoint>
 ### TreeNodeIter.node
-```lx
+```wren
 TreeNodeIter.node : TreeNode
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="TreeNodeIter" signature="new(node : TreeNode, depth : Num)"></endpoint>
 ### TreeNodeIter.new(..)
-```lx
+```wren
 TreeNodeIter.new(node : TreeNode, depth : Num) : TreeNodeIter
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="TreeNodeIter" signature="iteratorValue(index : Num)"></endpoint>
 ### TreeNodeIter.iteratorValue(.)
-```lx
+```wren
 TreeNodeIter.iteratorValue(index : Num) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="TreeNodeIter" signature="next_bucket(from_start : Bool)"></endpoint>
 ### TreeNodeIter.next_bucket(.)
-```lx
+```wren
 TreeNodeIter.next_bucket(from_start : Bool) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="TreeNodeIter" signature="iterate(index : Num)"></endpoint>
 ### TreeNodeIter.iterate(.)
-```lx
+```wren
 TreeNodeIter.iterate(index : Num) : unknown
 ```
 > no docs found   
 
 
 ## UIWorld
-```lx
+```wren
 import "luxe: ui/world" for UIWorld
 ```
 > no docs found
 
 <endpoint module="luxe: ui/world" class="UIWorld" signature="create(ui : UI)"></endpoint>
 ### UIWorld.create(.)
-```lx
+```wren
 UIWorld.create(ui : UI) : Control
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorld" signature="set_world(control : Control, world : World)"></endpoint>
 ### UIWorld.set_world(..)
-```lx
+```wren
 UIWorld.set_world(control : Control, world : World) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorld" signature="set_handle_default_icons(control : Control, enable : Bool)"></endpoint>
 ### UIWorld.set_handle_default_icons(..)
-```lx
+```wren
 UIWorld.set_handle_default_icons(control : Control, enable : Bool) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorld" signature="set_handle_folder_drop(control : Control, enable : Bool)"></endpoint>
 ### UIWorld.set_handle_folder_drop(..)
-```lx
+```wren
 UIWorld.set_handle_folder_drop(control : Control, enable : Bool) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorld" signature="refresh(control : Control)"></endpoint>
 ### UIWorld.refresh(.)
-```lx
+```wren
 UIWorld.refresh(control : Control) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorld" signature="get_view(control : Control)"></endpoint>
 ### UIWorld.get_view(.)
-```lx
+```wren
 UIWorld.get_view(control : Control) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorld" signature="scroll_to(control : Control, entity : Entity)"></endpoint>
 ### UIWorld.scroll_to(..)
-```lx
+```wren
 UIWorld.scroll_to(control : Control, entity : Entity) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorld" signature="set_selection(control : Control, selection : Selection)"></endpoint>
 ### UIWorld.set_selection(..)
-```lx
+```wren
 UIWorld.set_selection(control : Control, selection : Selection) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorld" signature="get_selection(control : Control)"></endpoint>
 ### UIWorld.get_selection(.)
-```lx
+```wren
 UIWorld.get_selection(control : Control) : Selection
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorld" signature="enter_select_mode(control : Control, enter_state : Bool, display : String)"></endpoint>
 ### UIWorld.enter_select_mode(...)
-```lx
+```wren
 UIWorld.enter_select_mode(control : Control, enter_state : Bool, display : String) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorld" signature="show_rename(control : Control)"></endpoint>
 ### UIWorld.show_rename(.)
-```lx
+```wren
 UIWorld.show_rename(control : Control) : unknown
 ```
 > no docs found   
 
 
 ## UIWorldEvent
-```lx
+```wren
 import "luxe: ui/world" for UIWorldEvent
 ```
 > no docs found
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="filter"></endpoint>
 ### UIWorldEvent.filter
-```lx
+```wren
 UIWorldEvent.filter : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="save"></endpoint>
 ### UIWorldEvent.save
-```lx
+```wren
 UIWorldEvent.save : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="save_all"></endpoint>
 ### UIWorldEvent.save_all
-```lx
+```wren
 UIWorldEvent.save_all : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="delete"></endpoint>
 ### UIWorldEvent.delete
-```lx
+```wren
 UIWorldEvent.delete : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="duplicate"></endpoint>
 ### UIWorldEvent.duplicate
-```lx
+```wren
 UIWorldEvent.duplicate : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="rename"></endpoint>
 ### UIWorldEvent.rename
-```lx
+```wren
 UIWorldEvent.rename : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="active_context"></endpoint>
 ### UIWorldEvent.active_context
-```lx
+```wren
 UIWorldEvent.active_context : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="focus"></endpoint>
 ### UIWorldEvent.focus
-```lx
+```wren
 UIWorldEvent.focus : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="close"></endpoint>
 ### UIWorldEvent.close
-```lx
+```wren
 UIWorldEvent.close : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="dragging"></endpoint>
 ### UIWorldEvent.dragging
-```lx
+```wren
 UIWorldEvent.dragging : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="collapse"></endpoint>
 ### UIWorldEvent.collapse
-```lx
+```wren
 UIWorldEvent.collapse : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="uncollapse"></endpoint>
 ### UIWorldEvent.uncollapse
-```lx
+```wren
 UIWorldEvent.uncollapse : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="entity_drop"></endpoint>
 ### UIWorldEvent.entity_drop
-```lx
+```wren
 UIWorldEvent.entity_drop : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="folder_drop"></endpoint>
 ### UIWorldEvent.folder_drop
-```lx
+```wren
 UIWorldEvent.folder_drop : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="kind"></endpoint>
 ### UIWorldEvent.kind
-```lx
+```wren
 UIWorldEvent.kind : Any
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="items"></endpoint>
 ### UIWorldEvent.items
-```lx
+```wren
 UIWorldEvent.items : Any
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="data"></endpoint>
 ### UIWorldEvent.data
-```lx
+```wren
 UIWorldEvent.data : Any
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="data2"></endpoint>
 ### UIWorldEvent.data2
-```lx
+```wren
 UIWorldEvent.data2 : Any
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="new(kind : UIWorldEvent, items : List, data : Any)"></endpoint>
 ### UIWorldEvent.new(...)
-```lx
+```wren
 UIWorldEvent.new(kind : UIWorldEvent, items : List, data : Any) : UIWorldEvent
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldEvent" signature="new(kind : UIWorldEvent, items : List, data : Any, data2 : Any)"></endpoint>
 ### UIWorldEvent.new(....)
-```lx
+```wren
 UIWorldEvent.new(kind : UIWorldEvent, items : List, data : Any, data2 : Any) : UIWorldEvent
 ```
 > no docs found   
 
 
 ## UIWorldIcon
-```lx
+```wren
 import "luxe: ui/world" for UIWorldIcon
 ```
 > no docs found
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="icon"></endpoint>
 ### UIWorldIcon.icon
-```lx
+```wren
 UIWorldIcon.icon : Control
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="enabled"></endpoint>
 ### UIWorldIcon.enabled
-```lx
+```wren
 UIWorldIcon.enabled : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="enabled(handle : Num)"></endpoint>
 ### UIWorldIcon.enabled(.)
-```lx
+```wren
 UIWorldIcon.enabled(handle : Num) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="tooltip"></endpoint>
 ### UIWorldIcon.tooltip
-```lx
+```wren
 UIWorldIcon.tooltip : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="tooltip=(v : String)"></endpoint>
 ### UIWorldIcon.tooltip
-```lx
+```wren
 UIWorldIcon.tooltip=(v : String) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="selection_based"></endpoint>
 ### UIWorldIcon.selection_based
-```lx
+```wren
 UIWorldIcon.selection_based : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="selection_based=(v : String)"></endpoint>
 ### UIWorldIcon.selection_based
-```lx
+```wren
 UIWorldIcon.selection_based=(v : String) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="allow_indirect"></endpoint>
 ### UIWorldIcon.allow_indirect
-```lx
+```wren
 UIWorldIcon.allow_indirect : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="allow_indirect=(v : String)"></endpoint>
 ### UIWorldIcon.allow_indirect
-```lx
+```wren
 UIWorldIcon.allow_indirect=(v : String) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="svg"></endpoint>
 ### UIWorldIcon.svg
-```lx
+```wren
 UIWorldIcon.svg : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="svg=(v : Any)"></endpoint>
 ### UIWorldIcon.svg
-```lx
+```wren
 UIWorldIcon.svg=(v : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="new(world_view : UIWorld)"></endpoint>
 ### UIWorldIcon.new(.)
-```lx
+```wren
 UIWorldIcon.new(world_view : UIWorld) : UIWorldIcon
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="enable()"></endpoint>
 ### UIWorldIcon.enable(.)
-```lx
+```wren
 UIWorldIcon.enable() : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="enable(handle : Num)"></endpoint>
 ### UIWorldIcon.enable(.)
-```lx
+```wren
 UIWorldIcon.enable(handle : Num) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="disable()"></endpoint>
 ### UIWorldIcon.disable(.)
-```lx
+```wren
 UIWorldIcon.disable() : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="disable(handle : Num)"></endpoint>
 ### UIWorldIcon.disable(.)
-```lx
+```wren
 UIWorldIcon.disable(handle : Num) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="can_do_direct_only_action(list : List)"></endpoint>
 ### UIWorldIcon.can_do_direct_only_action(.)
-```lx
+```wren
 UIWorldIcon.can_do_direct_only_action(list : List) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="on_selection(fn : Fn)"></endpoint>
 ### UIWorldIcon.on_selection(.)
-```lx
+```wren
 UIWorldIcon.on_selection(fn : Fn) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="on_release(fn : Fn)"></endpoint>
 ### UIWorldIcon.on_release(.)
-```lx
+```wren
 UIWorldIcon.on_release(fn : Fn) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="on_enter(fn : Fn)"></endpoint>
 ### UIWorldIcon.on_enter(.)
-```lx
+```wren
 UIWorldIcon.on_enter(fn : Fn) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldIcon" signature="on_exit(fn : Fn)"></endpoint>
 ### UIWorldIcon.on_exit(.)
-```lx
+```wren
 UIWorldIcon.on_exit(fn : Fn) : unknown
 ```
 > no docs found   
 
 
 ## UIWorldLens
-```lx
+```wren
 import "luxe: ui/world" for UIWorldLens
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var id : UUID = ID.uuid
 var state : UIWorldState = null
 var icon : String = "luxe: image/folder-open.svg"
@@ -549,304 +549,304 @@ var name : String = "luxe.default"
 ```
 <endpoint module="luxe: ui/world" class="UIWorldLens" signature="new(in_state : UIWorldState)"></endpoint>
 ### UIWorldLens.new(.)
-```lx
+```wren
 UIWorldLens.new(in_state : UIWorldState) : UIWorldLens
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLens" signature="get_droppable_tags(entity : Entity)"></endpoint>
 ### UIWorldLens.get_droppable_tags(.)
-```lx
+```wren
 UIWorldLens.get_droppable_tags(entity : Entity) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLens" signature="on_drop(from : Entity, to : Entity)"></endpoint>
 ### UIWorldLens.on_drop(..)
-```lx
+```wren
 UIWorldLens.on_drop(from : Entity, to : Entity) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLens" signature="reset(tree_root : TreeNode)"></endpoint>
 ### UIWorldLens.reset(.)
-```lx
+```wren
 UIWorldLens.reset(tree_root : TreeNode) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLens" signature="post_add(tree_root : TreeNode)"></endpoint>
 ### UIWorldLens.post_add(.)
-```lx
+```wren
 UIWorldLens.post_add(tree_root : TreeNode) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLens" signature="has_parent(entity : Entity)"></endpoint>
 ### UIWorldLens.has_parent(.)
-```lx
+```wren
 UIWorldLens.has_parent(entity : Entity) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLens" signature="get_parent(entity : Entity)"></endpoint>
 ### UIWorldLens.get_parent(.)
-```lx
+```wren
 UIWorldLens.get_parent(entity : Entity) : Entity
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLens" signature="should_ignore(entity : Entity)"></endpoint>
 ### UIWorldLens.should_ignore(.)
-```lx
+```wren
 UIWorldLens.should_ignore(entity : Entity) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLens" signature="entity_is_root(entity : Entity)"></endpoint>
 ### UIWorldLens.entity_is_root(.)
-```lx
+```wren
 UIWorldLens.entity_is_root(entity : Entity) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLens" signature="entity_is_origin(entity : Entity)"></endpoint>
 ### UIWorldLens.entity_is_origin(.)
-```lx
+```wren
 UIWorldLens.entity_is_origin(entity : Entity) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLens" signature="add_root(root : EntityNode, entity_to_node : Map)"></endpoint>
 ### UIWorldLens.add_root(..)
-```lx
+```wren
 UIWorldLens.add_root(root : EntityNode, entity_to_node : Map) : unknown
 ```
 > an opportunity to process roots added to the view. e.g the default view processes folders inside this   
 
 <endpoint module="luxe: ui/world" class="UIWorldLens" signature="add_nested(node : EntityNode, entity_to_node : Map)"></endpoint>
 ### UIWorldLens.add_nested(..)
-```lx
+```wren
 UIWorldLens.add_nested(node : EntityNode, entity_to_node : Map) : unknown
 ```
 > When an added child is added.  Return false to put into parent as expected, return true if you handled it manually.   
 
 <endpoint module="luxe: ui/world" class="UIWorldLens" signature="create_node(entity : Entity)"></endpoint>
 ### UIWorldLens.create_node(.)
-```lx
+```wren
 UIWorldLens.create_node(entity : Entity) : TreeNode
 ```
 > add the nested child into it's parent   
 
 <endpoint module="luxe: ui/world" class="UIWorldLens" signature="get_icon_id(entity : Entity, collapsed : Bool)"></endpoint>
 ### UIWorldLens.get_icon_id(..)
-```lx
+```wren
 UIWorldLens.get_icon_id(entity : Entity, collapsed : Bool) : unknown
 ```
 > no docs found   
 
 
 ## UIWorldLensDefault
-```lx
+```wren
 import "luxe: ui/world" for UIWorldLensDefault
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var context_to_folders : Map = {}
 var all_folders : Map = {}
 var folder_id_to_folder_node : Map = {}
 ```
 <endpoint module="luxe: ui/world" class="UIWorldLensDefault" signature="new(state : UIWorldState)"></endpoint>
 ### UIWorldLensDefault.new(.)
-```lx
+```wren
 UIWorldLensDefault.new(state : UIWorldState) : UIWorldLensDefault
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensDefault" signature="reset(tree_root : TreeNode)"></endpoint>
 ### UIWorldLensDefault.reset(.)
-```lx
+```wren
 UIWorldLensDefault.reset(tree_root : TreeNode) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensDefault" signature="post_add(tree_root : TreeNode)"></endpoint>
 ### UIWorldLensDefault.post_add(.)
-```lx
+```wren
 UIWorldLensDefault.post_add(tree_root : TreeNode) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensDefault" signature="get_parent(entity : Entity)"></endpoint>
 ### UIWorldLensDefault.get_parent(.)
-```lx
+```wren
 UIWorldLensDefault.get_parent(entity : Entity) : Entity
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensDefault" signature="entity_is_root(entity : Entity)"></endpoint>
 ### UIWorldLensDefault.entity_is_root(.)
-```lx
+```wren
 UIWorldLensDefault.entity_is_root(entity : Entity) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensDefault" signature="entity_is_origin(entity : Entity)"></endpoint>
 ### UIWorldLensDefault.entity_is_origin(.)
-```lx
+```wren
 UIWorldLensDefault.entity_is_origin(entity : Entity) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensDefault" signature="add_root(root : EntityNode, entity_to_node : Map)"></endpoint>
 ### UIWorldLensDefault.add_root(..)
-```lx
+```wren
 UIWorldLensDefault.add_root(root : EntityNode, entity_to_node : Map) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensDefault" signature="add_nested(node : EntityNode, entity_to_node : Map)"></endpoint>
 ### UIWorldLensDefault.add_nested(..)
-```lx
+```wren
 UIWorldLensDefault.add_nested(node : EntityNode, entity_to_node : Map) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensDefault" signature="create_node(entity : Entity)"></endpoint>
 ### UIWorldLensDefault.create_node(.)
-```lx
+```wren
 UIWorldLensDefault.create_node(entity : Entity) : TreeNode
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensDefault" signature="get_context_folder_map(entity : Entity)"></endpoint>
 ### UIWorldLensDefault.get_context_folder_map(.)
-```lx
+```wren
 UIWorldLensDefault.get_context_folder_map(entity : Entity) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensDefault" signature="get_root_folders(entity : Entity)"></endpoint>
 ### UIWorldLensDefault.get_root_folders(.)
-```lx
+```wren
 UIWorldLensDefault.get_root_folders(entity : Entity) : unknown
 ```
 > no docs found   
 
 
 ## UIWorldLensTransform
-```lx
+```wren
 import "luxe: ui/world" for UIWorldLensTransform
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var no_transform : FolderNode = null
 ```
 <endpoint module="luxe: ui/world" class="UIWorldLensTransform" signature="new(state : UIWorldState)"></endpoint>
 ### UIWorldLensTransform.new(.)
-```lx
+```wren
 UIWorldLensTransform.new(state : UIWorldState) : UIWorldLensTransform
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensTransform" signature="get_droppable_tags(entity : Entity)"></endpoint>
 ### UIWorldLensTransform.get_droppable_tags(.)
-```lx
+```wren
 UIWorldLensTransform.get_droppable_tags(entity : Entity) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensTransform" signature="on_drop(from : Entity, to : Entity)"></endpoint>
 ### UIWorldLensTransform.on_drop(..)
-```lx
+```wren
 UIWorldLensTransform.on_drop(from : Entity, to : Entity) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensTransform" signature="reset(tree_root : TreeNode)"></endpoint>
 ### UIWorldLensTransform.reset(.)
-```lx
+```wren
 UIWorldLensTransform.reset(tree_root : TreeNode) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensTransform" signature="get_parent(entity : Entity)"></endpoint>
 ### UIWorldLensTransform.get_parent(.)
-```lx
+```wren
 UIWorldLensTransform.get_parent(entity : Entity) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensTransform" signature="entity_is_root(entity : Entity)"></endpoint>
 ### UIWorldLensTransform.entity_is_root(.)
-```lx
+```wren
 UIWorldLensTransform.entity_is_root(entity : Entity) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensTransform" signature="create_node(entity : Entity)"></endpoint>
 ### UIWorldLensTransform.create_node(.)
-```lx
+```wren
 UIWorldLensTransform.create_node(entity : Entity) : TreeNode
 ```
 > no docs found   
 
 
 ## UIWorldLensUI
-```lx
+```wren
 import "luxe: ui/world" for UIWorldLensUI
 ```
 > no docs found
 
 <endpoint module="luxe: ui/world" class="UIWorldLensUI" signature="new(state : UIWorldState)"></endpoint>
 ### UIWorldLensUI.new(.)
-```lx
+```wren
 UIWorldLensUI.new(state : UIWorldState) : UIWorldLensUI
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensUI" signature="get_droppable_tags(entity : Entity)"></endpoint>
 ### UIWorldLensUI.get_droppable_tags(.)
-```lx
+```wren
 UIWorldLensUI.get_droppable_tags(entity : Entity) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensUI" signature="on_drop(from : Entity, to : Entity)"></endpoint>
 ### UIWorldLensUI.on_drop(..)
-```lx
+```wren
 UIWorldLensUI.on_drop(from : Entity, to : Entity) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensUI" signature="reset(tree_root : TreeNode)"></endpoint>
 ### UIWorldLensUI.reset(.)
-```lx
+```wren
 UIWorldLensUI.reset(tree_root : TreeNode) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensUI" signature="get_parent(entity : Entity)"></endpoint>
 ### UIWorldLensUI.get_parent(.)
-```lx
+```wren
 UIWorldLensUI.get_parent(entity : Entity) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensUI" signature="entity_is_root(entity : Entity)"></endpoint>
 ### UIWorldLensUI.entity_is_root(.)
-```lx
+```wren
 UIWorldLensUI.entity_is_root(entity : Entity) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/world" class="UIWorldLensUI" signature="create_node(entity : Entity)"></endpoint>
 ### UIWorldLensUI.create_node(.)
-```lx
+```wren
 UIWorldLensUI.create_node(entity : Entity) : TreeNode
 ```
 > no docs found   

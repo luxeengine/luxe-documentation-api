@@ -11,13 +11,13 @@ slug: "v/2025.11.1/system/ui/ui.modifier"
 
 
 ## Data
-```lx
+```wren
 import "luxe: system/ui/ui.modifier" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var theme : Asset = "luxe: ui/style/luxe.dark"
 var camera : Link = null
 var bounds : Float4 = [0, 0, 1280, 720]
@@ -29,104 +29,104 @@ var flex_layout : Bool = true
 ```
 
 ## System
-```lx
+```wren
 import "luxe: system/ui/ui.modifier" for System
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var draw : Draw = 0
 var style : null = PathStyle.new
 var drag : Map = {}
 ```
 <endpoint module="luxe: system/ui/ui.modifier" class="System" signature="new(world : Any)"></endpoint>
 ### System.new(.)
-```lx
+```wren
 System.new(world : Any) : System
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/ui.modifier" class="System" signature="editor_init(world : World)"></endpoint>
 ### System.editor_init(.)
-```lx
+```wren
 System.editor_init(world : World) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/ui.modifier" class="System" signature="init(world : World)"></endpoint>
 ### System.init(.)
-```lx
+```wren
 System.init(world : World) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/ui.modifier" class="System" signature="editor_attach(entity : Entity, ui : Data)"></endpoint>
 ### System.editor_attach(..)
-```lx
+```wren
 System.editor_attach(entity : Entity, ui : Data) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/ui.modifier" class="System" signature="attach(entity : Entity, ui : Data)"></endpoint>
 ### System.attach(..)
-```lx
+```wren
 System.attach(entity : Entity, ui : Data) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/ui.modifier" class="System" signature="editor_detach(entity : Entity, ui : Data)"></endpoint>
 ### System.editor_detach(..)
-```lx
+```wren
 System.editor_detach(entity : Entity, ui : Data) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/ui.modifier" class="System" signature="detach(entity : Entity, ui : Data)"></endpoint>
 ### System.detach(..)
-```lx
+```wren
 System.detach(entity : Entity, ui : Data) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/ui.modifier" class="System" signature="editor_change(entity : Entity, change : ModifierChange)"></endpoint>
 ### System.editor_change(..)
-```lx
+```wren
 System.editor_change(entity : Entity, change : ModifierChange) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/ui.modifier" class="System" signature="change(entity : Entity, change : ModifierChange)"></endpoint>
 ### System.change(..)
-```lx
+```wren
 System.change(entity : Entity, change : ModifierChange) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/ui.modifier" class="System" signature="draw_canvas(ui : Any, x : Any, y : Any, w : Any, h : Any)"></endpoint>
 ### System.draw_canvas(.....)
-```lx
+```wren
 System.draw_canvas(ui : Any, x : Any, y : Any, w : Any, h : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/ui.modifier" class="System" signature="editor_tick(delta : Num)"></endpoint>
 ### System.editor_tick(.)
-```lx
+```wren
 System.editor_tick(delta : Num) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/ui.modifier" class="System" signature="tick(delta : Num)"></endpoint>
 ### System.tick(.)
-```lx
+```wren
 System.tick(delta : Num) : unknown
 ```
 > no docs found   
 
 
 ## UI
-```lx
+```wren
 import "luxe: system/ui/ui.modifier" for UI
 ```
 > no docs found

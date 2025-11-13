@@ -11,33 +11,33 @@ slug: "v/2025.11.1/system/skin.modifier"
 
 
 ## Data
-```lx
+```wren
 import "luxe: system/skin.modifier" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var mesh_entity : Link = null
 var skeleton_entity : Link = null
 ```
 
 ## Skin
-```lx
+```wren
 import "luxe: system/skin.modifier" for Skin
 ```
 > no docs found
 
 
 ## System
-```lx
+```wren
 import "luxe: system/skin.modifier" for System
 ```
 > no docs found
 
 <endpoint module="luxe: system/skin.modifier" class="System" signature="new(world : World)"></endpoint>
 ### System.new(.)
-```lx
+```wren
 System.new(world : World) : System
 ```
 > no docs found   

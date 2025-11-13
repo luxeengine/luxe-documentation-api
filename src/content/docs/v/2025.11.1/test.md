@@ -21,784 +21,784 @@ slug: "v/2025.11.1/test"
 
 
 ## BaseMatchers
-```lx
+```wren
 import "luxe: test" for BaseMatchers
 ```
 > no docs found
 
 <endpoint module="luxe: test" class="BaseMatchers" signature="new(value : Any)"></endpoint>
 ### BaseMatchers.new(.)
-```lx
+```wren
 BaseMatchers.new(value : Any) : BaseMatchers
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="BaseMatchers" signature="value"></endpoint>
 ### BaseMatchers.value
-```lx
+```wren
 BaseMatchers.value : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="BaseMatchers" signature="not"></endpoint>
 ### BaseMatchers.not
-```lx
+```wren
 BaseMatchers.not : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="BaseMatchers" signature="toBe(klass : Any)"></endpoint>
 ### BaseMatchers.toBe(.)
-```lx
+```wren
 BaseMatchers.toBe(klass : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="BaseMatchers" signature="toBeFalse"></endpoint>
 ### BaseMatchers.toBeFalse
-```lx
+```wren
 BaseMatchers.toBeFalse : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="BaseMatchers" signature="toBeTrue"></endpoint>
 ### BaseMatchers.toBeTrue
-```lx
+```wren
 BaseMatchers.toBeTrue : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="BaseMatchers" signature="toBeNull"></endpoint>
 ### BaseMatchers.toBeNull
-```lx
+```wren
 BaseMatchers.toBeNull : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="BaseMatchers" signature="toEqual(other : Any)"></endpoint>
 ### BaseMatchers.toEqual(.)
-```lx
+```wren
 BaseMatchers.toEqual(other : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="BaseMatchers" signature="toEqualDeeply(other : Any)"></endpoint>
 ### BaseMatchers.toEqualDeeply(.)
-```lx
+```wren
 BaseMatchers.toEqualDeeply(other : Any) : unknown
 ```
 > no docs found   
 
 
 ## ConsoleReporter
-```lx
+```wren
 import "luxe: test" for ConsoleReporter
 ```
 > no docs found
 
 <endpoint module="luxe: test" class="ConsoleReporter" signature="new()"></endpoint>
 ### ConsoleReporter.new(.)
-```lx
+```wren
 ConsoleReporter.new() : ConsoleReporter
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="ConsoleReporter" signature="print_colors=(v : Any)"></endpoint>
 ### ConsoleReporter.print_colors
-```lx
+```wren
 ConsoleReporter.print_colors=(v : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="ConsoleReporter" signature="epilogue()"></endpoint>
 ### ConsoleReporter.epilogue(.)
-```lx
+```wren
 ConsoleReporter.epilogue() : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="ConsoleReporter" signature="runnableSkipped(skippable : Any)"></endpoint>
 ### ConsoleReporter.runnableSkipped(.)
-```lx
+```wren
 ConsoleReporter.runnableSkipped(skippable : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="ConsoleReporter" signature="suiteStart(title : Any)"></endpoint>
 ### ConsoleReporter.suiteStart(.)
-```lx
+```wren
 ConsoleReporter.suiteStart(title : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="ConsoleReporter" signature="suiteEnd(title : Any)"></endpoint>
 ### ConsoleReporter.suiteEnd(.)
-```lx
+```wren
 ConsoleReporter.suiteEnd(title : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="ConsoleReporter" signature="testStart(runnable : Any)"></endpoint>
 ### ConsoleReporter.testStart(.)
-```lx
+```wren
 ConsoleReporter.testStart(runnable : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="ConsoleReporter" signature="testEnd(runnable : Any)"></endpoint>
 ### ConsoleReporter.testEnd(.)
-```lx
+```wren
 ConsoleReporter.testEnd(runnable : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="ConsoleReporter" signature="testPassed(runnable : Any)"></endpoint>
 ### ConsoleReporter.testPassed(.)
-```lx
+```wren
 ConsoleReporter.testPassed(runnable : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="ConsoleReporter" signature="testFailed(runnable : Any)"></endpoint>
 ### ConsoleReporter.testFailed(.)
-```lx
+```wren
 ConsoleReporter.testFailed(runnable : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="ConsoleReporter" signature="testError(runnable : Any)"></endpoint>
 ### ConsoleReporter.testError(.)
-```lx
+```wren
 ConsoleReporter.testError(runnable : Any) : unknown
 ```
 > no docs found   
 
 
 ## Expectation
-```lx
+```wren
 import "luxe: test" for Expectation
 ```
 > no docs found
 
 <endpoint module="luxe: test" class="Expectation" signature="new(passed : Any, message : Any)"></endpoint>
 ### Expectation.new(..)
-```lx
+```wren
 Expectation.new(passed : Any, message : Any) : Expectation
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Expectation" signature="passed"></endpoint>
 ### Expectation.passed
-```lx
+```wren
 Expectation.passed : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Expectation" signature="message"></endpoint>
 ### Expectation.message
-```lx
+```wren
 Expectation.message : unknown
 ```
 > no docs found   
 
 
 ## FiberMatchers
-```lx
+```wren
 import "luxe: test" for FiberMatchers
 ```
 > no docs found
 
 <endpoint module="luxe: test" class="FiberMatchers" signature="new(value : Any)"></endpoint>
 ### FiberMatchers.new(.)
-```lx
+```wren
 FiberMatchers.new(value : Any) : FiberMatchers
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="FiberMatchers" signature="toBeARuntimeError"></endpoint>
 ### FiberMatchers.toBeARuntimeError
-```lx
+```wren
 FiberMatchers.toBeARuntimeError : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="FiberMatchers" signature="toBeARuntimeError(errorMessage : Any)"></endpoint>
 ### FiberMatchers.toBeARuntimeError(.)
-```lx
+```wren
 FiberMatchers.toBeARuntimeError(errorMessage : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="FiberMatchers" signature="toBeDone"></endpoint>
 ### FiberMatchers.toBeDone
-```lx
+```wren
 FiberMatchers.toBeDone : unknown
 ```
 > no docs found   
 
 
 ## Matchers
-```lx
+```wren
 import "luxe: test" for Matchers
 ```
 > no docs found
 
 <endpoint module="luxe: test" class="Matchers" signature="new(value : Any)"></endpoint>
 ### Matchers.new(.)
-```lx
+```wren
 Matchers.new(value : Any) : Matchers
 ```
 > no docs found   
 
 
 ## NumMatchers
-```lx
+```wren
 import "luxe: test" for NumMatchers
 ```
 > no docs found
 
 <endpoint module="luxe: test" class="NumMatchers" signature="new(value : Any)"></endpoint>
 ### NumMatchers.new(.)
-```lx
+```wren
 NumMatchers.new(value : Any) : NumMatchers
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="NumMatchers" signature="toBeGreaterThan(other : Any)"></endpoint>
 ### NumMatchers.toBeGreaterThan(.)
-```lx
+```wren
 NumMatchers.toBeGreaterThan(other : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="NumMatchers" signature="toBeLessThan(other : Any)"></endpoint>
 ### NumMatchers.toBeLessThan(.)
-```lx
+```wren
 NumMatchers.toBeLessThan(other : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="NumMatchers" signature="toBeBetween(min : Any, max : Any)"></endpoint>
 ### NumMatchers.toBeBetween(..)
-```lx
+```wren
 NumMatchers.toBeBetween(min : Any, max : Any) : unknown
 ```
 > no docs found   
 
 
 ## RangeMatchers
-```lx
+```wren
 import "luxe: test" for RangeMatchers
 ```
 > no docs found
 
 <endpoint module="luxe: test" class="RangeMatchers" signature="new(value : Any)"></endpoint>
 ### RangeMatchers.new(.)
-```lx
+```wren
 RangeMatchers.new(value : Any) : RangeMatchers
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="RangeMatchers" signature="toContain(other : Any)"></endpoint>
 ### RangeMatchers.toContain(.)
-```lx
+```wren
 RangeMatchers.toContain(other : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="RangeMatchers" signature="toBeContainedBy(other : Any)"></endpoint>
 ### RangeMatchers.toBeContainedBy(.)
-```lx
+```wren
 RangeMatchers.toBeContainedBy(other : Any) : unknown
 ```
 > no docs found   
 
 
 ## Reporter
-```lx
+```wren
 import "luxe: test" for Reporter
 ```
 > no docs found
 
 <endpoint module="luxe: test" class="Reporter" signature="epilogue()"></endpoint>
 ### Reporter.epilogue(.)
-```lx
+```wren
 Reporter.epilogue() : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Reporter" signature="runnableSkipped(skippable : Any)"></endpoint>
 ### Reporter.runnableSkipped(.)
-```lx
+```wren
 Reporter.runnableSkipped(skippable : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Reporter" signature="suiteStart(title : Any)"></endpoint>
 ### Reporter.suiteStart(.)
-```lx
+```wren
 Reporter.suiteStart(title : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Reporter" signature="suiteEnd(title : Any)"></endpoint>
 ### Reporter.suiteEnd(.)
-```lx
+```wren
 Reporter.suiteEnd(title : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Reporter" signature="testStart(runnable : Any)"></endpoint>
 ### Reporter.testStart(.)
-```lx
+```wren
 Reporter.testStart(runnable : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Reporter" signature="testPassed(runnable : Any)"></endpoint>
 ### Reporter.testPassed(.)
-```lx
+```wren
 Reporter.testPassed(runnable : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Reporter" signature="testFailed(runnable : Any)"></endpoint>
 ### Reporter.testFailed(.)
-```lx
+```wren
 Reporter.testFailed(runnable : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Reporter" signature="testError(runnable : Any)"></endpoint>
 ### Reporter.testError(.)
-```lx
+```wren
 Reporter.testError(runnable : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Reporter" signature="testEnd(runnable : Any)"></endpoint>
 ### Reporter.testEnd(.)
-```lx
+```wren
 Reporter.testEnd(runnable : Any) : unknown
 ```
 > no docs found   
 
 
 ## Runnable
-```lx
+```wren
 import "luxe: test" for Runnable
 ```
 > no docs found
 
 <endpoint module="luxe: test" class="Runnable" signature="new(title : Any, beforeEaches : Any, afterEaches : Any, fn : Any)"></endpoint>
 ### Runnable.new(....)
-```lx
+```wren
 Runnable.new(title : Any, beforeEaches : Any, afterEaches : Any, fn : Any) : Runnable
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Runnable" signature="duration"></endpoint>
 ### Runnable.duration
-```lx
+```wren
 Runnable.duration : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Runnable" signature="error"></endpoint>
 ### Runnable.error
-```lx
+```wren
 Runnable.error : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Runnable" signature="expectations"></endpoint>
 ### Runnable.expectations
-```lx
+```wren
 Runnable.expectations : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Runnable" signature="hasRun"></endpoint>
 ### Runnable.hasRun
-```lx
+```wren
 Runnable.hasRun : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Runnable" signature="run()"></endpoint>
 ### Runnable.run(.)
-```lx
+```wren
 Runnable.run() : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Runnable" signature="title"></endpoint>
 ### Runnable.title
-```lx
+```wren
 Runnable.title : unknown
 ```
 > no docs found   
 
 
 ## Skippable
-```lx
+```wren
 import "luxe: test" for Skippable
 ```
 > no docs found
 
 <endpoint module="luxe: test" class="Skippable" signature="new(title : Any)"></endpoint>
 ### Skippable.new(.)
-```lx
+```wren
 Skippable.new(title : Any) : Skippable
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Skippable" signature="run"></endpoint>
 ### Skippable.run
-```lx
+```wren
 Skippable.run : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Skippable" signature="title"></endpoint>
 ### Skippable.title
-```lx
+```wren
 Skippable.title : unknown
 ```
 > no docs found   
 
 
 ## Stub
-```lx
+```wren
 import "luxe: test" for Stub
 ```
 > no docs found
 
 <endpoint module="luxe: test" class="Stub" signature="new(name : Any)"></endpoint>
 ### Stub.new(.)
-```lx
+```wren
 Stub.new(name : Any) : Stub
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="new(name : Any, fakeFn : Any)"></endpoint>
 ### Stub.new(..)
-```lx
+```wren
 Stub.new(name : Any, fakeFn : Any) : Stub
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="andCallFake(name : Any, fakeFn : Any)"></endpoint>
 ### Stub.andCallFake(..)
-```lx
+```wren
 Stub.andCallFake(name : Any, fakeFn : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="andReturnValue(name : Any, returnValue : Any)"></endpoint>
 ### Stub.andReturnValue(..)
-```lx
+```wren
 Stub.andReturnValue(name : Any, returnValue : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="called"></endpoint>
 ### Stub.called
-```lx
+```wren
 Stub.called : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="calls"></endpoint>
 ### Stub.calls
-```lx
+```wren
 Stub.calls : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="firstCall"></endpoint>
 ### Stub.firstCall
-```lx
+```wren
 Stub.firstCall : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="mostRecentCall"></endpoint>
 ### Stub.mostRecentCall
-```lx
+```wren
 Stub.mostRecentCall : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="name"></endpoint>
 ### Stub.name
-```lx
+```wren
 Stub.name : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="reset"></endpoint>
 ### Stub.reset
-```lx
+```wren
 Stub.reset : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call"></endpoint>
 ### Stub.call
-```lx
+```wren
 Stub.call : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call()"></endpoint>
 ### Stub.call(.)
-```lx
+```wren
 Stub.call() : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call(a : Any)"></endpoint>
 ### Stub.call(.)
-```lx
+```wren
 Stub.call(a : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call(a : Any, b : Any)"></endpoint>
 ### Stub.call(..)
-```lx
+```wren
 Stub.call(a : Any, b : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call(a : Any, b : Any, c : Any)"></endpoint>
 ### Stub.call(...)
-```lx
+```wren
 Stub.call(a : Any, b : Any, c : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call(a : Any, b : Any, c : Any, d : Any)"></endpoint>
 ### Stub.call(....)
-```lx
+```wren
 Stub.call(a : Any, b : Any, c : Any, d : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call(a : Any, b : Any, c : Any, d : Any, e : Any)"></endpoint>
 ### Stub.call(.....)
-```lx
+```wren
 Stub.call(a : Any, b : Any, c : Any, d : Any, e : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any)"></endpoint>
 ### Stub.call(......)
-```lx
+```wren
 Stub.call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any)"></endpoint>
 ### Stub.call(.......)
-```lx
+```wren
 Stub.call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any)"></endpoint>
 ### Stub.call(........)
-```lx
+```wren
 Stub.call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any, i : Any)"></endpoint>
 ### Stub.call(.........)
-```lx
+```wren
 Stub.call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any, i : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any, i : Any, j : Any)"></endpoint>
 ### Stub.call(..........)
-```lx
+```wren
 Stub.call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any, i : Any, j : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any, i : Any, j : Any, k : Any)"></endpoint>
 ### Stub.call(...........)
-```lx
+```wren
 Stub.call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any, i : Any, j : Any, k : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any, i : Any, j : Any, k : Any, l : Any)"></endpoint>
 ### Stub.call(............)
-```lx
+```wren
 Stub.call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any, i : Any, j : Any, k : Any, l : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any, i : Any, j : Any, k : Any, l : Any, m : Any)"></endpoint>
 ### Stub.call(.............)
-```lx
+```wren
 Stub.call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any, i : Any, j : Any, k : Any, l : Any, m : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any, i : Any, j : Any, k : Any, l : Any, m : Any, n : Any)"></endpoint>
 ### Stub.call(..............)
-```lx
+```wren
 Stub.call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any, i : Any, j : Any, k : Any, l : Any, m : Any, n : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any, i : Any, j : Any, k : Any, l : Any, m : Any, n : Any, o : Any)"></endpoint>
 ### Stub.call(...............)
-```lx
+```wren
 Stub.call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any, i : Any, j : Any, k : Any, l : Any, m : Any, n : Any, o : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Stub" signature="call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any, i : Any, j : Any, k : Any, l : Any, m : Any, n : Any, o : Any, p : Any)"></endpoint>
 ### Stub.call(................)
-```lx
+```wren
 Stub.call(a : Any, b : Any, c : Any, d : Any, e : Any, f : Any, g : Any, h : Any, i : Any, j : Any, k : Any, l : Any, m : Any, n : Any, o : Any, p : Any) : unknown
 ```
 > no docs found   
 
 
 ## StubMatchers
-```lx
+```wren
 import "luxe: test" for StubMatchers
 ```
 > no docs found
 
 <endpoint module="luxe: test" class="StubMatchers" signature="new(value : Any)"></endpoint>
 ### StubMatchers.new(.)
-```lx
+```wren
 StubMatchers.new(value : Any) : StubMatchers
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="StubMatchers" signature="toHaveBeenCalled"></endpoint>
 ### StubMatchers.toHaveBeenCalled
-```lx
+```wren
 StubMatchers.toHaveBeenCalled : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="StubMatchers" signature="toHaveBeenCalled(times : Any)"></endpoint>
 ### StubMatchers.toHaveBeenCalled(.)
-```lx
+```wren
 StubMatchers.toHaveBeenCalled(times : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="StubMatchers" signature="toHaveBeenCalledWith(args : Any)"></endpoint>
 ### StubMatchers.toHaveBeenCalledWith(.)
-```lx
+```wren
 StubMatchers.toHaveBeenCalledWith(args : Any) : unknown
 ```
 > no docs found   
 
 
 ## Suite
-```lx
+```wren
 import "luxe: test" for Suite
 ```
 > no docs found
 
 <endpoint module="luxe: test" class="Suite" signature="new(name : Any, block : Any)"></endpoint>
 ### Suite.new(..)
-```lx
+```wren
 Suite.new(name : Any, block : Any) : Suite
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Suite" signature="new(name : Any, beforeEaches : Any, afterEaches : Any, block : Any)"></endpoint>
 ### Suite.new(....)
-```lx
+```wren
 Suite.new(name : Any, beforeEaches : Any, afterEaches : Any, block : Any) : Suite
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Suite" signature="afterEach"></endpoint>
 ### Suite.afterEach
-```lx
+```wren
 Suite.afterEach : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Suite" signature="afterEach(block : Any)"></endpoint>
 ### Suite.afterEach(.)
-```lx
+```wren
 Suite.afterEach(block : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Suite" signature="beforeEach"></endpoint>
 ### Suite.beforeEach
-```lx
+```wren
 Suite.beforeEach : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Suite" signature="beforeEach(block : Any)"></endpoint>
 ### Suite.beforeEach(.)
-```lx
+```wren
 Suite.beforeEach(block : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Suite" signature="run(reporter : Any)"></endpoint>
 ### Suite.run(.)
-```lx
+```wren
 Suite.run(reporter : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Suite" signature="should(name : Any)"></endpoint>
 ### Suite.should(.)
-```lx
+```wren
 Suite.should(name : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Suite" signature="should(name : Any, block : Any)"></endpoint>
 ### Suite.should(..)
-```lx
+```wren
 Suite.should(name : Any, block : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Suite" signature="skip(block : Any)"></endpoint>
 ### Suite.skip(.)
-```lx
+```wren
 Suite.skip(block : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Suite" signature="suite(name : Any)"></endpoint>
 ### Suite.suite(.)
-```lx
+```wren
 Suite.suite(name : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Suite" signature="suite(name : Any, block : Any)"></endpoint>
 ### Suite.suite(..)
-```lx
+```wren
 Suite.suite(name : Any, block : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: test" class="Suite" signature="title"></endpoint>
 ### Suite.title
-```lx
+```wren
 Suite.title : unknown
 ```
 > no docs found   

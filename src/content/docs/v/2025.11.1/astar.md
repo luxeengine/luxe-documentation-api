@@ -9,7 +9,7 @@ slug: "v/2025.11.1/astar"
 
 
 ## AStar
-```lx
+```wren
 import "luxe: astar" for AStar
 ```
 > A generic implementation of A* pathfinding in luxe.
@@ -19,21 +19,21 @@ import "luxe: astar" for AStar
 
 <endpoint module="luxe: astar" class="AStar" signature="MAX"></endpoint>
 ### AStar.MAX
-```lx
+```wren
 AStar.MAX : Num
 ```
 > A value that defaults to `250`, for the max number of iterations that will be considered valid. If the max is reached, no path is returned. To update it, use `Astar.MAX = 400`.   
 
 <endpoint module="luxe: astar" class="AStar" signature="MAX=(v : Num)"></endpoint>
 ### AStar.MAX
-```lx
+```wren
 AStar.MAX=(v : Num) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: astar" class="AStar" signature="path2D(start : Vec, end : Vec, cost_get_fn : Fn, neighbors_get_fn : Fn, heuristic_fn : Fn)"></endpoint>
 ### AStar.path2D(.....)
-```lx
+```wren
 AStar.path2D(start : Vec, end : Vec, cost_get_fn : Fn, neighbors_get_fn : Fn, heuristic_fn : Fn) : List
 ```
 > Returns a path between `start` and `end` if one was found, or `null` otherwise. The path is a `List` of nodes received from `start`, `end` or `neighbors_get_fn` and are unmodified.

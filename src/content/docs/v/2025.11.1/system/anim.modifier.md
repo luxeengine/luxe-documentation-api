@@ -16,7 +16,7 @@ slug: "v/2025.11.1/system/anim.modifier"
 
 
 ## Anim
-```lx
+```wren
 import "luxe: system/anim.modifier" for Anim
 ```
 > `Anim` is an animation player attached to an entity.
@@ -37,7 +37,7 @@ import "luxe: system/anim.modifier" for Anim
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="create(entity : Entity)"></endpoint>
 ### Anim.create(.)
-```lx
+```wren
 Anim.create(entity : Entity) : unknown
 ```
 > Attach an `Anim` modifier to `entity`.
@@ -49,7 +49,7 @@ Anim.create(entity : Entity) : unknown
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="destroy(entity : Entity)"></endpoint>
 ### Anim.destroy(.)
-```lx
+```wren
 Anim.destroy(entity : Entity) : None
 ```
 > Detach and destroy the `Anim` attached to `entity`.
@@ -60,7 +60,7 @@ Anim.destroy(entity : Entity) : None
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="has(entity : Entity)"></endpoint>
 ### Anim.has(.)
-```lx
+```wren
 Anim.has(entity : Entity) : Bool
 ```
 > Returns whether `entity` has an `Anim` modifier attached. 
@@ -73,7 +73,7 @@ Anim.has(entity : Entity) : Bool
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="valid(entity : Entity, anim : Anim)"></endpoint>
 ### Anim.valid(..)
-```lx
+```wren
 Anim.valid(entity : Entity, anim : Anim) : Bool
 ```
 > Returns whether the `Anim` instance is valid for the `Anim` attached to `entity`. 
@@ -87,7 +87,7 @@ Anim.valid(entity : Entity, anim : Anim) : Bool
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="get_source_id(entity : Entity, anim : Anim)"></endpoint>
 ### Anim.get_source_id(..)
-```lx
+```wren
 Anim.get_source_id(entity : Entity, anim : Anim) : ID
 ```
 > Returns the `ID` of the animation asset that the `Anim` instance was played from, 
@@ -101,7 +101,7 @@ Anim.get_source_id(entity : Entity, anim : Anim) : ID
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="get_state(entity : Entity, anim : Anim)"></endpoint>
 ### Anim.get_state(..)
-```lx
+```wren
 Anim.get_state(entity : Entity, anim : Anim) : AnimState
 ```
 > Return the animation state of the `Anim` instance, by asking the `Anim` attached to `entity`. 
@@ -116,7 +116,7 @@ Anim.get_state(entity : Entity, anim : Anim) : AnimState
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="get_active_anims(entity : Entity)"></endpoint>
 ### Anim.get_active_anims(.)
-```lx
+```wren
 Anim.get_active_anims(entity : Entity) : List
 ```
 > Returns a list of `Anim` instances that are active on the `Anim` attached to `entity`. 
@@ -131,7 +131,7 @@ Anim.get_active_anims(entity : Entity) : List
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="play(entity : Entity, anim_lx : ID, time_offset : Num)"></endpoint>
 ### Anim.play(...)
-```lx
+```wren
 Anim.play(entity : Entity, anim_lx : ID, time_offset : Num) : Anim
 ```
 > Play the animation asset `anim_lx` on the Anim attached to `entity`. 
@@ -146,7 +146,7 @@ Anim.play(entity : Entity, anim_lx : ID, time_offset : Num) : Anim
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="play_block(entity : Entity, anim_block : Block, anim_instance : BlockInstance, time_offset : Num, force_parse : Bool)"></endpoint>
 ### Anim.play_block(.....)
-```lx
+```wren
 Anim.play_block(entity : Entity, anim_block : Block, anim_instance : BlockInstance, time_offset : Num, force_parse : Bool) : Anim
 ```
 > Play the animation stored in a block instance on the Anim attached to `entity`. 
@@ -154,7 +154,7 @@ Anim.play_block(entity : Entity, anim_block : Block, anim_instance : BlockInstan
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="blend(entity : Entity, anim_lx : ID, blend_time : Num, time_offset : Num)"></endpoint>
 ### Anim.blend(....)
-```lx
+```wren
 Anim.blend(entity : Entity, anim_lx : ID, blend_time : Num, time_offset : Num) : Anim
 ```
 > Play the animation asset `anim_lx` on the `Anim` attached to `entity` with a blend fade time. 
@@ -169,7 +169,7 @@ Anim.blend(entity : Entity, anim_lx : ID, blend_time : Num, time_offset : Num) :
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="play(entity : Entity, anim_lx : ID)"></endpoint>
 ### Anim.play(..)
-```lx
+```wren
 Anim.play(entity : Entity, anim_lx : ID) : Anim
 ```
 > Play the animation asset `anim_lx` on the `Anim` attached to `entity`. 
@@ -182,7 +182,7 @@ Anim.play(entity : Entity, anim_lx : ID) : Anim
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="blend(entity : Entity, anim_lx : ID, blend_time : Num)"></endpoint>
 ### Anim.blend(...)
-```lx
+```wren
 Anim.blend(entity : Entity, anim_lx : ID, blend_time : Num) : Anim
 ```
 > Play the animation asset `anim_lx` on the `Anim` attached to `entity` with a blend fade time. 
@@ -196,7 +196,7 @@ Anim.blend(entity : Entity, anim_lx : ID, blend_time : Num) : Anim
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="play_only(entity : Entity, anim_lx : ID, time_offset : Num)"></endpoint>
 ### Anim.play_only(...)
-```lx
+```wren
 Anim.play_only(entity : Entity, anim_lx : ID, time_offset : Num) : Anim
 ```
 > Play the animation asset `anim_lx` on the `Anim` attached to `entity`, stopping all other active anims, 
@@ -209,7 +209,7 @@ Anim.play_only(entity : Entity, anim_lx : ID, time_offset : Num) : Anim
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="play_only(entity : Entity, anim_lx : ID)"></endpoint>
 ### Anim.play_only(..)
-```lx
+```wren
 Anim.play_only(entity : Entity, anim_lx : ID) : Anim
 ```
 > Play the animation asset `anim_lx` on the `Anim` attached to `entity`, stopping all other active anims, 
@@ -222,7 +222,7 @@ Anim.play_only(entity : Entity, anim_lx : ID) : Anim
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="stop(entity : Entity, anim : Anim, reset : Bool)"></endpoint>
 ### Anim.stop(...)
-```lx
+```wren
 Anim.stop(entity : Entity, anim : Anim, reset : Bool) : None
 ```
 > Stop the `Anim` instance if playing on the `Anim` attached to `entity`.
@@ -238,7 +238,7 @@ Anim.stop(entity : Entity, anim : Anim, reset : Bool) : None
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="stop(entity : Entity, anim : Anim)"></endpoint>
 ### Anim.stop(..)
-```lx
+```wren
 Anim.stop(entity : Entity, anim : Anim) : None
 ```
 > Stop the `Anim` instance if playing on the `Anim` attached to `entity`. 
@@ -251,7 +251,7 @@ Anim.stop(entity : Entity, anim : Anim) : None
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="stop_all(entity : Entity, reset : Bool)"></endpoint>
 ### Anim.stop_all(..)
-```lx
+```wren
 Anim.stop_all(entity : Entity, reset : Bool) : None
 ```
 > Stop all active `Anim` instances playing on the `Anim` attached to `entity`. 
@@ -264,7 +264,7 @@ Anim.stop_all(entity : Entity, reset : Bool) : None
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="stop_all(entity : Entity)"></endpoint>
 ### Anim.stop_all(.)
-```lx
+```wren
 Anim.stop_all(entity : Entity) : None
 ```
 > Stop all active `Anim` instances playing on the `Anim` attached to `entity`. 
@@ -277,49 +277,49 @@ Anim.stop_all(entity : Entity) : None
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="create_track(entity : Entity, anim : Anim, track_id : Any, track_type : Any)"></endpoint>
 ### Anim.create_track(....)
-```lx
+```wren
 Anim.create_track(entity : Entity, anim : Anim, track_id : Any, track_type : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="has_track(entity : Entity, anim : Anim, track_id : Any)"></endpoint>
 ### Anim.has_track(...)
-```lx
+```wren
 Anim.has_track(entity : Entity, anim : Anim, track_id : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="track_set_range(entity : Entity, anim : Anim, track_id : Any, min : Any, max : Any)"></endpoint>
 ### Anim.track_set_range(.....)
-```lx
+```wren
 Anim.track_set_range(entity : Entity, anim : Anim, track_id : Any, min : Any, max : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="track_get_range(entity : Entity, anim : Anim, track_id : Any)"></endpoint>
 ### Anim.track_get_range(...)
-```lx
+```wren
 Anim.track_get_range(entity : Entity, anim : Anim, track_id : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="track_set(entity : Entity, anim : Anim, track_id : Any, property : Any, value : Any)"></endpoint>
 ### Anim.track_set(.....)
-```lx
+```wren
 Anim.track_set(entity : Entity, anim : Anim, track_id : Any, property : Any, value : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="track_set_channel(entity : Entity, anim : Anim, track_id : Any, channel_id : Any, channel_idx : Any, interp : Any, keys : Any)"></endpoint>
 ### Anim.track_set_channel(.......)
-```lx
+```wren
 Anim.track_set_channel(entity : Entity, anim : Anim, track_id : Any, channel_id : Any, channel_idx : Any, interp : Any, keys : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="set_play_count(entity : Entity, anim : Anim, play_count : Num)"></endpoint>
 ### Anim.set_play_count(...)
-```lx
+```wren
 Anim.set_play_count(entity : Entity, anim : Anim, play_count : Num) : None
 ```
 > Set the amount of times to play the `Anim` instance on the `Anim` attached to `entity`. 
@@ -333,7 +333,7 @@ Anim.set_play_count(entity : Entity, anim : Anim, play_count : Num) : None
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="set_rate(entity : Entity, anim : Anim, rate : Num)"></endpoint>
 ### Anim.set_rate(...)
-```lx
+```wren
 Anim.set_rate(entity : Entity, anim : Anim, rate : Num) : None
 ```
 > Set the playback rate of the `Anim` instance on the `Anim` attached to `entity`. 
@@ -346,7 +346,7 @@ Anim.set_rate(entity : Entity, anim : Anim, rate : Num) : None
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="set_start(entity : Entity, anim : Anim, start : Num)"></endpoint>
 ### Anim.set_start(...)
-```lx
+```wren
 Anim.set_start(entity : Entity, anim : Anim, start : Num) : None
 ```
 > Set the start marker of the `Anim` instance on the `Anim` attached to `entity`. *note* This API is WIP. 
@@ -357,7 +357,7 @@ Anim.set_start(entity : Entity, anim : Anim, start : Num) : None
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="set_end(entity : Entity, anim : Anim, end : Num)"></endpoint>
 ### Anim.set_end(...)
-```lx
+```wren
 Anim.set_end(entity : Entity, anim : Anim, end : Num) : None
 ```
 > Set the end marker of the `Anim` instance on the `Anim` attached to `entity`. *note* This API is WIP. 
@@ -368,7 +368,7 @@ Anim.set_end(entity : Entity, anim : Anim, end : Num) : None
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="set_interval_time(entity : Entity, anim : Anim, time : Num)"></endpoint>
 ### Anim.set_interval_time(...)
-```lx
+```wren
 Anim.set_interval_time(entity : Entity, anim : Anim, time : Num) : None
 ```
 > Set the current playback time of the `Anim` instance on the `Anim` attached to `entity`. *note* This API is WIP. 
@@ -379,7 +379,7 @@ Anim.set_interval_time(entity : Entity, anim : Anim, time : Num) : None
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="set_persist(entity : Entity, anim : Anim, persist : Bool)"></endpoint>
 ### Anim.set_persist(...)
-```lx
+```wren
 Anim.set_persist(entity : Entity, anim : Anim, persist : Bool) : None
 ```
 > Set an `Anim` instance to persist after it has ended, 
@@ -388,7 +388,7 @@ Anim.set_persist(entity : Entity, anim : Anim, persist : Bool) : None
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="get_play_count(entity : Entity, anim : Anim)"></endpoint>
 ### Anim.get_play_count(..)
-```lx
+```wren
 Anim.get_play_count(entity : Entity, anim : Anim) : Num
 ```
 > Return the play count of the `Anim` instance on the `Anim` attached to `entity`. 
@@ -399,7 +399,7 @@ Anim.get_play_count(entity : Entity, anim : Anim) : Num
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="get_rate(entity : Entity, anim : Anim)"></endpoint>
 ### Anim.get_rate(..)
-```lx
+```wren
 Anim.get_rate(entity : Entity, anim : Anim) : Num
 ```
 > Return the rate of playback of the `Anim` instance on the `Anim` attached to `entity`. 
@@ -410,7 +410,7 @@ Anim.get_rate(entity : Entity, anim : Anim) : Num
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="get_duration(entity : Entity, anim : Anim)"></endpoint>
 ### Anim.get_duration(..)
-```lx
+```wren
 Anim.get_duration(entity : Entity, anim : Anim) : Num
 ```
 > Return the duration of the `Anim` instance on the `Anim` attached to `entity`. 
@@ -421,7 +421,7 @@ Anim.get_duration(entity : Entity, anim : Anim) : Num
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="get_start(entity : Entity, anim : Anim)"></endpoint>
 ### Anim.get_start(..)
-```lx
+```wren
 Anim.get_start(entity : Entity, anim : Anim) : Num
 ```
 > Return the start marker of the `Anim` instance on the `Anim` attached to `entity`. 
@@ -432,7 +432,7 @@ Anim.get_start(entity : Entity, anim : Anim) : Num
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="get_end(entity : Entity, anim : Anim)"></endpoint>
 ### Anim.get_end(..)
-```lx
+```wren
 Anim.get_end(entity : Entity, anim : Anim) : Num
 ```
 > Return the end marker of the `Anim` instance on the `Anim` attached to `entity`. 
@@ -443,7 +443,7 @@ Anim.get_end(entity : Entity, anim : Anim) : Num
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="get_interval_time(entity : Entity, anim : Anim)"></endpoint>
 ### Anim.get_interval_time(..)
-```lx
+```wren
 Anim.get_interval_time(entity : Entity, anim : Anim) : Num
 ```
 > Return the current playback time of the `Anim` instance on the `Anim` attached to entity. *note* This API is WIP. 
@@ -454,56 +454,56 @@ Anim.get_interval_time(entity : Entity, anim : Anim) : Num
 
 <endpoint module="luxe: system/anim.modifier" class="Anim" signature="on_event(entity : Entity, anim : Anim, fn : Fn)"></endpoint>
 ### Anim.on_event(...)
-```lx
+```wren
 Anim.on_event(entity : Entity, anim : Anim, fn : Fn) : None
 ```
 > no docs found   
 
 
 ## AnimEvent
-```lx
+```wren
 import "luxe: system/anim.modifier" for AnimEvent
 ```
 > no docs found
 
 <endpoint module="luxe: system/anim.modifier" class="AnimEvent" signature="start"></endpoint>
 ### AnimEvent.start
-```lx
+```wren
 AnimEvent.start : unknown
 ```
 > An event fired when an animation started playing.   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimEvent" signature="tick"></endpoint>
 ### AnimEvent.tick
-```lx
+```wren
 AnimEvent.tick : unknown
 ```
 > An event fired when an animation is updated, but only if the track is set to emit the event.   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimEvent" signature="complete"></endpoint>
 ### AnimEvent.complete
-```lx
+```wren
 AnimEvent.complete : unknown
 ```
 > An event fired when an animation is stopped or done playing.   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimEvent" signature="name(value : AnimEvent)"></endpoint>
 ### AnimEvent.name(.)
-```lx
+```wren
 AnimEvent.name(value : AnimEvent) : unknown
 ```
 > no docs found   
 
 
 ## AnimInterpolation
-```lx
+```wren
 import "luxe: system/anim.modifier" for AnimInterpolation
 ```
 > An enum for types of interpolation in animation tracks.
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterpolation" signature="unknown"></endpoint>
 ### AnimInterpolation.unknown
-```lx
+```wren
 AnimInterpolation.unknown : unknown
 ```
 > An invalid or unknown value.
@@ -516,7 +516,7 @@ AnimInterpolation.unknown : unknown
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterpolation" signature="curve"></endpoint>
 ### AnimInterpolation.curve
-```lx
+```wren
 AnimInterpolation.curve : unknown
 ```
 > The animation values between keys will be interpolated 
@@ -530,7 +530,7 @@ AnimInterpolation.curve : unknown
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterpolation" signature="linear"></endpoint>
 ### AnimInterpolation.linear
-```lx
+```wren
 AnimInterpolation.linear : unknown
 ```
 > The animation values between keys will be interpolated linearly. 
@@ -545,7 +545,7 @@ AnimInterpolation.linear : unknown
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterpolation" signature="discrete"></endpoint>
 ### AnimInterpolation.discrete
-```lx
+```wren
 AnimInterpolation.discrete : unknown
 ```
 > The animation values between keys would not be interpolated, 
@@ -563,7 +563,7 @@ AnimInterpolation.discrete : unknown
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterpolation" signature="name(value : AnimInterpolation)"></endpoint>
 ### AnimInterpolation.name(.)
-```lx
+```wren
 AnimInterpolation.name(value : AnimInterpolation) : String
 ```
 > Convert an `AnimInterpolation` value to a string. 
@@ -576,7 +576,7 @@ AnimInterpolation.name(value : AnimInterpolation) : String
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterpolation" signature="from_string(value : String)"></endpoint>
 ### AnimInterpolation.from_string(.)
-```lx
+```wren
 AnimInterpolation.from_string(value : String) : AnimInterpolation
 ```
 > Get the `AnimInterpolation` value to a name.
@@ -588,154 +588,154 @@ AnimInterpolation.from_string(value : String) : AnimInterpolation
 
 
 ## AnimInterval
-```lx
+```wren
 import "luxe: system/anim.modifier" for AnimInterval
 ```
 > no docs found
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="create(world : Any, duration : Any, rate : Any)"></endpoint>
 ### AnimInterval.create(...)
-```lx
+```wren
 AnimInterval.create(world : Any, duration : Any, rate : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="create(world : Any, duration : Any)"></endpoint>
 ### AnimInterval.create(..)
-```lx
+```wren
 AnimInterval.create(world : Any, duration : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="time(world : Any, anim : Any)"></endpoint>
 ### AnimInterval.time(..)
-```lx
+```wren
 AnimInterval.time(world : Any, anim : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="set_time(world : Any, anim : Any, time : Any)"></endpoint>
 ### AnimInterval.set_time(...)
-```lx
+```wren
 AnimInterval.set_time(world : Any, anim : Any, time : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="set_now(world : Any, anim : Any, offset : Any)"></endpoint>
 ### AnimInterval.set_now(...)
-```lx
+```wren
 AnimInterval.set_now(world : Any, anim : Any, offset : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="set_now(world : Any, anim : Any)"></endpoint>
 ### AnimInterval.set_now(..)
-```lx
+```wren
 AnimInterval.set_now(world : Any, anim : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="set_play_count(world : Any, anim : Any, count : Any)"></endpoint>
 ### AnimInterval.set_play_count(...)
-```lx
+```wren
 AnimInterval.set_play_count(world : Any, anim : Any, count : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="set_clock(world : Any, anim : Any, clock : Any)"></endpoint>
 ### AnimInterval.set_clock(...)
-```lx
+```wren
 AnimInterval.set_clock(world : Any, anim : Any, clock : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="set_rate(world : Any, anim : Any, rate : Any)"></endpoint>
 ### AnimInterval.set_rate(...)
-```lx
+```wren
 AnimInterval.set_rate(world : Any, anim : Any, rate : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="set_duration(world : Any, anim : Any, duration : Any)"></endpoint>
 ### AnimInterval.set_duration(...)
-```lx
+```wren
 AnimInterval.set_duration(world : Any, anim : Any, duration : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="set_start(world : Any, anim : Any, start : Any)"></endpoint>
 ### AnimInterval.set_start(...)
-```lx
+```wren
 AnimInterval.set_start(world : Any, anim : Any, start : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="set_end(world : Any, anim : Any, end : Any)"></endpoint>
 ### AnimInterval.set_end(...)
-```lx
+```wren
 AnimInterval.set_end(world : Any, anim : Any, end : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="get_now(world : Any, anim : Any)"></endpoint>
 ### AnimInterval.get_now(..)
-```lx
+```wren
 AnimInterval.get_now(world : Any, anim : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="get_play_count(world : Any, anim : Any)"></endpoint>
 ### AnimInterval.get_play_count(..)
-```lx
+```wren
 AnimInterval.get_play_count(world : Any, anim : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="get_clock(world : Any, anim : Any)"></endpoint>
 ### AnimInterval.get_clock(..)
-```lx
+```wren
 AnimInterval.get_clock(world : Any, anim : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="get_rate(world : Any, anim : Any)"></endpoint>
 ### AnimInterval.get_rate(..)
-```lx
+```wren
 AnimInterval.get_rate(world : Any, anim : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="get_duration(world : Any, anim : Any)"></endpoint>
 ### AnimInterval.get_duration(..)
-```lx
+```wren
 AnimInterval.get_duration(world : Any, anim : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="get_start(world : Any, anim : Any)"></endpoint>
 ### AnimInterval.get_start(..)
-```lx
+```wren
 AnimInterval.get_start(world : Any, anim : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimInterval" signature="get_end(world : Any, anim : Any)"></endpoint>
 ### AnimInterval.get_end(..)
-```lx
+```wren
 AnimInterval.get_end(world : Any, anim : Any) : unknown
 ```
 > no docs found   
 
 
 ## AnimState
-```lx
+```wren
 import "luxe: system/anim.modifier" for AnimState
 ```
 > An enum for the state of an `Anim` instance.
 
 <endpoint module="luxe: system/anim.modifier" class="AnimState" signature="inactive"></endpoint>
 ### AnimState.inactive
-```lx
+```wren
 AnimState.inactive : Num
 ```
 > The animation is inactive. _:todo: This may be obsolete_.
@@ -749,7 +749,7 @@ AnimState.inactive : Num
 
 <endpoint module="luxe: system/anim.modifier" class="AnimState" signature="playing"></endpoint>
 ### AnimState.playing
-```lx
+```wren
 AnimState.playing : Num
 ```
 > The animation is active and is playing.
@@ -763,7 +763,7 @@ AnimState.playing : Num
 
 <endpoint module="luxe: system/anim.modifier" class="AnimState" signature="ending"></endpoint>
 ### AnimState.ending
-```lx
+```wren
 AnimState.ending : Num
 ```
 > The animation is ending, and will be marked complete next update.
@@ -777,7 +777,7 @@ AnimState.ending : Num
 
 <endpoint module="luxe: system/anim.modifier" class="AnimState" signature="complete"></endpoint>
 ### AnimState.complete
-```lx
+```wren
 AnimState.complete : Num
 ```
 > The animation has ended and is complete.
@@ -791,7 +791,7 @@ AnimState.complete : Num
 
 <endpoint module="luxe: system/anim.modifier" class="AnimState" signature="name(value : Num)"></endpoint>
 ### AnimState.name(.)
-```lx
+```wren
 AnimState.name(value : Num) : String
 ```
 > Convert an `AnimState` value to a string.
@@ -804,7 +804,7 @@ AnimState.name(value : Num) : String
 
 <endpoint module="luxe: system/anim.modifier" class="AnimState" signature="from_string(value : String)"></endpoint>
 ### AnimState.from_string(.)
-```lx
+```wren
 AnimState.from_string(value : String) : Num
 ```
 > Convert a string to an enum value.
@@ -816,55 +816,55 @@ AnimState.from_string(value : String) : Num
 
 
 ## AnimUI
-```lx
+```wren
 import "luxe: system/anim.modifier" for AnimUI
 ```
 > no docs found
 
 <endpoint module="luxe: system/anim.modifier" class="AnimUI" signature="make_field(state : UIBlockState, name : String, type : BlockFieldType, view : ValueView)"></endpoint>
 ### AnimUI.make_field(....)
-```lx
+```wren
 AnimUI.make_field(state : UIBlockState, name : String, type : BlockFieldType, view : ValueView) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="AnimUI" signature="refresh(container : Any, anim_block : Any, state : Any)"></endpoint>
 ### AnimUI.refresh(...)
-```lx
+```wren
 AnimUI.refresh(container : Any, anim_block : Any, state : Any) : unknown
 ```
 > no docs found   
 
 
 ## Data
-```lx
+```wren
 import "luxe: system/anim.modifier" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var play : List = []
 var internal : Object = null
 var show_editor : Num = 0
 ```
 
 ## System
-```lx
+```wren
 import "luxe: system/anim.modifier" for System
 ```
 > no docs found
 
 <endpoint module="luxe: system/anim.modifier" class="System" signature="new(world : World)"></endpoint>
 ### System.new(.)
-```lx
+```wren
 System.new(world : World) : System
 ```
 > no docs found   
 
 <endpoint module="luxe: system/anim.modifier" class="System" signature="editor_change(entity : Entity, change : ModifierChange)"></endpoint>
 ### System.editor_change(..)
-```lx
+```wren
 System.editor_change(entity : Entity, change : ModifierChange) : unknown
 ```
 > no docs found   

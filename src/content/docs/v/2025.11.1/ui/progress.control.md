@@ -10,39 +10,39 @@ slug: "v/2025.11.1/ui/progress.control"
 
 
 ## Data
-```lx
+```wren
 import "luxe: ui/progress.control" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var progress : Num = 0
 ```
 
 ## UIProgress
-```lx
+```wren
 import "luxe: ui/progress.control" for UIProgress
 ```
 > no docs found
 
 <endpoint module="luxe: ui/progress.control" class="UIProgress" signature="create(ui_entity : Any)"></endpoint>
 ### UIProgress.create(.)
-```lx
+```wren
 UIProgress.create(ui_entity : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: ui/progress.control" class="UIProgress" signature="set_progress(control : Control, value : Num)"></endpoint>
 ### UIProgress.set_progress(..)
-```lx
+```wren
 UIProgress.set_progress(control : Control, value : Num) : unknown
 ```
 > Set the progress amount (0...1)   
 
 <endpoint module="luxe: ui/progress.control" class="UIProgress" signature="get_progress(control : Control)"></endpoint>
 ### UIProgress.get_progress(.)
-```lx
+```wren
 UIProgress.get_progress(control : Control) : Num
 ```
 > Get the progress amount (0...1)   

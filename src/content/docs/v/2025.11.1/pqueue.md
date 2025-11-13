@@ -10,7 +10,7 @@ slug: "v/2025.11.1/pqueue"
 
 
 ## MaxPQ
-```lx
+```wren
 import "luxe: pqueue" for MaxPQ
 ```
 > A priority queue that returns larger values first.
@@ -21,28 +21,28 @@ import "luxe: pqueue" for MaxPQ
 
 <endpoint module="luxe: pqueue" class="MaxPQ" signature="value"></endpoint>
 ### MaxPQ.value
-```lx
+```wren
 MaxPQ.value : unknown
 ```
 > Returns the internal array. Read only, modify the queue via `add` and `pop`.   
 
 <endpoint module="luxe: pqueue" class="MaxPQ" signature="count"></endpoint>
 ### MaxPQ.count
-```lx
+```wren
 MaxPQ.count : unknown
 ```
 > Returns the number of items in the priority queue.   
 
 <endpoint module="luxe: pqueue" class="MaxPQ" signature="new()"></endpoint>
 ### MaxPQ.new(.)
-```lx
+```wren
 MaxPQ.new() : MaxPQ
 ```
 > Create a new priority queue.   
 
 <endpoint module="luxe: pqueue" class="MaxPQ" signature="new(get_priority_fn : Any)"></endpoint>
 ### MaxPQ.new(.)
-```lx
+```wren
 MaxPQ.new(get_priority_fn : Any) : MaxPQ
 ```
 > Create a new priority queue with a callback for the priority of a value.
@@ -51,28 +51,28 @@ MaxPQ.new(get_priority_fn : Any) : MaxPQ
 
 <endpoint module="luxe: pqueue" class="MaxPQ" signature="add(value : Any)"></endpoint>
 ### MaxPQ.add(.)
-```lx
+```wren
 MaxPQ.add(value : Any) : unknown
 ```
 > Add a value to the queue.   
 
 <endpoint module="luxe: pqueue" class="MaxPQ" signature="pop()"></endpoint>
 ### MaxPQ.pop(.)
-```lx
+```wren
 MaxPQ.pop() : unknown
 ```
 > Return the next value, removing it from the queue.   
 
 <endpoint module="luxe: pqueue" class="MaxPQ" signature="peek()"></endpoint>
 ### MaxPQ.peek(.)
-```lx
+```wren
 MaxPQ.peek() : unknown
 ```
 > Return the next value without removing it from the queue.   
 
 
 ## MinPQ
-```lx
+```wren
 import "luxe: pqueue" for MinPQ
 ```
 > A priority queue that returns smaller values first.
@@ -83,28 +83,28 @@ import "luxe: pqueue" for MinPQ
 
 <endpoint module="luxe: pqueue" class="MinPQ" signature="value"></endpoint>
 ### MinPQ.value
-```lx
+```wren
 MinPQ.value : unknown
 ```
 > Returns the internal array. Read only, modify the queue via `add` and `pop`.   
 
 <endpoint module="luxe: pqueue" class="MinPQ" signature="count"></endpoint>
 ### MinPQ.count
-```lx
+```wren
 MinPQ.count : unknown
 ```
 > Returns the number of items in the priority queue.   
 
 <endpoint module="luxe: pqueue" class="MinPQ" signature="new()"></endpoint>
 ### MinPQ.new(.)
-```lx
+```wren
 MinPQ.new() : MinPQ
 ```
 > Create a new priority queue.   
 
 <endpoint module="luxe: pqueue" class="MinPQ" signature="new(get_priority_fn : Any)"></endpoint>
 ### MinPQ.new(.)
-```lx
+```wren
 MinPQ.new(get_priority_fn : Any) : MinPQ
 ```
 > Create a new priority queue with a callback for the priority of a value.
@@ -113,21 +113,21 @@ MinPQ.new(get_priority_fn : Any) : MinPQ
 
 <endpoint module="luxe: pqueue" class="MinPQ" signature="add(value : Any)"></endpoint>
 ### MinPQ.add(.)
-```lx
+```wren
 MinPQ.add(value : Any) : unknown
 ```
 > Add a value to the queue.   
 
 <endpoint module="luxe: pqueue" class="MinPQ" signature="pop()"></endpoint>
 ### MinPQ.pop(.)
-```lx
+```wren
 MinPQ.pop() : unknown
 ```
 > Return the next value, removing it from the queue.   
 
 <endpoint module="luxe: pqueue" class="MinPQ" signature="peek()"></endpoint>
 ### MinPQ.peek(.)
-```lx
+```wren
 MinPQ.peek() : unknown
 ```
 > Return the next value without removing it from the queue.   

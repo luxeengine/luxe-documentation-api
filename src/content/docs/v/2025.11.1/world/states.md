@@ -14,13 +14,13 @@ slug: "v/2025.11.1/world/states"
 
 
 ## AState
-```lx
+```wren
 import "luxe: world/states" for AState
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var id : String = ID.uuid
 var name : String = "<unknown>"
 var parent : AState = null
@@ -29,104 +29,104 @@ var entities : Map = {}
 ```
 <endpoint module="luxe: world/states" class="AState" signature="persist(yes : Bool)"></endpoint>
 ### AState.persist(.)
-```lx
+```wren
 AState.persist(yes : Bool) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="AState" signature="get(entity : Entity)"></endpoint>
 ### AState.get(.)
-```lx
+```wren
 AState.get(entity : Entity) : EntityState
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="AState" signature="enter(entity : Entity, fn : Fn)"></endpoint>
 ### AState.enter(..)
-```lx
+```wren
 AState.enter(entity : Entity, fn : Fn) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="AState" signature="reenter(entity : Entity, fn : Fn)"></endpoint>
 ### AState.reenter(..)
-```lx
+```wren
 AState.reenter(entity : Entity, fn : Fn) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="AState" signature="exit(entity : Entity, fn : Fn)"></endpoint>
 ### AState.exit(..)
-```lx
+```wren
 AState.exit(entity : Entity, fn : Fn) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="AState" signature="tick(entity : Entity, fn : Fn)"></endpoint>
 ### AState.tick(..)
-```lx
+```wren
 AState.tick(entity : Entity, fn : Fn) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="AState" signature="goto_after(entity : Entity, state : AState, time : Num)"></endpoint>
 ### AState.goto_after(...)
-```lx
+```wren
 AState.goto_after(entity : Entity, state : AState, time : Num) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="AState" signature="goto_if(entity : Entity, state : AState, fn : Fn)"></endpoint>
 ### AState.goto_if(...)
-```lx
+```wren
 AState.goto_if(entity : Entity, state : AState, fn : Fn) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="AState" signature="goto_when(entity : Entity, state : AState, field : String)"></endpoint>
 ### AState.goto_when(...)
-```lx
+```wren
 AState.goto_when(entity : Entity, state : AState, field : String) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="AState" signature="goto_when(entity : Entity, state : AState, field : String, desired_value : Any)"></endpoint>
 ### AState.goto_when(....)
-```lx
+```wren
 AState.goto_when(entity : Entity, state : AState, field : String, desired_value : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="AState" signature="goto_when(entity : Entity, state : AState, field : String, op : Op, desired_value : Any)"></endpoint>
 ### AState.goto_when(.....)
-```lx
+```wren
 AState.goto_when(entity : Entity, state : AState, field : String, op : Op, desired_value : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="AState" signature="goto_on(entity : Entity, state : AState, context : String, wire : Num)"></endpoint>
 ### AState.goto_on(....)
-```lx
+```wren
 AState.goto_on(entity : Entity, state : AState, context : String, wire : Num) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="AState" signature="create(in_name : String, in_parent : AState)"></endpoint>
 ### AState.create(..)
-```lx
+```wren
 AState.create(in_name : String, in_parent : AState) : AState
 ```
 > no docs found   
 
 
 ## EntityState
-```lx
+```wren
 import "luxe: world/states" for EntityState
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var time : Num = 0
 var timestamp : Num = 0
 var actions_enter : List = []
@@ -142,20 +142,20 @@ var entity : Entity = 0
 ```
 <endpoint module="luxe: world/states" class="EntityState" signature="new(in_state : AState, in_entity : Entity)"></endpoint>
 ### EntityState.new(..)
-```lx
+```wren
 EntityState.new(in_state : AState, in_entity : Entity) : EntityState
 ```
 > no docs found   
 
 
 ## EntityStates
-```lx
+```wren
 import "luxe: world/states" for EntityStates
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var container : States = null
 var entity : Entity = 0
 var active : List = []
@@ -165,104 +165,104 @@ var next : AState = null
 ```
 <endpoint module="luxe: world/states" class="EntityStates" signature="new(in_container : States, in_entity : Entity)"></endpoint>
 ### EntityStates.new(..)
-```lx
+```wren
 EntityStates.new(in_container : States, in_entity : Entity) : EntityStates
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="EntityStates" signature="is_active(state : AState)"></endpoint>
 ### EntityStates.is_active(.)
-```lx
+```wren
 EntityStates.is_active(state : AState) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="EntityStates" signature="make_inactive(state : AState)"></endpoint>
 ### EntityStates.make_inactive(.)
-```lx
+```wren
 EntityStates.make_inactive(state : AState) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="EntityStates" signature="make_active(state : AState)"></endpoint>
 ### EntityStates.make_active(.)
-```lx
+```wren
 EntityStates.make_active(state : AState) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="EntityStates" signature="get_tree(state : AState)"></endpoint>
 ### EntityStates.get_tree(.)
-```lx
+```wren
 EntityStates.get_tree(state : AState) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="EntityStates" signature="goto(goto_state : AState)"></endpoint>
 ### EntityStates.goto(.)
-```lx
+```wren
 EntityStates.goto(goto_state : AState) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="EntityStates" signature="tick(non_world_delta : Num, delta : Num)"></endpoint>
 ### EntityStates.tick(..)
-```lx
+```wren
 EntityStates.tick(non_world_delta : Num, delta : Num) : unknown
 ```
 > no docs found   
 
 
 ## Op
-```lx
+```wren
 import "luxe: world/states" for Op
 ```
 > no docs found
 
 <endpoint module="luxe: world/states" class="Op" signature="equal"></endpoint>
 ### Op.equal
-```lx
+```wren
 Op.equal : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="Op" signature="lt"></endpoint>
 ### Op.lt
-```lx
+```wren
 Op.lt : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="Op" signature="lte"></endpoint>
 ### Op.lte
-```lx
+```wren
 Op.lte : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="Op" signature="gt"></endpoint>
 ### Op.gt
-```lx
+```wren
 Op.gt : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="Op" signature="gte"></endpoint>
 ### Op.gte
-```lx
+```wren
 Op.gte : unknown
 ```
 > no docs found   
 
 
 ## States
-```lx
+```wren
 import "luxe: world/states" for States
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var world : World = 0
 var data_block : Block = 0
 var data_listener : String = null
@@ -270,62 +270,62 @@ var entities : Map = {}
 ```
 <endpoint module="luxe: world/states" class="States" signature="tick(delta : Num)"></endpoint>
 ### States.tick(.)
-```lx
+```wren
 States.tick(delta : Num) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="States" signature="goto(entity : Entity, state : AState)"></endpoint>
 ### States.goto(..)
-```lx
+```wren
 States.goto(entity : Entity, state : AState) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="States" signature="get(entity : Entity)"></endpoint>
 ### States.get(.)
-```lx
+```wren
 States.get(entity : Entity) : EntityStates
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="States" signature="register(entity : Entity)"></endpoint>
 ### States.register(.)
-```lx
+```wren
 States.register(entity : Entity) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="States" signature="listen_for_changes()"></endpoint>
 ### States.listen_for_changes(.)
-```lx
+```wren
 States.listen_for_changes() : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="States" signature="new(in_world : World, in_data_block : Block)"></endpoint>
 ### States.new(..)
-```lx
+```wren
 States.new(in_world : World, in_data_block : Block) : States
 ```
 > no docs found   
 
 <endpoint module="luxe: world/states" class="States" signature="destroy()"></endpoint>
 ### States.destroy(.)
-```lx
+```wren
 States.destroy() : unknown
 ```
 > no docs found   
 
 
 ## WireAction
-```lx
+```wren
 import "luxe: world/states" for WireAction
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var entity : Entity = 0
 var connect : String = null
 var context : String = null
@@ -334,7 +334,7 @@ var states : List = []
 ```
 <endpoint module="luxe: world/states" class="WireAction" signature="new()"></endpoint>
 ### WireAction.new(.)
-```lx
+```wren
 WireAction.new() : WireAction
 ```
 > no docs found   

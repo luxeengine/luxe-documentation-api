@@ -9,13 +9,13 @@ slug: "v/2025.11.1/system/physics/query.block"
 
 
 ## QueryResult
-```lx
+```wren
 import "luxe: system/physics/query.block" for QueryResult
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var body_entity : Handle = 0
 var collider_entity : Handle = 0
 ```

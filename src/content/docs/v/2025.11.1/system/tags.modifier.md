@@ -11,88 +11,88 @@ slug: "v/2025.11.1/system/tags.modifier"
 
 
 ## Data
-```lx
+```wren
 import "luxe: system/tags.modifier" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var tags : List = []
 ```
 
 ## System
-```lx
+```wren
 import "luxe: system/tags.modifier" for System
 ```
 > no docs found
 
 <endpoint module="luxe: system/tags.modifier" class="System" signature="new(world : World)"></endpoint>
 ### System.new(.)
-```lx
+```wren
 System.new(world : World) : System
 ```
 > no docs found   
 
 
 ## Tags
-```lx
+```wren
 import "luxe: system/tags.modifier" for Tags
 ```
 > no docs found
 
 <endpoint module="luxe: system/tags.modifier" class="Tags" signature="create(entity : Any)"></endpoint>
 ### Tags.create(.)
-```lx
+```wren
 Tags.create(entity : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/tags.modifier" class="Tags" signature="destroy(entity : Any)"></endpoint>
 ### Tags.destroy(.)
-```lx
+```wren
 Tags.destroy(entity : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/tags.modifier" class="Tags" signature="has(entity : Any)"></endpoint>
 ### Tags.has(.)
-```lx
+```wren
 Tags.has(entity : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/tags.modifier" class="Tags" signature="add(entity : Any, tag : Any)"></endpoint>
 ### Tags.add(..)
-```lx
+```wren
 Tags.add(entity : Any, tag : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/tags.modifier" class="Tags" signature="remove(entity : Any, tag : Any)"></endpoint>
 ### Tags.remove(..)
-```lx
+```wren
 Tags.remove(entity : Any, tag : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/tags.modifier" class="Tags" signature="list(world : Any, tag : Any)"></endpoint>
 ### Tags.list(..)
-```lx
+```wren
 Tags.list(world : Any, tag : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/tags.modifier" class="Tags" signature="list(entity : Any)"></endpoint>
 ### Tags.list(.)
-```lx
+```wren
 Tags.list(entity : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/tags.modifier" class="Tags" signature="has_tag(entity : Any, tag : Any)"></endpoint>
 ### Tags.has_tag(..)
-```lx
+```wren
 Tags.has_tag(entity : Any, tag : Any) : unknown
 ```
 > no docs found   

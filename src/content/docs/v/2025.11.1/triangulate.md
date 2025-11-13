@@ -9,49 +9,49 @@ slug: "v/2025.11.1/triangulate"
 
 
 ## Triangulate
-```lx
+```wren
 import "luxe: triangulate" for Triangulate
 ```
 > no docs found
 
 <endpoint module="luxe: triangulate" class="Triangulate" signature="get_svg(file_contents : String, units : String, dpi : Num, tolerance : Num)"></endpoint>
 ### Triangulate.get_svg(....)
-```lx
+```wren
 Triangulate.get_svg(file_contents : String, units : String, dpi : Num, tolerance : Num) : List
 ```
 > no docs found   
 
 <endpoint module="luxe: triangulate" class="Triangulate" signature="svg_to_image(file_contents : String, units : String, dpi : Num, width : Num, height : Num)"></endpoint>
 ### Triangulate.svg_to_image(.....)
-```lx
+```wren
 Triangulate.svg_to_image(file_contents : String, units : String, dpi : Num, width : Num, height : Num) : Image
 ```
 > no docs found   
 
 <endpoint module="luxe: triangulate" class="Triangulate" signature="svg_to_geometry(file_contents : String, units : String, dpi : Num, resolution : Num, limit : Num, basis : String)"></endpoint>
 ### Triangulate.svg_to_geometry(......)
-```lx
+```wren
 Triangulate.svg_to_geometry(file_contents : String, units : String, dpi : Num, resolution : Num, limit : Num, basis : String) : Geometry
 ```
 > no docs found   
 
 <endpoint module="luxe: triangulate" class="Triangulate" signature="svg_to_geometry(file_contents : String, units : String, dpi : Num, resolution : Num, limit : Num)"></endpoint>
 ### Triangulate.svg_to_geometry(.....)
-```lx
+```wren
 Triangulate.svg_to_geometry(file_contents : String, units : String, dpi : Num, resolution : Num, limit : Num) : Geometry
 ```
 > no docs found   
 
 <endpoint module="luxe: triangulate" class="Triangulate" signature="points(points : List)"></endpoint>
 ### Triangulate.points(.)
-```lx
+```wren
 Triangulate.points(points : List) : List
 ```
 > no docs found   
 
 <endpoint module="luxe: triangulate" class="Triangulate" signature="polys(points : List, edges : List)"></endpoint>
 ### Triangulate.polys(..)
-```lx
+```wren
 Triangulate.polys(points : List, edges : List) : List
 ```
 > no docs found   

@@ -26,35 +26,35 @@ slug: "v/2025.11.1/world"
 
 
 ## Clock
-```lx
+```wren
 import "luxe: world" for Clock
 ```
 > no docs found
 
 <endpoint module="luxe: world" class="Clock" signature="create(world : World, rate : Num, paused : Bool)"></endpoint>
 ### Clock.create(...)
-```lx
+```wren
 Clock.create(world : World, rate : Num, paused : Bool) : Clock
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="Clock" signature="create(world : World, rate : Num)"></endpoint>
 ### Clock.create(..)
-```lx
+```wren
 Clock.create(world : World, rate : Num) : Clock
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="Clock" signature="time(world : World, clock : Clock)"></endpoint>
 ### Clock.time(..)
-```lx
+```wren
 Clock.time(world : World, clock : Clock) : Num
 ```
 > no docs found   
 
 
 ## Entity
-```lx
+```wren
 import "luxe: world" for Entity
 ```
 > Anything that exists in a world is a `entity`. The entity itself is just a handle (represented by a number) with which modifiers and a name can be associated. Entities are very lightweight, so creating and destroying many of them usually isnt a concern.
@@ -64,14 +64,14 @@ import "luxe: world" for Entity
 
 <endpoint module="luxe: world" class="Entity" signature="none"></endpoint>
 ### Entity.none
-```lx
+```wren
 Entity.none : Entity
 ```
 > An entity representing no value. Note, not for comparisons! Use Entity.valid(entity) for that   
 
 <endpoint module="luxe: world" class="Entity" signature="create(world : World)"></endpoint>
 ### Entity.create(.)
-```lx
+```wren
 Entity.create(world : World) : Entity
 ```
 > Creates a new `entity` in the given `world`.
@@ -82,7 +82,7 @@ Entity.create(world : World) : Entity
 
 <endpoint module="luxe: world" class="Entity" signature="create(world : World, name : String)"></endpoint>
 ### Entity.create(..)
-```lx
+```wren
 Entity.create(world : World, name : String) : Entity
 ```
 > Creates a new `entity` in the given `world` with the specified `String` name.
@@ -93,7 +93,7 @@ Entity.create(world : World, name : String) : Entity
 
 <endpoint module="luxe: world" class="Entity" signature="valid(entity : Entity)"></endpoint>
 ### Entity.valid(.)
-```lx
+```wren
 Entity.valid(entity : Entity) : Bool
 ```
 > Checks if the given variable references a valid `entity`.
@@ -107,7 +107,7 @@ Entity.valid(entity : Entity) : Bool
 
 <endpoint module="luxe: world" class="Entity" signature="valid_handle(entity : Entity)"></endpoint>
 ### Entity.valid_handle(.)
-```lx
+```wren
 Entity.valid_handle(entity : Entity) : Bool
 ```
 > Checks if the given variable references a valid `entity` handle.
@@ -119,7 +119,7 @@ Entity.valid_handle(entity : Entity) : Bool
 
 <endpoint module="luxe: world" class="Entity" signature="get_world(entity : Entity)"></endpoint>
 ### Entity.get_world(.)
-```lx
+```wren
 Entity.get_world(entity : Entity) : World
 ```
 > Get the `world` a given `entity` belongs to
@@ -130,7 +130,7 @@ Entity.get_world(entity : Entity) : World
 
 <endpoint module="luxe: world" class="Entity" signature="get(uuid : String)"></endpoint>
 ### Entity.get(.)
-```lx
+```wren
 Entity.get(uuid : String) : Entity
 ```
 > Get the entity with a given UUID. Since an entity can have 
@@ -148,7 +148,7 @@ Entity.get(uuid : String) : Entity
 
 <endpoint module="luxe: world" class="Entity" signature="get_addressed_in(context_root : Entity, address : List)"></endpoint>
 ### Entity.get_addressed_in(..)
-```lx
+```wren
 Entity.get_addressed_in(context_root : Entity, address : List) : Entity
 ```
 > Find an entity by `address` in the given context (only). 
@@ -157,7 +157,7 @@ Entity.get_addressed_in(context_root : Entity, address : List) : Entity
 
 <endpoint module="luxe: world" class="Entity" signature="get_addressed(relative_to : Entity, address : List)"></endpoint>
 ### Entity.get_addressed(..)
-```lx
+```wren
 Entity.get_addressed(relative_to : Entity, address : List) : Entity
 ```
 > Find an entity by `address` relative to the given entity, and will search upward
@@ -166,7 +166,7 @@ Entity.get_addressed(relative_to : Entity, address : List) : Entity
 
 <endpoint module="luxe: world" class="Entity" signature="resolve(relative_to : Entity, address : List)"></endpoint>
 ### Entity.resolve(..)
-```lx
+```wren
 Entity.resolve(relative_to : Entity, address : List) : Entity
 ```
 > Find an entity by `address` relative to the given entity, and will search upward
@@ -176,7 +176,7 @@ Entity.resolve(relative_to : Entity, address : List) : Entity
 
 <endpoint module="luxe: world" class="Entity" signature="get_relative_address(entity : Entity, relative_to : Entity)"></endpoint>
 ### Entity.get_relative_address(..)
-```lx
+```wren
 Entity.get_relative_address(entity : Entity, relative_to : Entity) : List
 ```
 > Get the address of one entity relative to another. Typically used in e.g the editor to resolve
@@ -184,7 +184,7 @@ Entity.get_relative_address(entity : Entity, relative_to : Entity) : List
 
 <endpoint module="luxe: world" class="Entity" signature="get_addressed_context(relative_to : Entity, address : List)"></endpoint>
 ### Entity.get_addressed_context(..)
-```lx
+```wren
 Entity.get_addressed_context(relative_to : Entity, address : List) : Entity
 ```
 > Find an entity by `address` relative to the given entity, and will search upward
@@ -194,7 +194,7 @@ Entity.get_addressed_context(relative_to : Entity, address : List) : Entity
 
 <endpoint module="luxe: world" class="Entity" signature="get_with_in(context : Entity, modifier_id : String)"></endpoint>
 ### Entity.get_with_in(..)
-```lx
+```wren
 Entity.get_with_in(context : Entity, modifier_id : String) : Entity
 ```
 > Get the first entity found in the context that has the given modifier attached.
@@ -203,7 +203,7 @@ Entity.get_with_in(context : Entity, modifier_id : String) : Entity
 
 <endpoint module="luxe: world" class="Entity" signature="get_with(relative_to : Entity, modifier_id : String)"></endpoint>
 ### Entity.get_with(..)
-```lx
+```wren
 Entity.get_with(relative_to : Entity, modifier_id : String) : Entity
 ```
 > Get the first entity found in the context that has the given modifier attached.
@@ -212,7 +212,7 @@ Entity.get_with(relative_to : Entity, modifier_id : String) : Entity
 
 <endpoint module="luxe: world" class="Entity" signature="get_with_all_in(context : Entity, modifier_id : String)"></endpoint>
 ### Entity.get_with_all_in(..)
-```lx
+```wren
 Entity.get_with_all_in(context : Entity, modifier_id : String) : Set
 ```
 > Get the set of entities found in the context that have the given modifier attached.
@@ -221,7 +221,7 @@ Entity.get_with_all_in(context : Entity, modifier_id : String) : Set
 
 <endpoint module="luxe: world" class="Entity" signature="get_with_all(relative_to : Entity, modifier_id : String)"></endpoint>
 ### Entity.get_with_all(..)
-```lx
+```wren
 Entity.get_with_all(relative_to : Entity, modifier_id : String) : Set
 ```
 > Get the set of entities found in the context that have the given modifier attached.
@@ -230,7 +230,7 @@ Entity.get_with_all(relative_to : Entity, modifier_id : String) : Set
 
 <endpoint module="luxe: world" class="Entity" signature="get_named(world : World, name : String)"></endpoint>
 ### Entity.get_named(..)
-```lx
+```wren
 Entity.get_named(world : World, name : String) : Entity
 ```
 > Get the first `entity` from the given `world` with the name `name`.
@@ -244,7 +244,7 @@ Entity.get_named(world : World, name : String) : Entity
 
 <endpoint module="luxe: world" class="Entity" signature="get_named_all(world : World, name : String)"></endpoint>
 ### Entity.get_named_all(..)
-```lx
+```wren
 Entity.get_named_all(world : World, name : String) : List
 ```
 > Get a list of all `entities` from the given `world` with the name `name`.
@@ -258,7 +258,7 @@ Entity.get_named_all(world : World, name : String) : List
 
 <endpoint module="luxe: world" class="Entity" signature="get_named_in(context : Entity, name : String)"></endpoint>
 ### Entity.get_named_in(..)
-```lx
+```wren
 Entity.get_named_in(context : Entity, name : String) : Entity
 ```
 > Get the first `entity` from the given `context` with the name `name`.
@@ -274,7 +274,7 @@ Entity.get_named_in(context : Entity, name : String) : Entity
 
 <endpoint module="luxe: world" class="Entity" signature="get_named_all_in(context : Entity, name : String)"></endpoint>
 ### Entity.get_named_all_in(..)
-```lx
+```wren
 Entity.get_named_all_in(context : Entity, name : String) : List
 ```
 > Get a list of all `entities` from the given `context` with the name `name`.
@@ -291,7 +291,7 @@ Entity.get_named_all_in(context : Entity, name : String) : List
 
 <endpoint module="luxe: world" class="Entity" signature="get_name(entity : Entity)"></endpoint>
 ### Entity.get_name(.)
-```lx
+```wren
 Entity.get_name(entity : Entity) : StringID
 ```
 > Get the name of a given `entity` as a hashed string ID.
@@ -308,7 +308,7 @@ Entity.get_name(entity : Entity) : StringID
 
 <endpoint module="luxe: world" class="Entity" signature="name(entity : Entity)"></endpoint>
 ### Entity.name(.)
-```lx
+```wren
 Entity.name(entity : Entity) : String
 ```
 > Get the name of a given `entity` as a string.
@@ -323,7 +323,7 @@ Entity.name(entity : Entity) : String
 
 <endpoint module="luxe: world" class="Entity" signature="set_visible(entity : Entity, state : Bool)"></endpoint>
 ### Entity.set_visible(..)
-```lx
+```wren
 Entity.set_visible(entity : Entity, state : Bool) : unknown
 ```
 > Set the entity visibility flag, which will remove associated geometry from rendering.
@@ -333,7 +333,7 @@ Entity.set_visible(entity : Entity, state : Bool) : unknown
 
 <endpoint module="luxe: world" class="Entity" signature="set_visible(entity : Entity, state : Bool, tag : String)"></endpoint>
 ### Entity.set_visible(...)
-```lx
+```wren
 Entity.set_visible(entity : Entity, state : Bool, tag : String) : unknown
 ```
 > Set the entity visibility flag, which will remove associated geometry from rendering.
@@ -348,196 +348,196 @@ Entity.set_visible(entity : Entity, state : Bool, tag : String) : unknown
 
 <endpoint module="luxe: world" class="Entity" signature="get_visible(entity : Entity)"></endpoint>
 ### Entity.get_visible(.)
-```lx
+```wren
 Entity.get_visible(entity : Entity) : unknown
 ```
 > Get the entity visibility state   
 
 <endpoint module="luxe: world" class="Entity" signature="get_visible(entity : Entity, tag : String)"></endpoint>
 ### Entity.get_visible(..)
-```lx
+```wren
 Entity.get_visible(entity : Entity, tag : String) : unknown
 ```
 > Get the entity visibility state for the given tag   
 
 <endpoint module="luxe: world" class="Entity" signature="get_visual_obb(entity : Entity)"></endpoint>
 ### Entity.get_visual_obb(.)
-```lx
+```wren
 Entity.get_visual_obb(entity : Entity) : List
 ```
 > Returns the combined visual bounds of this and entity created by this entity (in the obb shape, e.g 8 corner points)   
 
 <endpoint module="luxe: world" class="Entity" signature="get_folder(entity : Entity)"></endpoint>
 ### Entity.get_folder(.)
-```lx
+```wren
 Entity.get_folder(entity : Entity) : String
 ```
 > get the folder of this entity (used for nested display in a world outliner)   
 
 <endpoint module="luxe: world" class="Entity" signature="set_folder(entity : Entity, folder : String)"></endpoint>
 ### Entity.set_folder(..)
-```lx
+```wren
 Entity.set_folder(entity : Entity, folder : String) : None
 ```
 > set the folder of this entity (used for nested display in a world outliner)   
 
 <endpoint module="luxe: world" class="Entity" signature="get_asset_id(entity : Entity)"></endpoint>
 ### Entity.get_asset_id(.)
-```lx
+```wren
 Entity.get_asset_id(entity : Entity) : String
 ```
 > get the asset ID of this entity (if it has one)   
 
 <endpoint module="luxe: world" class="Entity" signature="set_asset_id(entity : Entity, asset_id : String)"></endpoint>
 ### Entity.set_asset_id(..)
-```lx
+```wren
 Entity.set_asset_id(entity : Entity, asset_id : String) : None
 ```
 > set the asset ID of this entity (used for e.g editor)   
 
 <endpoint module="luxe: world" class="Entity" signature="get_context_asset_id(entity : Entity)"></endpoint>
 ### Entity.get_context_asset_id(.)
-```lx
+```wren
 Entity.get_context_asset_id(entity : Entity) : String
 ```
 > get the context asset ID of this entity (if it has one)   
 
 <endpoint module="luxe: world" class="Entity" signature="set_context_asset_id(entity : Entity, asset_id : String)"></endpoint>
 ### Entity.set_context_asset_id(..)
-```lx
+```wren
 Entity.set_context_asset_id(entity : Entity, asset_id : String) : None
 ```
 > set the context asset ID of this entity (used for e.g editor)   
 
 <endpoint module="luxe: world" class="Entity" signature="get_context_type(entity : Entity)"></endpoint>
 ### Entity.get_context_type(.)
-```lx
+```wren
 Entity.get_context_type(entity : Entity) : EntityContextType
 ```
 > get the context type for an entity   
 
 <endpoint module="luxe: world" class="Entity" signature="get_context_instance_uuid(entity : Entity)"></endpoint>
 ### Entity.get_context_instance_uuid(.)
-```lx
+```wren
 Entity.get_context_instance_uuid(entity : Entity) : String
 ```
 > get the context uuid for a given entity. Entity should be EntityContextType `scene` or `prototype` or null is returned   
 
 <endpoint module="luxe: world" class="Entity" signature="get_context_data_uuid(entity : Entity)"></endpoint>
 ### Entity.get_context_data_uuid(.)
-```lx
+```wren
 Entity.get_context_data_uuid(entity : Entity) : String
 ```
 > get the context data uuid for a given entity. Entity should be EntityContextType `scene` or `prototype` or null is returned   
 
 <endpoint module="luxe: world" class="Entity" signature="get_context(entity : Entity)"></endpoint>
 ### Entity.get_context(.)
-```lx
+```wren
 Entity.get_context(entity : Entity) : Entity
 ```
 > get the context this entity belongs to if any   
 
 <endpoint module="luxe: world" class="Entity" signature="get_context_origin(entity : Entity)"></endpoint>
 ### Entity.get_context_origin(.)
-```lx
+```wren
 Entity.get_context_origin(entity : Entity) : Entity
 ```
 > get the context that this entity originated from. For example if a scene was loaded and inside it there was a prototype and so on, the scene is the origin.   
 
 <endpoint module="luxe: world" class="Entity" signature="get_context_address(entity : Entity, context : Entity)"></endpoint>
 ### Entity.get_context_address(..)
-```lx
+```wren
 Entity.get_context_address(entity : Entity, context : Entity) : List
 ```
 > get the address of the entity within a given context.   
 
 <endpoint module="luxe: world" class="Entity" signature="list_context_all(context : Entity)"></endpoint>
 ### Entity.list_context_all(.)
-```lx
+```wren
 Entity.list_context_all(context : Entity) : Set
 ```
 > Get all the entities this context created as a Set of entities.   
 
 <endpoint module="luxe: world" class="Entity" signature="list_context_direct(context : Entity)"></endpoint>
 ### Entity.list_context_direct(.)
-```lx
+```wren
 Entity.list_context_direct(context : Entity) : Set
 ```
 > Get all the entities this context created directly (rather than indirectly) as a Set of entities.   
 
 <endpoint module="luxe: world" class="Entity" signature="get_context_id(context : Entity)"></endpoint>
 ### Entity.get_context_id(.)
-```lx
+```wren
 Entity.get_context_id(context : Entity) : String
 ```
 > get the id of the given context.   
 
 <endpoint module="luxe: world" class="Entity" signature="get_origin_address(entity : Entity)"></endpoint>
 ### Entity.get_origin_address(.)
-```lx
+```wren
 Entity.get_origin_address(entity : Entity) : List
 ```
 > get the address of the entity within it's origin context.   
 
 <endpoint module="luxe: world" class="Entity" signature="get_address(entity : Entity)"></endpoint>
 ### Entity.get_address(.)
-```lx
+```wren
 Entity.get_address(entity : Entity) : List
 ```
 > get the address of the entity within it's origin context.   
 
 <endpoint module="luxe: world" class="Entity" signature="get_context_is_direct(context : Entity, entity : Entity)"></endpoint>
 ### Entity.get_context_is_direct(..)
-```lx
+```wren
 Entity.get_context_is_direct(context : Entity, entity : Entity) : Bool
 ```
 > returns true if the given entity is a direct entity in the context. This includes prototype roots spawned into the context (use context type to filter them out).   
 
 <endpoint module="luxe: world" class="Entity" signature="init_into_context(entity : Entity, context : Entity)"></endpoint>
 ### Entity.init_into_context(..)
-```lx
+```wren
 Entity.init_into_context(entity : Entity, context : Entity) : unknown
 ```
 > Initialize an entity into an existing context (typically editor related)   
 
 <endpoint module="luxe: world" class="Entity" signature="init_into_context(entity : Entity, context : Entity, address_uuid : UUID)"></endpoint>
 ### Entity.init_into_context(...)
-```lx
+```wren
 Entity.init_into_context(entity : Entity, context : Entity, address_uuid : UUID) : unknown
 ```
 > Initialize an entity into an existing context with an address uuid (typically editor related)   
 
 <endpoint module="luxe: world" class="Entity" signature="note_add(entity : Entity, note : String)"></endpoint>
 ### Entity.note_add(..)
-```lx
+```wren
 Entity.note_add(entity : Entity, note : String) : unknown
 ```
 > add a note to this entity (like a lower level tag)   
 
 <endpoint module="luxe: world" class="Entity" signature="note_remove(entity : Entity, note : String)"></endpoint>
 ### Entity.note_remove(..)
-```lx
+```wren
 Entity.note_remove(entity : Entity, note : String) : unknown
 ```
 > remove a note to this entity   
 
 <endpoint module="luxe: world" class="Entity" signature="note_has(entity : Entity, note : String)"></endpoint>
 ### Entity.note_has(..)
-```lx
+```wren
 Entity.note_has(entity : Entity, note : String) : unknown
 ```
 > returns true if this note exists, false otherwise   
 
 <endpoint module="luxe: world" class="Entity" signature="notes(entity : Entity)"></endpoint>
 ### Entity.notes(.)
-```lx
+```wren
 Entity.notes(entity : Entity) : unknown
 ```
 > get all the notes on the given entity   
 
 <endpoint module="luxe: world" class="Entity" signature="set_name(entity : Entity, name : String)"></endpoint>
 ### Entity.set_name(..)
-```lx
+```wren
 Entity.set_name(entity : Entity, name : String) : unknown
 ```
 > Set the name of a given `entity`.
@@ -548,14 +548,14 @@ Entity.set_name(entity : Entity, name : String) : unknown
 
 <endpoint module="luxe: world" class="Entity" signature="get_uuid(entity : Entity)"></endpoint>
 ### Entity.get_uuid(.)
-```lx
+```wren
 Entity.get_uuid(entity : Entity) : String
 ```
 > Get the unique ID as a string UUID for a given `entity`.   
 
 <endpoint module="luxe: world" class="Entity" signature="set_uuid(entity : Entity, uuid_string : String)"></endpoint>
 ### Entity.set_uuid(..)
-```lx
+```wren
 Entity.set_uuid(entity : Entity, uuid_string : String) : unknown
 ```
 > Set the unique ID of a given `entity`.
@@ -563,7 +563,7 @@ Entity.set_uuid(entity : Entity, uuid_string : String) : unknown
 
 <endpoint module="luxe: world" class="Entity" signature="destroy(entity : Entity)"></endpoint>
 ### Entity.destroy(.)
-```lx
+```wren
 Entity.destroy(entity : Entity) : unknown
 ```
 > Destroy the given `entity`, removing it from the world it's in.
@@ -575,7 +575,7 @@ Entity.destroy(entity : Entity) : unknown
 
 <endpoint module="luxe: world" class="Entity" signature="duplicate(entity : Entity)"></endpoint>
 ### Entity.duplicate(.)
-```lx
+```wren
 Entity.duplicate(entity : Entity) : Entity
 ```
 > Duplicate the given `entity`. 
@@ -583,7 +583,7 @@ Entity.duplicate(entity : Entity) : Entity
 
 <endpoint module="luxe: world" class="Entity" signature="duplicate(entity : Entity, world : World)"></endpoint>
 ### Entity.duplicate(..)
-```lx
+```wren
 Entity.duplicate(entity : Entity, world : World) : Entity
 ```
 > Duplicate the given `entity` into another world.
@@ -592,140 +592,140 @@ Entity.duplicate(entity : Entity, world : World) : Entity
 
 
 ## EntityContextType
-```lx
+```wren
 import "luxe: world" for EntityContextType
 ```
 > Which kind of context is an entity the root of? Default is `none`.
 
 <endpoint module="luxe: world" class="EntityContextType" signature="none"></endpoint>
 ### EntityContextType.none
-```lx
+```wren
 EntityContextType.none : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="EntityContextType" signature="scene"></endpoint>
 ### EntityContextType.scene
-```lx
+```wren
 EntityContextType.scene : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="EntityContextType" signature="prototype"></endpoint>
 ### EntityContextType.prototype
-```lx
+```wren
 EntityContextType.prototype : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="EntityContextType" signature="name(value : EntityContextType)"></endpoint>
 ### EntityContextType.name(.)
-```lx
+```wren
 EntityContextType.name(value : EntityContextType) : String
 ```
 > no docs found   
 
 
 ## EntityEventType
-```lx
+```wren
 import "luxe: world" for EntityEventType
 ```
 > no docs found
 
 <endpoint module="luxe: world" class="EntityEventType" signature="unknown"></endpoint>
 ### EntityEventType.unknown
-```lx
+```wren
 EntityEventType.unknown : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="EntityEventType" signature="create"></endpoint>
 ### EntityEventType.create
-```lx
+```wren
 EntityEventType.create : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="EntityEventType" signature="destroy"></endpoint>
 ### EntityEventType.destroy
-```lx
+```wren
 EntityEventType.destroy : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="EntityEventType" signature="load"></endpoint>
 ### EntityEventType.load
-```lx
+```wren
 EntityEventType.load : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="EntityEventType" signature="unload"></endpoint>
 ### EntityEventType.unload
-```lx
+```wren
 EntityEventType.unload : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="EntityEventType" signature="modifier"></endpoint>
 ### EntityEventType.modifier
-```lx
+```wren
 EntityEventType.modifier : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="EntityEventType" signature="name(value : EntityEventType)"></endpoint>
 ### EntityEventType.name(.)
-```lx
+```wren
 EntityEventType.name(value : EntityEventType) : String
 ```
 > no docs found   
 
 
 ## ModifierEventType
-```lx
+```wren
 import "luxe: world" for ModifierEventType
 ```
 > no docs found
 
 <endpoint module="luxe: world" class="ModifierEventType" signature="unknown"></endpoint>
 ### ModifierEventType.unknown
-```lx
+```wren
 ModifierEventType.unknown : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="ModifierEventType" signature="attach"></endpoint>
 ### ModifierEventType.attach
-```lx
+```wren
 ModifierEventType.attach : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="ModifierEventType" signature="detach"></endpoint>
 ### ModifierEventType.detach
-```lx
+```wren
 ModifierEventType.detach : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="ModifierEventType" signature="change"></endpoint>
 ### ModifierEventType.change
-```lx
+```wren
 ModifierEventType.change : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="ModifierEventType" signature="name(value : ModifierEventType)"></endpoint>
 ### ModifierEventType.name(.)
-```lx
+```wren
 ModifierEventType.name(value : ModifierEventType) : String
 ```
 > no docs found   
 
 
 ## UI
-```lx
+```wren
 import "luxe: world" for UI
 ```
 > A `UI` modifier holds controls which define a 2d user interface with images, buttons, sliders, etc...
@@ -745,7 +745,7 @@ import "luxe: world" for UI
 
 <endpoint module="luxe: world" class="UI" signature="create(entity : Entity, x : Num, y : Num, w : Num, h : Num, z : Num, camera : Entity)"></endpoint>
 ### UI.create(.......)
-```lx
+```wren
 UI.create(entity : Entity, x : Num, y : Num, w : Num, h : Num, z : Num, camera : Entity) : None
 ```
 > Create a UI modifier on an Entity.
@@ -755,56 +755,56 @@ UI.create(entity : Entity, x : Num, y : Num, w : Num, h : Num, z : Num, camera :
 
 <endpoint module="luxe: world" class="UI" signature="destroy(entity : Entity)"></endpoint>
 ### UI.destroy(.)
-```lx
+```wren
 UI.destroy(entity : Entity) : None
 ```
 > Remove a `UI` modifier from an entity. This also destroys all controls on that `UI`.   
 
 <endpoint module="luxe: world" class="UI" signature="has(entity : Entity)"></endpoint>
 ### UI.has(.)
-```lx
+```wren
 UI.has(entity : Entity) : Bool
 ```
 > Get whether an Entity has an `UI` modifier attached.   
 
 <endpoint module="luxe: world" class="UI" signature="commit(entity : Entity)"></endpoint>
 ### UI.commit(.)
-```lx
+```wren
 UI.commit(entity : Entity) : None
 ```
 > Request all changes to the UI are committed before rendering happens   
 
 <endpoint module="luxe: world" class="UI" signature="commit_now(entity : Entity)"></endpoint>
 ### UI.commit_now(.)
-```lx
+```wren
 UI.commit_now(entity : Entity) : None
 ```
 > Commit all changes to the UI immediately   
 
 <endpoint module="luxe: world" class="UI" signature="event_cancel(entity : Entity, event_id : ID)"></endpoint>
 ### UI.event_cancel(..)
-```lx
+```wren
 UI.event_cancel(entity : Entity, event_id : ID) : None
 ```
 > Cancel an event.   
 
 <endpoint module="luxe: world" class="UI" signature="event_cancelled(entity : Entity, event_id : ID)"></endpoint>
 ### UI.event_cancelled(..)
-```lx
+```wren
 UI.event_cancelled(entity : Entity, event_id : ID) : Bool
 ```
 > Check whether an event was cancelled before.   
 
 <endpoint module="luxe: world" class="UI" signature="set_camera(entity : Entity, camera : Entity)"></endpoint>
 ### UI.set_camera(..)
-```lx
+```wren
 UI.set_camera(entity : Entity, camera : Entity) : None
 ```
 > Set the camera used for input calculations. Most of the time this is the camera rendering the world the UI is in, but it doesnt have to be.   
 
 <endpoint module="luxe: world" class="UI" signature="set_render_mode(entity : Entity, mode : UIRenderMode)"></endpoint>
 ### UI.set_render_mode(..)
-```lx
+```wren
 UI.set_render_mode(entity : Entity, mode : UIRenderMode) : None
 ```
 > Set the render mode of the UI canvas.
@@ -815,14 +815,14 @@ UI.set_render_mode(entity : Entity, mode : UIRenderMode) : None
 
 <endpoint module="luxe: world" class="UI" signature="set_material_basis(entity : Entity, solid : String, text : String)"></endpoint>
 ### UI.set_material_basis(...)
-```lx
+```wren
 UI.set_material_basis(entity : Entity, solid : String, text : String) : None
 ```
 > Set the material basis the controls (excluding `UIImage`) is drawn with. By default "luxe: material_basis/ui_solid" is the basis for solid controls and "luxe: material_basis/ui_font" the basis for text.   
 
 <endpoint module="luxe: world" class="UI" signature="set_bounds(entity : Entity, x : Num, y : Num, w : Num, h : Num, z : Num)"></endpoint>
 ### UI.set_bounds(......)
-```lx
+```wren
 UI.set_bounds(entity : Entity, x : Num, y : Num, w : Num, h : Num, z : Num) : None
 ```
 > Set size and position of an `UI` modifier.
@@ -831,63 +831,63 @@ UI.set_bounds(entity : Entity, x : Num, y : Num, w : Num, h : Num, z : Num) : No
 
 <endpoint module="luxe: world" class="UI" signature="get_pos(entity : Entity)"></endpoint>
 ### UI.get_pos(.)
-```lx
+```wren
 UI.get_pos(entity : Entity) : Vec
 ```
 > Get position of an `UI` modifier.   
 
 <endpoint module="luxe: world" class="UI" signature="get_opacity(entity : Entity)"></endpoint>
 ### UI.get_opacity(.)
-```lx
+```wren
 UI.get_opacity(entity : Entity) : Num
 ```
 > Get overall UI opacity   
 
 <endpoint module="luxe: world" class="UI" signature="set_opacity(entity : Entity, opacity : Num)"></endpoint>
 ### UI.set_opacity(..)
-```lx
+```wren
 UI.set_opacity(entity : Entity, opacity : Num) : Num
 ```
 > Set overall UI opacity   
 
 <endpoint module="luxe: world" class="UI" signature="get_size(entity : Entity)"></endpoint>
 ### UI.get_size(.)
-```lx
+```wren
 UI.get_size(entity : Entity) : Vec
 ```
 > Get size of an `UI` modifier.   
 
 <endpoint module="luxe: world" class="UI" signature="get_debug_control(entity : Entity)"></endpoint>
 ### UI.get_debug_control(.)
-```lx
+```wren
 UI.get_debug_control(entity : Entity) : Control
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="get_debug_draw_depth(entity : Entity)"></endpoint>
 ### UI.get_debug_draw_depth(.)
-```lx
+```wren
 UI.get_debug_draw_depth(entity : Entity) : Num
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="get_input_node(entity : Entity)"></endpoint>
 ### UI.get_input_node(.)
-```lx
+```wren
 UI.get_input_node(entity : Entity) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="set_input_node(entity : Entity, input_node_id : String)"></endpoint>
 ### UI.set_input_node(..)
-```lx
+```wren
 UI.set_input_node(entity : Entity, input_node_id : String) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="set_layout_mode(entity : Entity, mode : UILayoutMode)"></endpoint>
 ### UI.set_layout_mode(..)
-```lx
+```wren
 UI.set_layout_mode(entity : Entity, mode : UILayoutMode) : None
 ```
 > Set the layout mode of the UI.
@@ -918,154 +918,154 @@ UI.set_layout_mode(entity : Entity, mode : UILayoutMode) : None
 
 <endpoint module="luxe: world" class="UI" signature="set_debug_mode(entity : Entity, mode : UIDebugMode)"></endpoint>
 ### UI.set_debug_mode(..)
-```lx
+```wren
 UI.set_debug_mode(entity : Entity, mode : UIDebugMode) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="any_marked()"></endpoint>
 ### UI.any_marked(.)
-```lx
+```wren
 UI.any_marked() : Bool
 ```
 > Returns true if any UI has a marked control (any control with input under the mouse)   
 
 <endpoint module="luxe: world" class="UI" signature="any_focused()"></endpoint>
 ### UI.any_focused(.)
-```lx
+```wren
 UI.any_focused() : Bool
 ```
 > Returns true if any UI has a focused control   
 
 <endpoint module="luxe: world" class="UI" signature="get_focused(entity : Entity)"></endpoint>
 ### UI.get_focused(.)
-```lx
+```wren
 UI.get_focused(entity : Entity) : Control
 ```
 > Get currently focussed control. A control being focused means its been clicked on or otherwise focused and will recieve context inputs like keyboard presses on a text input field.   
 
 <endpoint module="luxe: world" class="UI" signature="get_captured(entity : Entity)"></endpoint>
 ### UI.get_captured(.)
-```lx
+```wren
 UI.get_captured(entity : Entity) : Control
 ```
 > Get captured control, `null` if none is captured. A control being captured means all inputs will only be sent to this control until it is uncaptured again.   
 
 <endpoint module="luxe: world" class="UI" signature="get_marked(entity : Entity)"></endpoint>
 ### UI.get_marked(.)
-```lx
+```wren
 UI.get_marked(entity : Entity) : Control
 ```
 > Get marked control, `null` if none is marked. A control being marked means it is hovered over and can be focused.   
 
 <endpoint module="luxe: world" class="UI" signature="get_control_count(entity : Entity)"></endpoint>
 ### UI.get_control_count(.)
-```lx
+```wren
 UI.get_control_count(entity : Entity) : Num
 ```
 > Get amount of controls in a `UI`.   
 
 <endpoint module="luxe: world" class="UI" signature="get_control(entity : Entity, index : Num)"></endpoint>
 ### UI.get_control(..)
-```lx
+```wren
 UI.get_control(entity : Entity, index : Num) : Control
 ```
 > Get a control in a `UI` by its index. Useful for iterating over all controls.   
 
 <endpoint module="luxe: world" class="UI" signature="focus_invalidate(entity : Entity)"></endpoint>
 ### UI.focus_invalidate(.)
-```lx
+```wren
 UI.focus_invalidate(entity : Entity) : None
 ```
 > Unfocus whatever is focussed in a specific `UI`.   
 
 <endpoint module="luxe: world" class="UI" signature="focus(control : Control)"></endpoint>
 ### UI.focus(.)
-```lx
+```wren
 UI.focus(control : Control) : None
 ```
 > Focus a control. Will unfocus any previously focused controls on the `UI`. A control being focused means its been clicked on or otherwise focused and will recieve context inputs like keyboard presses on a text input field.   
 
 <endpoint module="luxe: world" class="UI" signature="unfocus(control : Control)"></endpoint>
 ### UI.unfocus(.)
-```lx
+```wren
 UI.unfocus(control : Control) : None
 ```
 > Unfocus a specific control. If the control is not the focused control in the UI, this does nothing.   
 
 <endpoint module="luxe: world" class="UI" signature="mark(control : Control)"></endpoint>
 ### UI.mark(.)
-```lx
+```wren
 UI.mark(control : Control) : None
 ```
 > Mark a control. Will unfocus any previously marked controls on the `UI`. A control being marked means it is hovered over and can be focused.   
 
 <endpoint module="luxe: world" class="UI" signature="unmark(control : Control)"></endpoint>
 ### UI.unmark(.)
-```lx
+```wren
 UI.unmark(control : Control) : None
 ```
 > Unmark a specific control. If the control is not the marked control in the UI, this does nothing.   
 
 <endpoint module="luxe: world" class="UI" signature="capture(control : Control)"></endpoint>
 ### UI.capture(.)
-```lx
+```wren
 UI.capture(control : Control) : None
 ```
 > Capture a control. Until uncaptured all inputs will only go to this control.   
 
 <endpoint module="luxe: world" class="UI" signature="uncapture(control : Control)"></endpoint>
 ### UI.uncapture(.)
-```lx
+```wren
 UI.uncapture(control : Control) : None
 ```
 > Uncapture a control and have inputs be distributed regularly.   
 
 <endpoint module="luxe: world" class="UI" signature="bring_to_front(control : Control)"></endpoint>
 ### UI.bring_to_front(.)
-```lx
+```wren
 UI.bring_to_front(control : Control) : None
 ```
 > Bring the control to the front in its current context (globally in the `UI` or within its parent if its a child)   
 
 <endpoint module="luxe: world" class="UI" signature="control_at_point(entity : Entity, x : Num, y : Num)"></endpoint>
 ### UI.control_at_point(...)
-```lx
+```wren
 UI.control_at_point(entity : Entity, x : Num, y : Num) : Control
 ```
 > Get the highest control at a position.   
 
 <endpoint module="luxe: world" class="UI" signature="controls_at_point(entity : Entity, x : Num, y : Num)"></endpoint>
 ### UI.controls_at_point(...)
-```lx
+```wren
 UI.controls_at_point(entity : Entity, x : Num, y : Num) : List
 ```
 > Get all controls at a position.   
 
 <endpoint module="luxe: world" class="UI" signature="mouse_to_canvas(entity : Entity, x : Num, y : Num)"></endpoint>
 ### UI.mouse_to_canvas(...)
-```lx
+```wren
 UI.mouse_to_canvas(entity : Entity, x : Num, y : Num) : Float2
 ```
 > Translate from mouse position on screen to canvas coordinates. Uses the set canvas camera.   
 
 <endpoint module="luxe: world" class="UI" signature="canvas_to_world(entity : Entity, x : Num, y : Num)"></endpoint>
 ### UI.canvas_to_world(...)
-```lx
+```wren
 UI.canvas_to_world(entity : Entity, x : Num, y : Num) : Float3
 ```
 > Translate from canvas position to world space.   
 
 <endpoint module="luxe: world" class="UI" signature="dump(ui : Entity)"></endpoint>
 ### UI.dump(.)
-```lx
+```wren
 UI.dump(ui : Entity) : None
 ```
 > Write a bunch of information about the `UI` and its controls into the console.   
 
 <endpoint module="luxe: world" class="UI" signature="spawn(asset_id : String, parent : Control, instance_id : String)"></endpoint>
 ### UI.spawn(...)
-```lx
+```wren
 UI.spawn(asset_id : String, parent : Control, instance_id : String) : None
 ```
 > Spawn controls from a ui asset.
@@ -1073,7 +1073,7 @@ UI.spawn(asset_id : String, parent : Control, instance_id : String) : None
 
 <endpoint module="luxe: world" class="UI" signature="make(ui : Entity, asset : String, instance_id : String)"></endpoint>
 ### UI.make(...)
-```lx
+```wren
 UI.make(ui : Entity, asset : String, instance_id : String) : Control
 ```
 > Spawn controls from a ui asset.
@@ -1081,203 +1081,203 @@ UI.make(ui : Entity, asset : String, instance_id : String) : Control
 
 <endpoint module="luxe: world" class="UI" signature="draw_depth_of(control : Control, index : Num)"></endpoint>
 ### UI.draw_depth_of(..)
-```lx
+```wren
 UI.draw_depth_of(control : Control, index : Num) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="draw_text(control : Control, x : Num, y : Num, z : Num, w : Num, h : Num, string : String, size : Num, font : String, color : Color, align : TextAlign, align_vertical : TextAlign)"></endpoint>
 ### UI.draw_text(............)
-```lx
+```wren
 UI.draw_text(control : Control, x : Num, y : Num, z : Num, w : Num, h : Num, string : String, size : Num, font : String, color : Color, align : TextAlign, align_vertical : TextAlign) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="draw_text(control : Control, x : Num, y : Num, z : Num, string : String, size : Num, font : String, color : Color, align : TextAlign, align_vertical : TextAlign)"></endpoint>
 ### UI.draw_text(..........)
-```lx
+```wren
 UI.draw_text(control : Control, x : Num, y : Num, z : Num, string : String, size : Num, font : String, color : Color, align : TextAlign, align_vertical : TextAlign) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="draw_image(control : Control, x : Num, y : Num, z : Num, w : Num, h : Num, angle : Num, color : Color, uv : Vec, image : Image, flags : UIImageFlags)"></endpoint>
 ### UI.draw_image(...........)
-```lx
+```wren
 UI.draw_image(control : Control, x : Num, y : Num, z : Num, w : Num, h : Num, angle : Num, color : Color, uv : Vec, image : Image, flags : UIImageFlags) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="draw_image(control : Control, x : Num, y : Num, z : Num, w : Num, h : Num, angle : Num, color : Color, uv : Vec, image : Image)"></endpoint>
 ### UI.draw_image(..........)
-```lx
+```wren
 UI.draw_image(control : Control, x : Num, y : Num, z : Num, w : Num, h : Num, angle : Num, color : Color, uv : Vec, image : Image) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="draw_quad(control : Control, x : Num, y : Num, z : Num, w : Num, h : Num, angle : Num, color : Color)"></endpoint>
 ### UI.draw_quad(........)
-```lx
+```wren
 UI.draw_quad(control : Control, x : Num, y : Num, z : Num, w : Num, h : Num, angle : Num, color : Color) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="draw_circle(control : Control, ox : Num, oy : Num, oz : Num, rx : Num, ry : Num, start_angle : Num, end_angle : Num, smoothness : Num, color : Color)"></endpoint>
 ### UI.draw_circle(..........)
-```lx
+```wren
 UI.draw_circle(control : Control, ox : Num, oy : Num, oz : Num, rx : Num, ry : Num, start_angle : Num, end_angle : Num, smoothness : Num, color : Color) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="draw_line(control : Control, x1 : Num, y1 : Num, x2 : Num, y2 : Num, z : Num, style : PathStyle)"></endpoint>
 ### UI.draw_line(.......)
-```lx
+```wren
 UI.draw_line(control : Control, x1 : Num, y1 : Num, x2 : Num, y2 : Num, z : Num, style : PathStyle) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="draw_rect(control : Control, x : Num, y : Num, z : Num, w : Num, h : Num, angle : Num, style : PathStyle)"></endpoint>
 ### UI.draw_rect(........)
-```lx
+```wren
 UI.draw_rect(control : Control, x : Num, y : Num, z : Num, w : Num, h : Num, angle : Num, style : PathStyle) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="draw_rect_detailed(control : Control, x : Num, y : Num, z : Num, w : Num, h : Num, angle : Num, radius : Num, smoothness : Num, style : PathStyle)"></endpoint>
 ### UI.draw_rect_detailed(..........)
-```lx
+```wren
 UI.draw_rect_detailed(control : Control, x : Num, y : Num, z : Num, w : Num, h : Num, angle : Num, radius : Num, smoothness : Num, style : PathStyle) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="draw_quad_detailed(control : Control, x : Num, y : Num, z : Num, w : Num, h : Num, angle : Num, radius : Num, smoothness : Num, color : Color)"></endpoint>
 ### UI.draw_quad_detailed(..........)
-```lx
+```wren
 UI.draw_quad_detailed(control : Control, x : Num, y : Num, z : Num, w : Num, h : Num, angle : Num, radius : Num, smoothness : Num, color : Color) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="draw_ring(control : Control, ox : Num, oy : Num, oz : Num, rx : Num, ry : Num, start_angle : Num, end_angle : Num, smoothness : Num, style : PathStyle)"></endpoint>
 ### UI.draw_ring(..........)
-```lx
+```wren
 UI.draw_ring(control : Control, ox : Num, oy : Num, oz : Num, rx : Num, ry : Num, start_angle : Num, end_angle : Num, smoothness : Num, style : PathStyle) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="draw_path(control : Control, points : List, style : PathStyle, closed : Bool)"></endpoint>
 ### UI.draw_path(....)
-```lx
+```wren
 UI.draw_path(control : Control, points : List, style : PathStyle, closed : Bool) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="events_emit(control : Control, type : UIEvent)"></endpoint>
 ### UI.events_emit(..)
-```lx
+```wren
 UI.events_emit(control : Control, type : UIEvent) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="events_emit(control : Control, type : UIEvent, data : Any)"></endpoint>
 ### UI.events_emit(...)
-```lx
+```wren
 UI.events_emit(control : Control, type : UIEvent, data : Any) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UI" signature="events_emit(control : Control, type : UIEvent, data : Any, data_before : Any)"></endpoint>
 ### UI.events_emit(....)
-```lx
+```wren
 UI.events_emit(control : Control, type : UIEvent, data : Any, data_before : Any) : None
 ```
 > no docs found   
 
 
 ## UIBehave
-```lx
+```wren
 import "luxe: world" for UIBehave
 ```
 > no docs found
 
 <endpoint module="luxe: world" class="UIBehave" signature="left"></endpoint>
 ### UIBehave.left
-```lx
+```wren
 UIBehave.left : unknown
 ```
 > Item anchors to the item to its left or left side of parent   
 
 <endpoint module="luxe: world" class="UIBehave" signature="top"></endpoint>
 ### UIBehave.top
-```lx
+```wren
 UIBehave.top : unknown
 ```
 > Item anchors to the item above it or top side of parent   
 
 <endpoint module="luxe: world" class="UIBehave" signature="right"></endpoint>
 ### UIBehave.right
-```lx
+```wren
 UIBehave.right : unknown
 ```
 > Item anchors to the item to its right or right side of parent   
 
 <endpoint module="luxe: world" class="UIBehave" signature="bottom"></endpoint>
 ### UIBehave.bottom
-```lx
+```wren
 UIBehave.bottom : unknown
 ```
 > Item anchors to the item below it or bottom side of parent   
 
 <endpoint module="luxe: world" class="UIBehave" signature="hfill"></endpoint>
 ### UIBehave.hfill
-```lx
+```wren
 UIBehave.hfill : unknown
 ```
 > Item anchors to both left and right item or parent borders   
 
 <endpoint module="luxe: world" class="UIBehave" signature="vfill"></endpoint>
 ### UIBehave.vfill
-```lx
+```wren
 UIBehave.vfill : unknown
 ```
 > Item anchors to both top and bottom item or parent borders   
 
 <endpoint module="luxe: world" class="UIBehave" signature="hcenter"></endpoint>
 ### UIBehave.hcenter
-```lx
+```wren
 UIBehave.hcenter : unknown
 ```
 > Center item horizontally, with left margin as offset   
 
 <endpoint module="luxe: world" class="UIBehave" signature="vcenter"></endpoint>
 ### UIBehave.vcenter
-```lx
+```wren
 UIBehave.vcenter : unknown
 ```
 > Center item vertically, with top margin as offset   
 
 <endpoint module="luxe: world" class="UIBehave" signature="center"></endpoint>
 ### UIBehave.center
-```lx
+```wren
 UIBehave.center : unknown
 ```
 > Center item in both directions, with left/top margin as offset   
 
 <endpoint module="luxe: world" class="UIBehave" signature="fill"></endpoint>
 ### UIBehave.fill
-```lx
+```wren
 UIBehave.fill : unknown
 ```
 > Anchor item to all four directions   
 
 <endpoint module="luxe: world" class="UIBehave" signature="break_line"></endpoint>
 ### UIBehave.break_line
-```lx
+```wren
 UIBehave.break_line : unknown
 ```
 > no docs found   
 
 
 ## UIClear
-```lx
+```wren
 import "luxe: world" for UIClear
 ```
 > Used as an argument when a UI container is cleared to specify what happens to the affected controls.
@@ -1285,189 +1285,189 @@ import "luxe: world" for UIClear
 
 <endpoint module="luxe: world" class="UIClear" signature="destroy"></endpoint>
 ### UIClear.destroy
-```lx
+```wren
 UIClear.destroy : unknown
 ```
 > Destroy the controls (like `Control.destroy(_)`).   
 
 <endpoint module="luxe: world" class="UIClear" signature="remove"></endpoint>
 ### UIClear.remove
-```lx
+```wren
 UIClear.remove : unknown
 ```
 > Remove the controls from their parent control (like `Control.child_remove(_, _)`).   
 
 <endpoint module="luxe: world" class="UIClear" signature="set_invisible"></endpoint>
 ### UIClear.set_invisible
-```lx
+```wren
 UIClear.set_invisible : unknown
 ```
 > Turn controls invisible (like `Control.set_visible(_, false)`).   
 
 <endpoint module="luxe: world" class="UIClear" signature="remove_set_invisible"></endpoint>
 ### UIClear.remove_set_invisible
-```lx
+```wren
 UIClear.remove_set_invisible : unknown
 ```
 > Both removes control from parent and sets them as not visible.   
 
 
 ## UIContain
-```lx
+```wren
 import "luxe: world" for UIContain
 ```
 > no docs found
 
 <endpoint module="luxe: world" class="UIContain" signature="row"></endpoint>
 ### UIContain.row
-```lx
+```wren
 UIContain.row : unknown
 ```
 > Items go from left to right   
 
 <endpoint module="luxe: world" class="UIContain" signature="column"></endpoint>
 ### UIContain.column
-```lx
+```wren
 UIContain.column : unknown
 ```
 > Items go from top to bottom   
 
 <endpoint module="luxe: world" class="UIContain" signature="layout"></endpoint>
 ### UIContain.layout
-```lx
+```wren
 UIContain.layout : unknown
 ```
 > Use Free Layout model   
 
 <endpoint module="luxe: world" class="UIContain" signature="flex"></endpoint>
 ### UIContain.flex
-```lx
+```wren
 UIContain.flex : unknown
 ```
 > Use Flex Layout model   
 
 <endpoint module="luxe: world" class="UIContain" signature="nowrap"></endpoint>
 ### UIContain.nowrap
-```lx
+```wren
 UIContain.nowrap : unknown
 ```
 > Stays on a single line   
 
 <endpoint module="luxe: world" class="UIContain" signature="wrap"></endpoint>
 ### UIContain.wrap
-```lx
+```wren
 UIContain.wrap : unknown
 ```
 > Wraps to multiple lines, wrapping left to right   
 
 <endpoint module="luxe: world" class="UIContain" signature="start"></endpoint>
 ### UIContain.start
-```lx
+```wren
 UIContain.start : unknown
 ```
 > Items begin at start of row/column   
 
 <endpoint module="luxe: world" class="UIContain" signature="middle"></endpoint>
 ### UIContain.middle
-```lx
+```wren
 UIContain.middle : unknown
 ```
 > Items begin at middle of row/column   
 
 <endpoint module="luxe: world" class="UIContain" signature="end"></endpoint>
 ### UIContain.end
-```lx
+```wren
 UIContain.end : unknown
 ```
 > Items begin at end of row/column   
 
 <endpoint module="luxe: world" class="UIContain" signature="justify"></endpoint>
 ### UIContain.justify
-```lx
+```wren
 UIContain.justify : unknown
 ```
 > Insert spacing between items to stretch elements across whole row/column   
 
 <endpoint module="luxe: world" class="UIContain" signature="vfit"></endpoint>
 ### UIContain.vfit
-```lx
+```wren
 UIContain.vfit : unknown
 ```
 > Items stretch height to fill vertical space   
 
 <endpoint module="luxe: world" class="UIContain" signature="hfit"></endpoint>
 ### UIContain.hfit
-```lx
+```wren
 UIContain.hfit : unknown
 ```
 > Items stretch width to fill horizontal space   
 
 
 ## UIDebugMode
-```lx
+```wren
 import "luxe: world" for UIDebugMode
 ```
 > no docs found
 
 <endpoint module="luxe: world" class="UIDebugMode" signature="none"></endpoint>
 ### UIDebugMode.none
-```lx
+```wren
 UIDebugMode.none : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UIDebugMode" signature="basic"></endpoint>
 ### UIDebugMode.basic
-```lx
+```wren
 UIDebugMode.basic : unknown
 ```
 > no docs found   
 
 
 ## UIDrop
-```lx
+```wren
 import "luxe: world" for UIDrop
 ```
 > no docs found
 
 <endpoint module="luxe: world" class="UIDrop" signature="start"></endpoint>
 ### UIDrop.start
-```lx
+```wren
 UIDrop.start : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UIDrop" signature="end"></endpoint>
 ### UIDrop.end
-```lx
+```wren
 UIDrop.end : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UIDrop" signature="move"></endpoint>
 ### UIDrop.move
-```lx
+```wren
 UIDrop.move : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UIDrop" signature="drop"></endpoint>
 ### UIDrop.drop
-```lx
+```wren
 UIDrop.drop : unknown
 ```
 > no docs found   
 
 
 ## UIEvent
-```lx
+```wren
 import "luxe: world" for UIEvent
 ```
 > The built in UI events that all controls can potentially use.
 
 <endpoint module="luxe: world" class="UIEvent" signature="name(value : Any)"></endpoint>
 ### UIEvent.name(.)
-```lx
+```wren
 UIEvent.name(value : Any) : unknown
 ```
 > Converts a UIEvent value to a readable name.
@@ -1478,14 +1478,14 @@ UIEvent.name(value : Any) : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="unknown"></endpoint>
 ### UIEvent.unknown
-```lx
+```wren
 UIEvent.unknown : unknown
 ```
 > An event of unknown type, invalid. This is the default value.   
 
 <endpoint module="luxe: world" class="UIEvent" signature="enter"></endpoint>
 ### UIEvent.enter
-```lx
+```wren
 UIEvent.enter : unknown
 ```
 > An input cursor has entered this control. (e.g on mouse enter).
@@ -1499,7 +1499,7 @@ UIEvent.enter : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="exit"></endpoint>
 ### UIEvent.exit
-```lx
+```wren
 UIEvent.exit : unknown
 ```
 > An input cursor has left this control. (e.g on mouse exit)
@@ -1513,7 +1513,7 @@ UIEvent.exit : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="press"></endpoint>
 ### UIEvent.press
-```lx
+```wren
 UIEvent.press : unknown
 ```
 > An input press event (e.g mouse button was pressed down). a.k.a "down"
@@ -1529,7 +1529,7 @@ UIEvent.press : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="release"></endpoint>
 ### UIEvent.release
-```lx
+```wren
 UIEvent.release : unknown
 ```
 > An input release event (e.g mouse button was released). a.k.a "up"
@@ -1545,7 +1545,7 @@ UIEvent.release : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="scroll"></endpoint>
 ### UIEvent.scroll
-```lx
+```wren
 UIEvent.scroll : unknown
 ```
 > A scroll event (e.g mouse wheel).
@@ -1560,7 +1560,7 @@ UIEvent.scroll : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="move"></endpoint>
 ### UIEvent.move
-```lx
+```wren
 UIEvent.move : unknown
 ```
 > An input move event (e.g mouse movement).
@@ -1574,7 +1574,7 @@ UIEvent.move : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="key"></endpoint>
 ### UIEvent.key
-```lx
+```wren
 UIEvent.key : unknown
 ```
 > A key input event.
@@ -1599,7 +1599,7 @@ UIEvent.key : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="text"></endpoint>
 ### UIEvent.text
-```lx
+```wren
 UIEvent.text : unknown
 ```
 > A control has sent a text event, which originates from typing.
@@ -1624,7 +1624,7 @@ UIEvent.text : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="focus"></endpoint>
 ### UIEvent.focus
-```lx
+```wren
 UIEvent.focus : unknown
 ```
 > A control has gained focus.
@@ -1638,7 +1638,7 @@ UIEvent.focus : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="unfocus"></endpoint>
 ### UIEvent.unfocus
-```lx
+```wren
 UIEvent.unfocus : unknown
 ```
 > A control has lost focus.
@@ -1652,7 +1652,7 @@ UIEvent.unfocus : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="capture"></endpoint>
 ### UIEvent.capture
-```lx
+```wren
 UIEvent.capture : unknown
 ```
 > A control has been captured.
@@ -1665,7 +1665,7 @@ UIEvent.capture : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="uncapture"></endpoint>
 ### UIEvent.uncapture
-```lx
+```wren
 UIEvent.uncapture : unknown
 ```
 > A control has lost capture status.
@@ -1678,7 +1678,7 @@ UIEvent.uncapture : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="commit"></endpoint>
 ### UIEvent.commit
-```lx
+```wren
 UIEvent.commit : unknown
 ```
 > When a control has changeable state (like an editable text control),
@@ -1693,7 +1693,7 @@ UIEvent.commit : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="destroy"></endpoint>
 ### UIEvent.destroy
-```lx
+```wren
 UIEvent.destroy : unknown
 ```
 > When a control is destroyed you'll get notified here.
@@ -1707,7 +1707,7 @@ UIEvent.destroy : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="language"></endpoint>
 ### UIEvent.language
-```lx
+```wren
 UIEvent.language : unknown
 ```
 > When the UI lanuage changes, your control will receive this event.
@@ -1720,7 +1720,7 @@ UIEvent.language : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="change"></endpoint>
 ### UIEvent.change
-```lx
+```wren
 UIEvent.change : unknown
 ```
 > Change events are context specific, but notify you of a change in state.
@@ -1738,7 +1738,7 @@ UIEvent.change : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="bounds"></endpoint>
 ### UIEvent.bounds
-```lx
+```wren
 UIEvent.bounds : unknown
 ```
 > A control has changed bounds (note: this may not be working as intended right now).
@@ -1756,7 +1756,7 @@ UIEvent.bounds : unknown
 
 <endpoint module="luxe: world" class="UIEvent" signature="drag"></endpoint>
 ### UIEvent.drag
-```lx
+```wren
 UIEvent.drag : unknown
 ```
 > When a control is dragged or dropped on the UI canvas.
@@ -1771,245 +1771,245 @@ UIEvent.drag : unknown
 
 
 ## UIImageFit
-```lx
+```wren
 import "luxe: world" for UIImageFit
 ```
 > no docs found
 
 <endpoint module="luxe: world" class="UIImageFit" signature="fill"></endpoint>
 ### UIImageFit.fill
-```lx
+```wren
 UIImageFit.fill : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UIImageFit" signature="contain"></endpoint>
 ### UIImageFit.contain
-```lx
+```wren
 UIImageFit.contain : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UIImageFit" signature="cover"></endpoint>
 ### UIImageFit.cover
-```lx
+```wren
 UIImageFit.cover : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UIImageFit" signature="keep_width"></endpoint>
 ### UIImageFit.keep_width
-```lx
+```wren
 UIImageFit.keep_width : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UIImageFit" signature="keep_height"></endpoint>
 ### UIImageFit.keep_height
-```lx
+```wren
 UIImageFit.keep_height : unknown
 ```
 > no docs found   
 
 
 ## UIImageFlags
-```lx
+```wren
 import "luxe: world" for UIImageFlags
 ```
 > no docs found
 
 <endpoint module="luxe: world" class="UIImageFlags" signature="none"></endpoint>
 ### UIImageFlags.none
-```lx
+```wren
 UIImageFlags.none : unknown
 ```
 > uses linear interpolation samplers, interpolating smoothly between pixels.   
 
 <endpoint module="luxe: world" class="UIImageFlags" signature="pixelated"></endpoint>
 ### UIImageFlags.pixelated
-```lx
+```wren
 UIImageFlags.pixelated : unknown
 ```
 > uses nearest neighbor samplers, leading to an interpolated look.   
 
 <endpoint module="luxe: world" class="UIImageFlags" signature="use_mips"></endpoint>
 ### UIImageFlags.use_mips
-```lx
+```wren
 UIImageFlags.use_mips : unknown
 ```
 > uses trilinear interpolation samplers, interpolating smoothly between pixels and mip levels.   
 
 
 ## UILayoutMode
-```lx
+```wren
 import "luxe: world" for UILayoutMode
 ```
 > no docs found
 
 <endpoint module="luxe: world" class="UILayoutMode" signature="none"></endpoint>
 ### UILayoutMode.none
-```lx
+```wren
 UILayoutMode.none : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UILayoutMode" signature="flex"></endpoint>
 ### UILayoutMode.flex
-```lx
+```wren
 UILayoutMode.flex : unknown
 ```
 > no docs found   
 
 
 ## UIRenderMode
-```lx
+```wren
 import "luxe: world" for UIRenderMode
 ```
 > no docs found
 
 <endpoint module="luxe: world" class="UIRenderMode" signature="unknown"></endpoint>
 ### UIRenderMode.unknown
-```lx
+```wren
 UIRenderMode.unknown : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UIRenderMode" signature="image"></endpoint>
 ### UIRenderMode.image
-```lx
+```wren
 UIRenderMode.image : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="UIRenderMode" signature="world"></endpoint>
 ### UIRenderMode.world
-```lx
+```wren
 UIRenderMode.world : unknown
 ```
 > no docs found   
 
 
 ## WorldEventType
-```lx
+```wren
 import "luxe: world" for WorldEventType
 ```
 > no docs found
 
 <endpoint module="luxe: world" class="WorldEventType" signature="unknown"></endpoint>
 ### WorldEventType.unknown
-```lx
+```wren
 WorldEventType.unknown : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="WorldEventType" signature="create"></endpoint>
 ### WorldEventType.create
-```lx
+```wren
 WorldEventType.create : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="WorldEventType" signature="destroy"></endpoint>
 ### WorldEventType.destroy
-```lx
+```wren
 WorldEventType.destroy : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="WorldEventType" signature="tick"></endpoint>
 ### WorldEventType.tick
-```lx
+```wren
 WorldEventType.tick : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="WorldEventType" signature="modifier_tick"></endpoint>
 ### WorldEventType.modifier_tick
-```lx
+```wren
 WorldEventType.modifier_tick : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="WorldEventType" signature="name(value : WorldEventType)"></endpoint>
 ### WorldEventType.name(.)
-```lx
+```wren
 WorldEventType.name(value : WorldEventType) : String
 ```
 > no docs found   
 
 
 ## WorldRenderDesc
-```lx
+```wren
 import "luxe: world" for WorldRenderDesc
 ```
 > no docs found
 
 <endpoint module="luxe: world" class="WorldRenderDesc" signature="camera"></endpoint>
 ### WorldRenderDesc.camera
-```lx
+```wren
 WorldRenderDesc.camera : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="WorldRenderDesc" signature="camera=(v : Any)"></endpoint>
 ### WorldRenderDesc.camera
-```lx
+```wren
 WorldRenderDesc.camera=(v : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="WorldRenderDesc" signature="camera(v : Any)"></endpoint>
 ### WorldRenderDesc.camera(.)
-```lx
+```wren
 WorldRenderDesc.camera(v : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="WorldRenderDesc" signature="cull_camera"></endpoint>
 ### WorldRenderDesc.cull_camera
-```lx
+```wren
 WorldRenderDesc.cull_camera : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="WorldRenderDesc" signature="cull_camera=(v : Any)"></endpoint>
 ### WorldRenderDesc.cull_camera
-```lx
+```wren
 WorldRenderDesc.cull_camera=(v : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="WorldRenderDesc" signature="cull_camera(v : Any)"></endpoint>
 ### WorldRenderDesc.cull_camera(.)
-```lx
+```wren
 WorldRenderDesc.cull_camera(v : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="WorldRenderDesc" signature="no_cull"></endpoint>
 ### WorldRenderDesc.no_cull
-```lx
+```wren
 WorldRenderDesc.no_cull : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="WorldRenderDesc" signature="no_cull=(v : Any)"></endpoint>
 ### WorldRenderDesc.no_cull
-```lx
+```wren
 WorldRenderDesc.no_cull=(v : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="WorldRenderDesc" signature="no_cull(v : Any)"></endpoint>
 ### WorldRenderDesc.no_cull(.)
-```lx
+```wren
 WorldRenderDesc.no_cull(v : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: world" class="WorldRenderDesc" signature="new()"></endpoint>
 ### WorldRenderDesc.new(.)
-```lx
+```wren
 WorldRenderDesc.new() : WorldRenderDesc
 ```
 > no docs found   

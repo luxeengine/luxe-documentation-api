@@ -10,7 +10,7 @@ slug: "v/2025.11.1/assets"
 
 
 ## Assets
-```lx
+```wren
 import "luxe: assets" for Assets
 ```
 > The `Assets` services is how you access loaded assets, and query if an asset is loaded.
@@ -28,7 +28,7 @@ import "luxe: assets" for Assets
 
 <endpoint module="luxe: assets" class="Assets" signature="db_init()"></endpoint>
 ### Assets.db_init(.)
-```lx
+```wren
 Assets.db_init() : AssetDB
 ```
 > Create a new asset DB. 
@@ -37,7 +37,7 @@ Assets.db_init() : AssetDB
 
 <endpoint module="luxe: assets" class="Assets" signature="db_destroy(db : AssetDB)"></endpoint>
 ### Assets.db_destroy(.)
-```lx
+```wren
 Assets.db_destroy(db : AssetDB) : Bool
 ```
 > Destroy a previously created asset DB.
@@ -45,42 +45,42 @@ Assets.db_destroy(db : AssetDB) : Bool
 
 <endpoint module="luxe: assets" class="Assets" signature="db_commit(db : AssetDB)"></endpoint>
 ### Assets.db_commit(.)
-```lx
+```wren
 Assets.db_commit(db : AssetDB) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_default()"></endpoint>
 ### Assets.db_default(.)
-```lx
+```wren
 Assets.db_default() : AssetDB
 ```
 > Get the default database handle. By default this is the first created database.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_default_set(db : AssetDB)"></endpoint>
 ### Assets.db_default_set(.)
-```lx
+```wren
 Assets.db_default_set(db : AssetDB) : None
 ```
 > Set the default database to a different one.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_commit_post(db : AssetDB)"></endpoint>
 ### Assets.db_commit_post(.)
-```lx
+```wren
 Assets.db_commit_post(db : AssetDB) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_commit_refs(db : AssetDB)"></endpoint>
 ### Assets.db_commit_refs(.)
-```lx
+```wren
 Assets.db_commit_refs(db : AssetDB) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_add_root_path(db : AssetDB, path : String, subfolder : String, prefix : String)"></endpoint>
 ### Assets.db_add_root_path(....)
-```lx
+```wren
 Assets.db_add_root_path(db : AssetDB, path : String, subfolder : String, prefix : String) : None
 ```
 > Add a root path for files that the asset database considers.
@@ -89,7 +89,7 @@ Assets.db_add_root_path(db : AssetDB, path : String, subfolder : String, prefix 
 
 <endpoint module="luxe: assets" class="Assets" signature="db_add_item(db : AssetDB, root : String, path : String, is_directory : Bool)"></endpoint>
 ### Assets.db_add_item(....)
-```lx
+```wren
 Assets.db_add_item(db : AssetDB, root : String, path : String, is_directory : Bool) : None
 ```
 > Add a folder path or file path to the database.
@@ -97,49 +97,49 @@ Assets.db_add_item(db : AssetDB, root : String, path : String, is_directory : Bo
 
 <endpoint module="luxe: assets" class="Assets" signature="db_add_item(db : AssetDB, root : String, path : String)"></endpoint>
 ### Assets.db_add_item(...)
-```lx
+```wren
 Assets.db_add_item(db : AssetDB, root : String, path : String) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_make_item(db : AssetDB, root : String, path : String, is_directory : Bool)"></endpoint>
 ### Assets.db_make_item(....)
-```lx
+```wren
 Assets.db_make_item(db : AssetDB, root : String, path : String, is_directory : Bool) : Map
 ```
 > Get DB item information for a path without adding it to the DB.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_make_item(db : AssetDB, root : String, path : String)"></endpoint>
 ### Assets.db_make_item(...)
-```lx
+```wren
 Assets.db_make_item(db : AssetDB, root : String, path : String) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_remove_item(db : AssetDB, asset_id : String)"></endpoint>
 ### Assets.db_remove_item(..)
-```lx
+```wren
 Assets.db_remove_item(db : AssetDB, asset_id : String) : Bool
 ```
 > Make a database forget about an asset with a asset ID. Returns if asset existed and was successfully forgotten.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_add_ignore(db : AssetDB, globs : List)"></endpoint>
 ### Assets.db_add_ignore(..)
-```lx
+```wren
 Assets.db_add_ignore(db : AssetDB, globs : List) : None
 ```
 > Tell the database to ignore files or folders. This is used to not include things like logs, temp data and previous builds.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_asset_from_path(db : AssetDB, path : String)"></endpoint>
 ### Assets.db_asset_from_path(..)
-```lx
+```wren
 Assets.db_asset_from_path(db : AssetDB, path : String) : Map
 ```
 > Get the db asset info for an asset by its path on disk.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_asset_from_id(db : AssetDB, asset_id : String)"></endpoint>
 ### Assets.db_asset_from_id(..)
-```lx
+```wren
 Assets.db_asset_from_id(db : AssetDB, asset_id : String) : Map
 ```
 > Get the db asset info for an asset by its asset id.
@@ -147,91 +147,91 @@ Assets.db_asset_from_id(db : AssetDB, asset_id : String) : Map
 
 <endpoint module="luxe: assets" class="Assets" signature="db_asset_from_uuid(db : AssetDB, meta_uuid : String)"></endpoint>
 ### Assets.db_asset_from_uuid(..)
-```lx
+```wren
 Assets.db_asset_from_uuid(db : AssetDB, meta_uuid : String) : Map
 ```
 > Get the db asset info for an asset by its UUID stored in the associated `.meta.lx` file.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_asset_get_root(db : AssetDB, asset_id : String)"></endpoint>
 ### Assets.db_asset_get_root(..)
-```lx
+```wren
 Assets.db_asset_get_root(db : AssetDB, asset_id : String) : String
 ```
 > Get root path of the project/module the asset is a part of.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_compile(db : AssetDB)"></endpoint>
 ### Assets.db_compile(.)
-```lx
+```wren
 Assets.db_compile(db : AssetDB) : String
 ```
 > Compile the asset DB into a serialized form.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_parse(bytes : String)"></endpoint>
 ### Assets.db_parse(.)
-```lx
+```wren
 Assets.db_parse(bytes : String) : AssetDB
 ```
 > Parse the asset DB from its serialized form.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_has(db : AssetDB, asset_id : String)"></endpoint>
 ### Assets.db_has(..)
-```lx
+```wren
 Assets.db_has(db : AssetDB, asset_id : String) : Bool
 ```
 > Check whether a database knows about an asset id.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_add_reference(db : AssetDB, from_asset_id : String, to_asset_id : String)"></endpoint>
 ### Assets.db_add_reference(...)
-```lx
+```wren
 Assets.db_add_reference(db : AssetDB, from_asset_id : String, to_asset_id : String) : None
 ```
 > Track a reference between two assets. Block fields with the `Asset` type are tracked like this automatically.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_reset_references(db : AssetDB, asset_id : String)"></endpoint>
 ### Assets.db_reset_references(..)
-```lx
+```wren
 Assets.db_reset_references(db : AssetDB, asset_id : String) : None
 ```
 > Forget all tracked references from this asset.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_get_references(db : AssetDB, asset_id : String)"></endpoint>
 ### Assets.db_get_references(..)
-```lx
+```wren
 Assets.db_get_references(db : AssetDB, asset_id : String) : List
 ```
 > Get list of assets that are referenced by this asset.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_get_referenced_by(db : AssetDB, asset_id : String)"></endpoint>
 ### Assets.db_get_referenced_by(..)
-```lx
+```wren
 Assets.db_get_referenced_by(db : AssetDB, asset_id : String) : List
 ```
 > Get list of assets that are referencing this asset.   
 
 <endpoint module="luxe: assets" class="Assets" signature="list(db : AssetDB)"></endpoint>
 ### Assets.list(.)
-```lx
+```wren
 Assets.list(db : AssetDB) : List
 ```
 > Get a list of *all* assets tracked by a database (as dictionaries with all db entry info).   
 
 <endpoint module="luxe: assets" class="Assets" signature="list(db : AssetDB, ext : String)"></endpoint>
 ### Assets.list(..)
-```lx
+```wren
 Assets.list(db : AssetDB, ext : String) : List
 ```
 > #doc="Get a list of assets tracked by a database filtered by a specific extension. Same as `Assets.list(db, ext, null)`"   
 
 <endpoint module="luxe: assets" class="Assets" signature="list(db : AssetDB, ext : String, subtype : String)"></endpoint>
 ### Assets.list(...)
-```lx
+```wren
 Assets.list(db : AssetDB, ext : String, subtype : String) : List
 ```
 > Get a list of assets tracked by a database filtered by a specific extension and subtype.   
 
 <endpoint module="luxe: assets" class="Assets" signature="list(db : AssetDB, ext : String, subtype : String, root : String)"></endpoint>
 ### Assets.list(....)
-```lx
+```wren
 Assets.list(db : AssetDB, ext : String, subtype : String, root : String) : List
 ```
 > Get a list of assets tracked by a database filtered by a specific extension and subtype. 
@@ -239,7 +239,7 @@ Assets.list(db : AssetDB, ext : String, subtype : String, root : String) : List
 
 <endpoint module="luxe: assets" class="Assets" signature="list_folders(db : AssetDB, root : String, use_path : Bool)"></endpoint>
 ### Assets.list_folders(...)
-```lx
+```wren
 Assets.list_folders(db : AssetDB, root : String, use_path : Bool) : List
 ```
 > Get folders in the DB as asset entry maps. 
@@ -247,56 +247,56 @@ Assets.list_folders(db : AssetDB, root : String, use_path : Bool) : List
 
 <endpoint module="luxe: assets" class="Assets" signature="list_ids(db : AssetDB, type_id : String)"></endpoint>
 ### Assets.list_ids(..)
-```lx
+```wren
 Assets.list_ids(db : AssetDB, type_id : String) : List
 ```
 > Get a list of all asset IDs (as strings) of a known asset type.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_list_tags(db : AssetDB)"></endpoint>
 ### Assets.db_list_tags(.)
-```lx
+```wren
 Assets.db_list_tags(db : AssetDB) : List
 ```
 > Get a list of all tags used anywhere in the database.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_get_tags(db : AssetDB, asset_id : String)"></endpoint>
 ### Assets.db_get_tags(..)
-```lx
+```wren
 Assets.db_get_tags(db : AssetDB, asset_id : String) : List
 ```
 > Get a list of tags on a specific asset.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_get_tagged(db : AssetDB, tag : String)"></endpoint>
 ### Assets.db_get_tagged(..)
-```lx
+```wren
 Assets.db_get_tagged(db : AssetDB, tag : String) : List
 ```
 > Check whether an asset has a specific tag.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_get_tagged_from_list(db : AssetDB, tags : List)"></endpoint>
 ### Assets.db_get_tagged_from_list(..)
-```lx
+```wren
 Assets.db_get_tagged_from_list(db : AssetDB, tags : List) : List
 ```
 > Get all asset ids of assets that *any* of the tags apply to.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_add_tags(db : AssetDB, asset_id : String, tags : List)"></endpoint>
 ### Assets.db_add_tags(...)
-```lx
+```wren
 Assets.db_add_tags(db : AssetDB, asset_id : String, tags : List) : None
 ```
 > Add new tags to the DB entry of an asset.   
 
 <endpoint module="luxe: assets" class="Assets" signature="db_remove_tags(db : AssetDB, asset_id : String, tags : List)"></endpoint>
 ### Assets.db_remove_tags(...)
-```lx
+```wren
 Assets.db_remove_tags(db : AssetDB, asset_id : String, tags : List) : None
 ```
 > Remove tags from the DB entry of an asset.   
 
 <endpoint module="luxe: assets" class="Assets" signature="modified(db : AssetDB, query_id : String)"></endpoint>
 ### Assets.modified(..)
-```lx
+```wren
 Assets.modified(db : AssetDB, query_id : String) : List
 ```
 > Get all modified asset files in the db. 
@@ -306,105 +306,105 @@ Assets.modified(db : AssetDB, query_id : String) : List
 
 <endpoint module="luxe: assets" class="Assets" signature="modified(db : AssetDB, query_id : String, ext : String, subtype : String)"></endpoint>
 ### Assets.modified(....)
-```lx
+```wren
 Assets.modified(db : AssetDB, query_id : String, ext : String, subtype : String) : List
 ```
 > Get the modified asset files in the DB with a specific extension/subtype (like `.subtype.ext`). Asset flow uses this internally to get which assets to recompile.   
 
 <endpoint module="luxe: assets" class="Assets" signature="modified(db : AssetDB, query_id : String, ext : String, subtype : String, root : String)"></endpoint>
 ### Assets.modified(.....)
-```lx
+```wren
 Assets.modified(db : AssetDB, query_id : String, ext : String, subtype : String, root : String) : List
 ```
 > Get the modified asset files in the DB with a specific extension with paths that are starting with a specific root.   
 
 <endpoint module="luxe: assets" class="Assets" signature="modified(db : AssetDB, query_id : String, ext : String)"></endpoint>
 ### Assets.modified(...)
-```lx
+```wren
 Assets.modified(db : AssetDB, query_id : String, ext : String) : List
 ```
 > Get the modified asset files in the DB with a specific extension.   
 
 <endpoint module="luxe: assets" class="Assets" signature="unmodified(db : AssetDB, query_id : String, asset_id : String)"></endpoint>
 ### Assets.unmodified(...)
-```lx
+```wren
 Assets.unmodified(db : AssetDB, query_id : String, asset_id : String) : None
 ```
 > Mark an asset as not modified/dirty anymore (in the context of one query), this usually happens when an asset was handled/compiled successfully and doesn't need to be touched again until the file changes.   
 
 <endpoint module="luxe: assets" class="Assets" signature="modify(db : AssetDB, query_id : String, asset_id : String)"></endpoint>
 ### Assets.modify(...)
-```lx
+```wren
 Assets.modify(db : AssetDB, query_id : String, asset_id : String) : None
 ```
 > Mark an asset file as modified. This can be useful if one asset is dependent on a bunch of other assets in a folder (like entities in scenes, the entities mark the scene as modified when the entity changes.).   
 
 <endpoint module="luxe: assets" class="Assets" signature="is_modified(db : AssetDB, query_id : String, asset_id : String)"></endpoint>
 ### Assets.is_modified(...)
-```lx
+```wren
 Assets.is_modified(db : AssetDB, query_id : String, asset_id : String) : Bool
 ```
 > Get if an asset changed or was marked as modified manually.   
 
 <endpoint module="luxe: assets" class="Assets" signature="get_data(type_id : String, id : String)"></endpoint>
 ### Assets.get_data(..)
-```lx
+```wren
 Assets.get_data(type_id : String, id : String) : String
 ```
 > Get the contents of an asset file.   
 
 <endpoint module="luxe: assets" class="Assets" signature="get_block(type_id : String)"></endpoint>
 ### Assets.get_block(.)
-```lx
+```wren
 Assets.get_block(type_id : String) : Block
 ```
 > Get the data block associated with an asset type.   
 
 <endpoint module="luxe: assets" class="Assets" signature="get_handle(type_id : String, id : String)"></endpoint>
 ### Assets.get_handle(..)
-```lx
+```wren
 Assets.get_handle(type_id : String, id : String) : Num
 ```
 > Get the block handle for a compiled asset block instance.   
 
 <endpoint module="luxe: assets" class="Assets" signature="set_handle(type_id : String, id : String, handle : Num)"></endpoint>
 ### Assets.set_handle(...)
-```lx
+```wren
 Assets.set_handle(type_id : String, id : String, handle : Num) : None
 ```
 > Set the block handle for a compiled asset block instance.   
 
 <endpoint module="luxe: assets" class="Assets" signature="get_id_from_handle(type_id : String, handle : Handle)"></endpoint>
 ### Assets.get_id_from_handle(..)
-```lx
+```wren
 Assets.get_id_from_handle(type_id : String, handle : Handle) : String
 ```
 > Get the asset id to from the block handle of the compiled asset block instance.   
 
 <endpoint module="luxe: assets" class="Assets" signature="get_dev_version_path(db : AssetDB, asset_id : String)"></endpoint>
 ### Assets.get_dev_version_path(..)
-```lx
+```wren
 Assets.get_dev_version_path(db : AssetDB, asset_id : String) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: assets" class="Assets" signature="get_dev_version_data(db : AssetDB, asset_id : String)"></endpoint>
 ### Assets.get_dev_version_data(..)
-```lx
+```wren
 Assets.get_dev_version_data(db : AssetDB, asset_id : String) : Map
 ```
 > no docs found   
 
 <endpoint module="luxe: assets" class="Assets" signature="save_dev_version_data(db : AssetDB, asset_id : String, version_data : Map)"></endpoint>
 ### Assets.save_dev_version_data(...)
-```lx
+```wren
 Assets.save_dev_version_data(db : AssetDB, asset_id : String, version_data : Map) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: assets" class="Assets" signature="image(id : String)"></endpoint>
 ### Assets.image(.)
-```lx
+```wren
 Assets.image(id : String) : Image
 ```
 > Return a loaded image by id.
@@ -416,7 +416,7 @@ Assets.image(id : String) : Image
 
 <endpoint module="luxe: assets" class="Assets" signature="bytes(id : String)"></endpoint>
 ### Assets.bytes(.)
-```lx
+```wren
 Assets.bytes(id : String) : String
 ```
 > Returns the data stored as bytes. 
@@ -438,7 +438,7 @@ Assets.bytes(id : String) : String
 
 <endpoint module="luxe: assets" class="Assets" signature="material(id : String)"></endpoint>
 ### Assets.material(.)
-```lx
+```wren
 Assets.material(id : String) : Material
 ```
 > Returns a loaded material by id.
@@ -450,7 +450,7 @@ Assets.material(id : String) : Material
 
 <endpoint module="luxe: assets" class="Assets" signature="atlas(id : String)"></endpoint>
 ### Assets.atlas(.)
-```lx
+```wren
 Assets.atlas(id : String) : Atlas
 ```
 > Returns a loaded atlas by id.
@@ -461,7 +461,7 @@ Assets.atlas(id : String) : Atlas
 
 <endpoint module="luxe: assets" class="Assets" signature="lx(id : String)"></endpoint>
 ### Assets.lx(.)
-```lx
+```wren
 Assets.lx(id : String) : Any
 ```
 > Returns the LX parsed representation of a `bytes` asset.
@@ -480,7 +480,7 @@ Assets.lx(id : String) : Any
 
 <endpoint module="luxe: assets" class="Assets" signature="has_shader_library(id : String)"></endpoint>
 ### Assets.has_shader_library(.)
-```lx
+```wren
 Assets.has_shader_library(id : String) : Bool
 ```
 > Returns true if a shader library with this id is loaded, or false otherwise.
@@ -491,7 +491,7 @@ Assets.has_shader_library(id : String) : Bool
 
 <endpoint module="luxe: assets" class="Assets" signature="has_image(id : String)"></endpoint>
 ### Assets.has_image(.)
-```lx
+```wren
 Assets.has_image(id : String) : Bool
 ```
 > Returns true if an image with this id is loaded, or false otherwise.
@@ -502,7 +502,7 @@ Assets.has_image(id : String) : Bool
 
 <endpoint module="luxe: assets" class="Assets" signature="has_material_basis(id : String)"></endpoint>
 ### Assets.has_material_basis(.)
-```lx
+```wren
 Assets.has_material_basis(id : String) : Bool
 ```
 > Returns true if a material basis with this id is loaded, or false otherwise.
@@ -513,7 +513,7 @@ Assets.has_material_basis(id : String) : Bool
 
 <endpoint module="luxe: assets" class="Assets" signature="has_material(id : String)"></endpoint>
 ### Assets.has_material(.)
-```lx
+```wren
 Assets.has_material(id : String) : Bool
 ```
 > Returns true if a material with this id is loaded, or false otherwise.
@@ -524,7 +524,7 @@ Assets.has_material(id : String) : Bool
 
 <endpoint module="luxe: assets" class="Assets" signature="has_bytes(id : String)"></endpoint>
 ### Assets.has_bytes(.)
-```lx
+```wren
 Assets.has_bytes(id : String) : Bool
 ```
 > Returns true if a bytes asset with this id is loaded, or false otherwise.
@@ -535,7 +535,7 @@ Assets.has_bytes(id : String) : Bool
 
 <endpoint module="luxe: assets" class="Assets" signature="has_settings(id : String)"></endpoint>
 ### Assets.has_settings(.)
-```lx
+```wren
 Assets.has_settings(id : String) : Bool
 ```
 > Returns true if a settings asset with this id is loaded, or false otherwise.
@@ -546,7 +546,7 @@ Assets.has_settings(id : String) : Bool
 
 <endpoint module="luxe: assets" class="Assets" signature="has_atlas(id : String)"></endpoint>
 ### Assets.has_atlas(.)
-```lx
+```wren
 Assets.has_atlas(id : String) : Bool
 ```
 > Returns true if an atlas asset with this id is loaded, or false otherwise.
@@ -557,7 +557,7 @@ Assets.has_atlas(id : String) : Bool
 
 <endpoint module="luxe: assets" class="Assets" signature="has_input(id : String)"></endpoint>
 ### Assets.has_input(.)
-```lx
+```wren
 Assets.has_input(id : String) : Bool
 ```
 > Returns true if an input asset with this id is loaded, or false otherwise.
@@ -568,7 +568,7 @@ Assets.has_input(id : String) : Bool
 
 <endpoint module="luxe: assets" class="Assets" signature="has_ui(id : String)"></endpoint>
 ### Assets.has_ui(.)
-```lx
+```wren
 Assets.has_ui(id : String) : Bool
 ```
 > Returns true if a ui asset with this id is loaded, or false otherwise.
@@ -579,21 +579,21 @@ Assets.has_ui(id : String) : Bool
 
 <endpoint module="luxe: assets" class="Assets" signature="unload_input(id : String)"></endpoint>
 ### Assets.unload_input(.)
-```lx
+```wren
 Assets.unload_input(id : String) : None
 ```
 > Unload the input asset, which undefines any nodes or events   
 
 <endpoint module="luxe: assets" class="Assets" signature="load_input(id : String)"></endpoint>
 ### Assets.load_input(.)
-```lx
+```wren
 Assets.load_input(id : String) : None
 ```
 > Load an input asset, which defines any nodes or events within it   
 
 
 ## Strings
-```lx
+```wren
 import "luxe: assets" for Strings
 ```
 > When dealing with data like assets, storing a string directly can take up a lot of space.
@@ -626,7 +626,7 @@ import "luxe: assets" for Strings
 
 <endpoint module="luxe: assets" class="Strings" signature="add(value : String)"></endpoint>
 ### Strings.add(.)
-```lx
+```wren
 Strings.add(value : String) : Num
 ```
 > Adds a string to the `Strings` service and returns the key.
@@ -637,7 +637,7 @@ Strings.add(value : String) : Num
 
 <endpoint module="luxe: assets" class="Strings" signature="get(key : Num)"></endpoint>
 ### Strings.get(.)
-```lx
+```wren
 Strings.get(key : Num) : String
 ```
 > Return the value associated with the given key.

@@ -9,14 +9,14 @@ slug: "v/2025.11.1/id"
 
 
 ## ID
-```lx
+```wren
 import "luxe: id" for ID
 ```
 > IDs are useful in many cases, this API provides them in various forms like UUID or unique short strings.
 
 <endpoint module="luxe: id" class="ID" signature="unique()"></endpoint>
 ### ID.unique(.)
-```lx
+```wren
 ID.unique() : String
 ```
 > Returns a unique short string ID for use.
@@ -34,7 +34,7 @@ ID.unique() : String
 
 <endpoint module="luxe: id" class="ID" signature="unique(length : Num)"></endpoint>
 ### ID.unique(.)
-```lx
+```wren
 ID.unique(length : Num) : String
 ```
 > Returns a unique short string ID for use.
@@ -50,14 +50,14 @@ ID.unique(length : Num) : String
 
 <endpoint module="luxe: id" class="ID" signature="index(index : Num)"></endpoint>
 ### ID.index(.)
-```lx
+```wren
 ID.index(index : Num) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: id" class="ID" signature="uuid()"></endpoint>
 ### ID.uuid(.)
-```lx
+```wren
 ID.uuid() : String
 ```
 > Returns a UUID v4 ID.
@@ -71,7 +71,7 @@ ID.uuid() : String
 
 <endpoint module="luxe: id" class="ID" signature="uuid(from : String)"></endpoint>
 ### ID.uuid(.)
-```lx
+```wren
 ID.uuid(from : String) : String
 ```
 > Returns a UUID v4 from the given string (treated as bytes).
@@ -84,7 +84,7 @@ ID.uuid(from : String) : String
 
 <endpoint module="luxe: id" class="ID" signature="uuid_validate(uuid : String)"></endpoint>
 ### ID.uuid_validate(.)
-```lx
+```wren
 ID.uuid_validate(uuid : String) : unknown
 ```
 > Returns true if the given UUID is valid (using regex matching).
@@ -96,7 +96,7 @@ ID.uuid_validate(uuid : String) : unknown
 
 <endpoint module="luxe: id" class="ID" signature="uuid_base62()"></endpoint>
 ### ID.uuid_base62(.)
-```lx
+```wren
 ID.uuid_base62() : String
 ```
 > Returns a UUID represented as a base62 string.
@@ -107,7 +107,7 @@ ID.uuid_base62() : String
 
 <endpoint module="luxe: id" class="ID" signature="uuid_combine(uuid_a : String, uuid_b : String)"></endpoint>
 ### ID.uuid_combine(..)
-```lx
+```wren
 ID.uuid_combine(uuid_a : String, uuid_b : String) : String
 ```
 > Returns a new UUID by combining the two UUIDs given.

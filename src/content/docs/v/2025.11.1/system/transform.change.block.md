@@ -9,13 +9,13 @@ slug: "v/2025.11.1/system/transform.change.block"
 
 
 ## TransformChange
-```lx
+```wren
 import "luxe: system/transform.change.block" for TransformChange
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var entity : Num = 0
 var pos : Float3 = [0, 0, 0]
 var rotation : Float4 = [0, 0, 0, 1]

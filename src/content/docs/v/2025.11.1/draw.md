@@ -12,7 +12,7 @@ slug: "v/2025.11.1/draw"
 
 
 ## Draw
-```lx
+```wren
 import "luxe: draw" for Draw
 ```
 > Draw is a service API that offers drawing to a context (canvas) in an efficient way.
@@ -31,7 +31,7 @@ import "luxe: draw" for Draw
 
 <endpoint module="luxe: draw" class="Draw" signature="create(set : Any)"></endpoint>
 ### Draw.create(.)
-```lx
+```wren
 Draw.create(set : Any) : unknown
 ```
 > Creates a new drawing context to draw with.
@@ -42,7 +42,7 @@ Draw.create(set : Any) : unknown
 
 <endpoint module="luxe: draw" class="Draw" signature="create(set : RenderSet, tri_basis : String, text_basis : String, line_basis : String)"></endpoint>
 ### Draw.create(....)
-```lx
+```wren
 Draw.create(set : RenderSet, tri_basis : String, text_basis : String, line_basis : String) : unknown
 ```
 > Creates a new drawing context to draw with.
@@ -66,7 +66,7 @@ Draw.create(set : RenderSet, tri_basis : String, text_basis : String, line_basis
 
 <endpoint module="luxe: draw" class="Draw" signature="destroy(context : Any)"></endpoint>
 ### Draw.destroy(.)
-```lx
+```wren
 Draw.destroy(context : Any) : unknown
 ```
 > Destroy a previously created context.
@@ -79,7 +79,7 @@ Draw.destroy(context : Any) : unknown
 
 <endpoint module="luxe: draw" class="Draw" signature="valid(context : Any)"></endpoint>
 ### Draw.valid(.)
-```lx
+```wren
 Draw.valid(context : Any) : unknown
 ```
 > Returns true if the context is valid (and hasn't been destroyed).
@@ -94,7 +94,7 @@ Draw.valid(context : Any) : unknown
 
 <endpoint module="luxe: draw" class="Draw" signature="clear(context : Any)"></endpoint>
 ### Draw.clear(.)
-```lx
+```wren
 Draw.clear(context : Any) : unknown
 ```
 > Clears the context of any drawn content.
@@ -106,7 +106,7 @@ Draw.clear(context : Any) : unknown
 
 <endpoint module="luxe: draw" class="Draw" signature="commit(context : Any)"></endpoint>
 ### Draw.commit(.)
-```lx
+```wren
 Draw.commit(context : Any) : unknown
 ```
 > Commit the content that has been drawn to the context.
@@ -129,7 +129,7 @@ Draw.commit(context : Any) : unknown
 
 <endpoint module="luxe: draw" class="Draw" signature="rect(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, angle : Any, style : Any)"></endpoint>
 ### Draw.rect(........)
-```lx
+```wren
 Draw.rect(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, angle : Any, style : Any) : unknown
 ```
 > Draws a rectangle **outline** using `style` (`PathStyle`) at `x`,`y`, with depth `z`, with width of `w` and height of `h`.
@@ -146,7 +146,7 @@ Draw.rect(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, angle : An
 
 <endpoint module="luxe: draw" class="Draw" signature="rect_detailed(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, angle : Any, radius : Any, smoothness : Any, style : Any)"></endpoint>
 ### Draw.rect_detailed(..........)
-```lx
+```wren
 Draw.rect_detailed(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, angle : Any, radius : Any, smoothness : Any, style : Any) : unknown
 ```
 > Draws a detailed rectangle **outline** using `style` (`PathStyle`) at `x`,`y`, with depth `z`, with width of `w` and height of `h`.
@@ -169,7 +169,7 @@ Draw.rect_detailed(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, a
 
 <endpoint module="luxe: draw" class="Draw" signature="quad_detailed(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, angle : Any, radius : Any, smoothness : Any, color : Any)"></endpoint>
 ### Draw.quad_detailed(..........)
-```lx
+```wren
 Draw.quad_detailed(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, angle : Any, radius : Any, smoothness : Any, color : Any) : unknown
 ```
 > Draws a detailed rectangle using `color` at `x`,`y`, with depth `z`, with width of `w` and height of `h`.
@@ -192,7 +192,7 @@ Draw.quad_detailed(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, a
 
 <endpoint module="luxe: draw" class="Draw" signature="quad(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, angle : Any, color : Any)"></endpoint>
 ### Draw.quad(........)
-```lx
+```wren
 Draw.quad(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, angle : Any, color : Any) : unknown
 ```
 > Draws a **solid** rectangle using `color` at `x`,`y`, with depth `z`, with width of `w` and height of `h`.
@@ -207,7 +207,7 @@ Draw.quad(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, angle : An
 
 <endpoint module="luxe: draw" class="Draw" signature="ngon(context : Any, ox : Any, oy : Any, oz : Any, rx : Any, ry : Any, sides : Any, angle : Any, style : Any)"></endpoint>
 ### Draw.ngon(.........)
-```lx
+```wren
 Draw.ngon(context : Any, ox : Any, oy : Any, oz : Any, rx : Any, ry : Any, sides : Any, angle : Any, style : Any) : unknown
 ```
 > Draw an ngon (like a triangle, hexagon, pentagon etc) **outline** at `ox`,`oy` at depth `oz`. 
@@ -226,7 +226,7 @@ Draw.ngon(context : Any, ox : Any, oy : Any, oz : Any, rx : Any, ry : Any, sides
 
 <endpoint module="luxe: draw" class="Draw" signature="ngon_solid(context : Any, ox : Any, oy : Any, oz : Any, rx : Any, ry : Any, sides : Any, angle : Any, color : Any)"></endpoint>
 ### Draw.ngon_solid(.........)
-```lx
+```wren
 Draw.ngon_solid(context : Any, ox : Any, oy : Any, oz : Any, rx : Any, ry : Any, sides : Any, angle : Any, color : Any) : unknown
 ```
 > Draw a **solid** ngon (like a triangle, hexagon, pentagon etc)  at `ox`,`oy` at depth `oz`. 
@@ -246,7 +246,7 @@ Draw.ngon_solid(context : Any, ox : Any, oy : Any, oz : Any, rx : Any, ry : Any,
 
 <endpoint module="luxe: draw" class="Draw" signature="ring(context : Any, ox : Any, oy : Any, oz : Any, rx : Any, ry : Any, start_angle : Any, end_angle : Any, smoothness : Any, style : Any)"></endpoint>
 ### Draw.ring(..........)
-```lx
+```wren
 Draw.ring(context : Any, ox : Any, oy : Any, oz : Any, rx : Any, ry : Any, start_angle : Any, end_angle : Any, smoothness : Any, style : Any) : unknown
 ```
 > Draw a circle **outline** at `ox`,`oy` at depth `oz`. `rx` and `ry` control separate radius values
@@ -269,14 +269,14 @@ Draw.ring(context : Any, ox : Any, oy : Any, oz : Any, rx : Any, ry : Any, start
 
 <endpoint module="luxe: draw" class="Draw" signature="ring(context : Any, ox : Any, oy : Any, oz : Any, radius : Any, smoothness : Any, style : Any)"></endpoint>
 ### Draw.ring(.......)
-```lx
+```wren
 Draw.ring(context : Any, ox : Any, oy : Any, oz : Any, radius : Any, smoothness : Any, style : Any) : unknown
 ```
 > Similar to `ring` with a single radius for both `x` and `y`.   
 
 <endpoint module="luxe: draw" class="Draw" signature="circle(context : Any, ox : Any, oy : Any, oz : Any, radius : Any, smoothness : Any, color : Any)"></endpoint>
 ### Draw.circle(.......)
-```lx
+```wren
 Draw.circle(context : Any, ox : Any, oy : Any, oz : Any, radius : Any, smoothness : Any, color : Any) : unknown
 ```
 > Draw a **solid** circle at `ox`,`oy` at depth `oz`, using `color` and `radius` in size.
@@ -290,7 +290,7 @@ Draw.circle(context : Any, ox : Any, oy : Any, oz : Any, radius : Any, smoothnes
 
 <endpoint module="luxe: draw" class="Draw" signature="circle(context : Any, ox : Any, oy : Any, oz : Any, rx : Any, ry : Any, start_angle : Any, end_angle : Any, smoothness : Any, color : Any)"></endpoint>
 ### Draw.circle(..........)
-```lx
+```wren
 Draw.circle(context : Any, ox : Any, oy : Any, oz : Any, rx : Any, ry : Any, start_angle : Any, end_angle : Any, smoothness : Any, color : Any) : unknown
 ```
 > Draw a **solid** circle at `ox`,`oy` at depth `oz`. `rx` and `ry` control separate radius values
@@ -312,7 +312,7 @@ Draw.circle(context : Any, ox : Any, oy : Any, oz : Any, rx : Any, ry : Any, sta
 
 <endpoint module="luxe: draw" class="Draw" signature="line(context : Any, x1 : Any, y1 : Any, x2 : Any, y2 : Any, z : Any, style : Any)"></endpoint>
 ### Draw.line(.......)
-```lx
+```wren
 Draw.line(context : Any, x1 : Any, y1 : Any, x2 : Any, y2 : Any, z : Any, style : Any) : unknown
 ```
 > Draw a line from `x1`,`y1` to `x2`,`y2` at depth `z` using `style` (`PathStyle`).
@@ -325,7 +325,7 @@ Draw.line(context : Any, x1 : Any, y1 : Any, x2 : Any, y2 : Any, z : Any, style 
 
 <endpoint module="luxe: draw" class="Draw" signature="path(context : Any, points : Any, style : Any, closed : Any)"></endpoint>
 ### Draw.path(....)
-```lx
+```wren
 Draw.path(context : Any, points : Any, style : Any, closed : Any) : unknown
 ```
 > Draw a path consisting of a list of points. 
@@ -350,7 +350,7 @@ Draw.path(context : Any, points : Any, style : Any, closed : Any) : unknown
 
 <endpoint module="luxe: draw" class="Draw" signature="path3D(context : Any, points : Any, style : Any, closed : Any)"></endpoint>
 ### Draw.path3D(....)
-```lx
+```wren
 Draw.path3D(context : Any, points : Any, style : Any, closed : Any) : unknown
 ```
 > Draw a 3D path consisting of a list of points. 
@@ -373,7 +373,7 @@ Draw.path3D(context : Any, points : Any, style : Any, closed : Any) : unknown
 
 <endpoint module="luxe: draw" class="Draw" signature="line3D(context : Draw, start : Vec, end : Vec, style : PathStyle)"></endpoint>
 ### Draw.line3D(....)
-```lx
+```wren
 Draw.line3D(context : Draw, start : Vec, end : Vec, style : PathStyle) : unknown
 ```
 > Draw a 3D line from `start` to `end` using `style`. 
@@ -385,35 +385,35 @@ Draw.line3D(context : Draw, start : Vec, end : Vec, style : PathStyle) : unknown
 
 <endpoint module="luxe: draw" class="Draw" signature="obb3D(context : Any, obb : Any, style : Any)"></endpoint>
 ### Draw.obb3D(...)
-```lx
+```wren
 Draw.obb3D(context : Any, obb : Any, style : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: draw" class="Draw" signature="bounds3D(context : Any, geometry : Any, style : Any)"></endpoint>
 ### Draw.bounds3D(...)
-```lx
+```wren
 Draw.bounds3D(context : Any, geometry : Any, style : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: draw" class="Draw" signature="aabb3D(context : Any, center : Any, radius : Any, style : Any)"></endpoint>
 ### Draw.aabb3D(....)
-```lx
+```wren
 Draw.aabb3D(context : Any, center : Any, radius : Any, style : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: draw" class="Draw" signature="plane3D(context : Draw, pos : Vec, normal : Vec, radius : Num, style : PathStyle)"></endpoint>
 ### Draw.plane3D(.....)
-```lx
+```wren
 Draw.plane3D(context : Draw, pos : Vec, normal : Vec, radius : Num, style : PathStyle) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: draw" class="Draw" signature="plus3D(context : Draw, pos : Vec, radius : Num, style : PathStyle)"></endpoint>
 ### Draw.plus3D(....)
-```lx
+```wren
 Draw.plus3D(context : Draw, pos : Vec, radius : Num, style : PathStyle) : unknown
 ```
 > Draw a 3D plus at `pos` with size `radius` using `style`. 
@@ -425,7 +425,7 @@ Draw.plus3D(context : Draw, pos : Vec, radius : Num, style : PathStyle) : unknow
 
 <endpoint module="luxe: draw" class="Draw" signature="ring3D(context : Draw, pos : Vec3, radius : Vec2, start_angle : Num, end_angle : Num, smoothness : Num, style : PathStyle)"></endpoint>
 ### Draw.ring3D(.......)
-```lx
+```wren
 Draw.ring3D(context : Draw, pos : Vec3, radius : Vec2, start_angle : Num, end_angle : Num, smoothness : Num, style : PathStyle) : unknown
 ```
 > Draw a 3D ring at `pos` with radius `[radius_x, radius_y]` using `style`. 
@@ -437,7 +437,7 @@ Draw.ring3D(context : Draw, pos : Vec3, radius : Vec2, start_angle : Num, end_an
 
 <endpoint module="luxe: draw" class="Draw" signature="plus(context : Draw, pos : Vec, radius : Num, style : PathStyle)"></endpoint>
 ### Draw.plus(....)
-```lx
+```wren
 Draw.plus(context : Draw, pos : Vec, radius : Num, style : PathStyle) : unknown
 ```
 > Draw a 2D plus at `pos` with size `radius` using `style`. 
@@ -449,7 +449,7 @@ Draw.plus(context : Draw, pos : Vec, radius : Num, style : PathStyle) : unknown
 
 <endpoint module="luxe: draw" class="Draw" signature="camera(context : Draw, camera : Entity, style : PathStyle)"></endpoint>
 ### Draw.camera(...)
-```lx
+```wren
 Draw.camera(context : Draw, camera : Entity, style : PathStyle) : unknown
 ```
 > Draw a 3D camera frustum for the given camera entity using `style`. 
@@ -461,7 +461,7 @@ Draw.camera(context : Draw, camera : Entity, style : PathStyle) : unknown
 
 <endpoint module="luxe: draw" class="Draw" signature="frustum(context : Draw, corners : List, style : PathStyle)"></endpoint>
 ### Draw.frustum(...)
-```lx
+```wren
 Draw.frustum(context : Draw, corners : List, style : PathStyle) : unknown
 ```
 > Draw a 3D camera frustum for the given 8 corner points using `style`.
@@ -484,7 +484,7 @@ Draw.frustum(context : Draw, corners : List, style : PathStyle) : unknown
 
 <endpoint module="luxe: draw" class="Draw" signature="text(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, string : Any, size : Any, font : Any, color : Any, align : Any, align_vertical : Any)"></endpoint>
 ### Draw.text(............)
-```lx
+```wren
 Draw.text(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, string : Any, size : Any, font : Any, color : Any, align : Any, align_vertical : Any) : unknown
 ```
 > Draw the specified `string` at `x`,`y` and depth `z`. `w` and `h` specify the bounds for the text, bottom left origin, y going up. 
@@ -501,7 +501,7 @@ Draw.text(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, string : A
 
 <endpoint module="luxe: draw" class="Draw" signature="text(context : Any, x : Any, y : Any, z : Any, string : Any, size : Any, font : Any, color : Any, align : Any, align_vertical : Any)"></endpoint>
 ### Draw.text(..........)
-```lx
+```wren
 Draw.text(context : Any, x : Any, y : Any, z : Any, string : Any, size : Any, font : Any, color : Any, align : Any, align_vertical : Any) : unknown
 ```
 > Draw the specified `string` at `x`,`y` and depth `z`. 
@@ -518,7 +518,7 @@ Draw.text(context : Any, x : Any, y : Any, z : Any, string : Any, size : Any, fo
 
 <endpoint module="luxe: draw" class="Draw" signature="text(context : Any, x : Any, y : Any, z : Any, string : Any, size : Any, color : Any)"></endpoint>
 ### Draw.text(.......)
-```lx
+```wren
 Draw.text(context : Any, x : Any, y : Any, z : Any, string : Any, size : Any, color : Any) : unknown
 ```
 > Draw the specified `string` at `x`,`y`, `z`.
@@ -533,7 +533,7 @@ Draw.text(context : Any, x : Any, y : Any, z : Any, string : Any, size : Any, co
 
 <endpoint module="luxe: draw" class="Draw" signature="image(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, angle : Any, material : Any)"></endpoint>
 ### Draw.image(........)
-```lx
+```wren
 Draw.image(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, angle : Any, material : Any) : unknown
 ```
 > Draw an image with the specified `material` at `x`,`y` and depth `z`. 
@@ -548,7 +548,7 @@ Draw.image(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, angle : A
 
 <endpoint module="luxe: draw" class="Draw" signature="image(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, angle : Any, color : Any, uv : Any, material : Any)"></endpoint>
 ### Draw.image(..........)
-```lx
+```wren
 Draw.image(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, angle : Any, color : Any, uv : Any, material : Any) : unknown
 ```
 > Draw an image with the specified `material` at `x`,`y` and depth `z`. 
@@ -569,14 +569,14 @@ Draw.image(context : Any, x : Any, y : Any, z : Any, w : Any, h : Any, angle : A
 
 <endpoint module="luxe: draw" class="Draw" signature="cross(context : Any, x : Any, y : Any, z : Any, radius : Any, angle : Any, style : Any)"></endpoint>
 ### Draw.cross(.......)
-```lx
+```wren
 Draw.cross(context : Any, x : Any, y : Any, z : Any, radius : Any, angle : Any, style : Any) : unknown
 ```
 > Draws a cross, an x shape   
 
 <endpoint module="luxe: draw" class="Draw" signature="sphere3D_slice(context : Draw, pos : Vec3, radius : Vec2, start_angle : Num, end_angle : Num, layers : Num, style : PathStyle)"></endpoint>
 ### Draw.sphere3D_slice(.......)
-```lx
+```wren
 Draw.sphere3D_slice(context : Draw, pos : Vec3, radius : Vec2, start_angle : Num, end_angle : Num, layers : Num, style : PathStyle) : unknown
 ```
 > Draw a 3D sphere made from layered circles with `layers` number of circles and `radius` radius. Make the `start_angle` 0 and the `end_angle` 360 to make a full sphere, or 0/180 for a half sphere.
@@ -587,14 +587,14 @@ Draw.sphere3D_slice(context : Draw, pos : Vec3, radius : Vec2, start_angle : Num
 
 
 ## LineCap
-```lx
+```wren
 import "luxe: draw" for LineCap
 ```
 > The end of a line is called a "cap", when drawing paths, this determines the type of cap that a line will have. :todo: images
 
 <endpoint module="luxe: draw" class="LineCap" signature="butt"></endpoint>
 ### LineCap.butt
-```lx
+```wren
 LineCap.butt : unknown
 ```
 > This cap is as if there was no cap, the line is just ended. The default.
@@ -606,7 +606,7 @@ LineCap.butt : unknown
 
 <endpoint module="luxe: draw" class="LineCap" signature="round"></endpoint>
 ### LineCap.round
-```lx
+```wren
 LineCap.round : unknown
 ```
 > A round cap is a half circle at the end of the line.
@@ -618,7 +618,7 @@ LineCap.round : unknown
 
 <endpoint module="luxe: draw" class="LineCap" signature="square"></endpoint>
 ### LineCap.square
-```lx
+```wren
 LineCap.square : unknown
 ```
 > A square cap is a square at the end of the line.
@@ -630,7 +630,7 @@ LineCap.square : unknown
 
 <endpoint module="luxe: draw" class="LineCap" signature="from_string(value : Any)"></endpoint>
 ### LineCap.from_string(.)
-```lx
+```wren
 LineCap.from_string(value : Any) : unknown
 ```
 > Convert a string to a LineCap value.
@@ -641,7 +641,7 @@ LineCap.from_string(value : Any) : unknown
 
 
 ## LineJoin
-```lx
+```wren
 import "luxe: draw" for LineJoin
 ```
 > When drawing a path, a series of lines will be drawn and joined together.
@@ -650,7 +650,7 @@ import "luxe: draw" for LineJoin
 
 <endpoint module="luxe: draw" class="LineJoin" signature="bevel"></endpoint>
 ### LineJoin.bevel
-```lx
+```wren
 LineJoin.bevel : unknown
 ```
 > The default join is a bevel, which is a flat join.
@@ -662,7 +662,7 @@ LineJoin.bevel : unknown
 
 <endpoint module="luxe: draw" class="LineJoin" signature="round"></endpoint>
 ### LineJoin.round
-```lx
+```wren
 LineJoin.round : unknown
 ```
 > A round join is a semi circle that makes the corner rounded.
@@ -674,7 +674,7 @@ LineJoin.round : unknown
 
 <endpoint module="luxe: draw" class="LineJoin" signature="miter"></endpoint>
 ### LineJoin.miter
-```lx
+```wren
 LineJoin.miter : unknown
 ```
 > A miter join is a sharp triangle join that has a limit value (which falls back to bevel).
@@ -687,7 +687,7 @@ LineJoin.miter : unknown
 
 <endpoint module="luxe: draw" class="LineJoin" signature="from_string(value : Any)"></endpoint>
 ### LineJoin.from_string(.)
-```lx
+```wren
 LineJoin.from_string(value : Any) : unknown
 ```
 > Convert a string to a LineJoin value.
@@ -698,21 +698,21 @@ LineJoin.from_string(value : Any) : unknown
 
 
 ## PathStyle
-```lx
+```wren
 import "luxe: draw" for PathStyle
 ```
 > 
 
 <endpoint module="luxe: draw" class="PathStyle" signature="array"></endpoint>
 ### PathStyle.array
-```lx
+```wren
 PathStyle.array : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: draw" class="PathStyle" signature="color"></endpoint>
 ### PathStyle.color
-```lx
+```wren
 PathStyle.color : unknown
 ```
 > Returns the color of the path style.
@@ -724,28 +724,28 @@ PathStyle.color : unknown
 
 <endpoint module="luxe: draw" class="PathStyle" signature="alpha(value : Any)"></endpoint>
 ### PathStyle.alpha(.)
-```lx
+```wren
 PathStyle.alpha(value : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: draw" class="PathStyle" signature="color(value : Any)"></endpoint>
 ### PathStyle.color(.)
-```lx
+```wren
 PathStyle.color(value : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: draw" class="PathStyle" signature="thickness(value : Any)"></endpoint>
 ### PathStyle.thickness(.)
-```lx
+```wren
 PathStyle.thickness(value : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: draw" class="PathStyle" signature="color=(value : Any)"></endpoint>
 ### PathStyle.color
-```lx
+```wren
 PathStyle.color=(value : Any) : unknown
 ```
 > Set the color for the style.
@@ -757,7 +757,7 @@ PathStyle.color=(value : Any) : unknown
 
 <endpoint module="luxe: draw" class="PathStyle" signature="alpha"></endpoint>
 ### PathStyle.alpha
-```lx
+```wren
 PathStyle.alpha : unknown
 ```
 > Returns the alpha from the color of the path style.
@@ -769,7 +769,7 @@ PathStyle.alpha : unknown
 
 <endpoint module="luxe: draw" class="PathStyle" signature="alpha=(value : Any)"></endpoint>
 ### PathStyle.alpha
-```lx
+```wren
 PathStyle.alpha=(value : Any) : unknown
 ```
 > Set the alpha of the color for the style.
@@ -781,7 +781,7 @@ PathStyle.alpha=(value : Any) : unknown
 
 <endpoint module="luxe: draw" class="PathStyle" signature="thickness"></endpoint>
 ### PathStyle.thickness
-```lx
+```wren
 PathStyle.thickness : unknown
 ```
 > Returns the thickness of the path style.
@@ -793,7 +793,7 @@ PathStyle.thickness : unknown
 
 <endpoint module="luxe: draw" class="PathStyle" signature="thickness=(value : Any)"></endpoint>
 ### PathStyle.thickness
-```lx
+```wren
 PathStyle.thickness=(value : Any) : unknown
 ```
 > Set the thickness of the path style.
@@ -805,7 +805,7 @@ PathStyle.thickness=(value : Any) : unknown
 
 <endpoint module="luxe: draw" class="PathStyle" signature="feather"></endpoint>
 ### PathStyle.feather
-```lx
+```wren
 PathStyle.feather : unknown
 ```
 > Returns the feather value for the path style. 
@@ -818,7 +818,7 @@ PathStyle.feather : unknown
 
 <endpoint module="luxe: draw" class="PathStyle" signature="feather=(value : Any)"></endpoint>
 ### PathStyle.feather
-```lx
+```wren
 PathStyle.feather=(value : Any) : unknown
 ```
 > Set the feather value for the path style. 
@@ -831,7 +831,7 @@ PathStyle.feather=(value : Any) : unknown
 
 <endpoint module="luxe: draw" class="PathStyle" signature="cap"></endpoint>
 ### PathStyle.cap
-```lx
+```wren
 PathStyle.cap : unknown
 ```
 > Returns the `LineCap` type for the path style.
@@ -843,7 +843,7 @@ PathStyle.cap : unknown
 
 <endpoint module="luxe: draw" class="PathStyle" signature="cap=(value : Any)"></endpoint>
 ### PathStyle.cap
-```lx
+```wren
 PathStyle.cap=(value : Any) : unknown
 ```
 > Set the `LineCap` type for the path style.
@@ -855,7 +855,7 @@ PathStyle.cap=(value : Any) : unknown
 
 <endpoint module="luxe: draw" class="PathStyle" signature="join"></endpoint>
 ### PathStyle.join
-```lx
+```wren
 PathStyle.join : unknown
 ```
 > Returns the `LineJoin` type for the path style.
@@ -867,7 +867,7 @@ PathStyle.join : unknown
 
 <endpoint module="luxe: draw" class="PathStyle" signature="join=(value : Any)"></endpoint>
 ### PathStyle.join
-```lx
+```wren
 PathStyle.join=(value : Any) : unknown
 ```
 > Set the `LineJoin` type for the path style.
@@ -879,7 +879,7 @@ PathStyle.join=(value : Any) : unknown
 
 <endpoint module="luxe: draw" class="PathStyle" signature="miter_limit"></endpoint>
 ### PathStyle.miter_limit
-```lx
+```wren
 PathStyle.miter_limit : unknown
 ```
 > Returns the miter limit for the path style.
@@ -892,7 +892,7 @@ PathStyle.miter_limit : unknown
 
 <endpoint module="luxe: draw" class="PathStyle" signature="miter_limit=(value : Any)"></endpoint>
 ### PathStyle.miter_limit
-```lx
+```wren
 PathStyle.miter_limit=(value : Any) : unknown
 ```
 > Set the miter limit for the path style.
@@ -905,7 +905,7 @@ PathStyle.miter_limit=(value : Any) : unknown
 
 <endpoint module="luxe: draw" class="PathStyle" signature="new()"></endpoint>
 ### PathStyle.new(.)
-```lx
+```wren
 PathStyle.new() : PathStyle
 ```
 > Create a new `PathStyle` instance.

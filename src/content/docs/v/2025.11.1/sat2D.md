@@ -9,7 +9,7 @@ slug: "v/2025.11.1/sat2D"
 
 
 ## SAT2D
-```lx
+```wren
 import "luxe: sat2D" for SAT2D
 ```
 > The SAT2D API is a collision and query API for the [luxe: shape2D](../shape2D) shapes and types.
@@ -19,7 +19,7 @@ import "luxe: sat2D" for SAT2D
 
 <endpoint module="luxe: sat2D" class="SAT2D" signature="collide_shape(shape1 : Any, shape2 : Any)"></endpoint>
 ### SAT2D.collide_shape(..)
-```lx
+```wren
 SAT2D.collide_shape(shape1 : Any, shape2 : Any) : unknown
 ```
 > Check if two `Shape2D` instances are colliding. Returns a result with several values in a `List`.
@@ -42,7 +42,7 @@ SAT2D.collide_shape(shape1 : Any, shape2 : Any) : unknown
 
 <endpoint module="luxe: sat2D" class="SAT2D" signature="collide_shapes(shape : Any, list : Any)"></endpoint>
 ### SAT2D.collide_shapes(..)
-```lx
+```wren
 SAT2D.collide_shapes(shape : Any, list : Any) : unknown
 ```
 > Like `collide_shape` for details on the results, but checks multiple shapes against a single one. 
@@ -56,42 +56,42 @@ SAT2D.collide_shapes(shape : Any, list : Any) : unknown
 
 <endpoint module="luxe: sat2D" class="SAT2D" signature="contains(shape : Any, point : Any)"></endpoint>
 ### SAT2D.contains(..)
-```lx
+```wren
 SAT2D.contains(shape : Any, point : Any) : unknown
 ```
 > Returns true if the given `Shape2D` contains `point`.   
 
 <endpoint module="luxe: sat2D" class="SAT2D" signature="sweep_shape(shape1 : Any, shape2 : Any, vel : Any)"></endpoint>
 ### SAT2D.sweep_shape(...)
-```lx
+```wren
 SAT2D.sweep_shape(shape1 : Any, shape2 : Any, vel : Any) : unknown
 ```
 >    
 
 <endpoint module="luxe: sat2D" class="SAT2D" signature="raycast_ray(ray1 : Any, ray2 : Any)"></endpoint>
 ### SAT2D.raycast_ray(..)
-```lx
+```wren
 SAT2D.raycast_ray(ray1 : Any, ray2 : Any) : unknown
 ```
 >    
 
 <endpoint module="luxe: sat2D" class="SAT2D" signature="raycast_rays(ray : Any, rays : Any)"></endpoint>
 ### SAT2D.raycast_rays(..)
-```lx
+```wren
 SAT2D.raycast_rays(ray : Any, rays : Any) : unknown
 ```
 >    
 
 <endpoint module="luxe: sat2D" class="SAT2D" signature="raycast_shape(ray : Any, shape : Any)"></endpoint>
 ### SAT2D.raycast_shape(..)
-```lx
+```wren
 SAT2D.raycast_shape(ray : Any, shape : Any) : unknown
 ```
 >    
 
 <endpoint module="luxe: sat2D" class="SAT2D" signature="raycast_shapes(ray : Any, shapes : Any)"></endpoint>
 ### SAT2D.raycast_shapes(..)
-```lx
+```wren
 SAT2D.raycast_shapes(ray : Any, shapes : Any) : unknown
 ```
 >    

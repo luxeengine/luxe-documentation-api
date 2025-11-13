@@ -11,7 +11,7 @@ slug: "v/2025.11.1/audio"
 
 
 ## Audio
-```lx
+```wren
 import "luxe: audio" for Audio
 ```
 > The Audio module let's you play audio.
@@ -41,14 +41,14 @@ import "luxe: audio" for Audio
 
 <endpoint module="luxe: audio" class="Audio" signature="set_listener(pos : Float3, forward : Float3, up : Float3, velocity : Float3)"></endpoint>
 ### Audio.set_listener(....)
-```lx
+```wren
 Audio.set_listener(pos : Float3, forward : Float3, up : Float3, velocity : Float3) : unknown
 ```
 > Set the world space listener position directly   
 
 <endpoint module="luxe: audio" class="Audio" signature="duration(source : AudioAsset)"></endpoint>
 ### Audio.duration(.)
-```lx
+```wren
 Audio.duration(source : AudioAsset) : Num
 ```
 > Returns the duration of the given audio asset.
@@ -61,7 +61,7 @@ Audio.duration(source : AudioAsset) : Num
 
 <endpoint module="luxe: audio" class="Audio" signature="play(source : AudioAsset, volume : Num)"></endpoint>
 ### Audio.play(..)
-```lx
+```wren
 Audio.play(source : AudioAsset, volume : Num) : AudioInstance
 ```
 > Plays audio from the specified `source` at volume `volume`.
@@ -74,7 +74,7 @@ Audio.play(source : AudioAsset, volume : Num) : AudioInstance
 
 <endpoint module="luxe: audio" class="Audio" signature="play(source : AudioAsset, as3D : Bool, bus : AudioBus, volume : Num)"></endpoint>
 ### Audio.play(....)
-```lx
+```wren
 Audio.play(source : AudioAsset, as3D : Bool, bus : AudioBus, volume : Num) : AudioInstance
 ```
 > Plays audio from the specified `source` with `as3D` and `bus` at volume `volume`.
@@ -89,7 +89,7 @@ Audio.play(source : AudioAsset, as3D : Bool, bus : AudioBus, volume : Num) : Aud
 
 <endpoint module="luxe: audio" class="Audio" signature="play(source : AudioAsset)"></endpoint>
 ### Audio.play(.)
-```lx
+```wren
 Audio.play(source : AudioAsset) : AudioInstance
 ```
 > Plays audio from the specified `source` at volume `1.0`.
@@ -102,7 +102,7 @@ Audio.play(source : AudioAsset) : AudioInstance
 
 <endpoint module="luxe: audio" class="Audio" signature="loop(source : AudioAsset, volume : Num)"></endpoint>
 ### Audio.loop(..)
-```lx
+```wren
 Audio.loop(source : AudioAsset, volume : Num) : AudioInstance
 ```
 > Begins looping audio for `id` at volume `volume`.
@@ -114,7 +114,7 @@ Audio.loop(source : AudioAsset, volume : Num) : AudioInstance
 
 <endpoint module="luxe: audio" class="Audio" signature="loop(source : AudioAsset, as3D : Bool, bus : AudioBus, volume : Num)"></endpoint>
 ### Audio.loop(....)
-```lx
+```wren
 Audio.loop(source : AudioAsset, as3D : Bool, bus : AudioBus, volume : Num) : AudioInstance
 ```
 > Begins looping audio for `id` with `as3D` and `bus` at volume `volume`.
@@ -128,7 +128,7 @@ Audio.loop(source : AudioAsset, as3D : Bool, bus : AudioBus, volume : Num) : Aud
 
 <endpoint module="luxe: audio" class="Audio" signature="loop(source : AudioAsset)"></endpoint>
 ### Audio.loop(.)
-```lx
+```wren
 Audio.loop(source : AudioAsset) : AudioInstance
 ```
 > Begins looping audio for `id` at volume `1.0`.
@@ -140,7 +140,7 @@ Audio.loop(source : AudioAsset) : AudioInstance
 
 <endpoint module="luxe: audio" class="Audio" signature="stop(instance : AudioInstance)"></endpoint>
 ### Audio.stop(.)
-```lx
+```wren
 Audio.stop(instance : AudioInstance) : None
 ```
 > Stops an AudioInstance.
@@ -152,7 +152,7 @@ Audio.stop(instance : AudioInstance) : None
 
 <endpoint module="luxe: audio" class="Audio" signature="playing(instance : AudioInstance)"></endpoint>
 ### Audio.playing(.)
-```lx
+```wren
 Audio.playing(instance : AudioInstance) : Bool
 ```
 > Returns true if an AudioInstance is playing.
@@ -166,7 +166,7 @@ Audio.playing(instance : AudioInstance) : Bool
 
 <endpoint module="luxe: audio" class="Audio" signature="pan(instance : AudioInstance, pan : Num)"></endpoint>
 ### Audio.pan(..)
-```lx
+```wren
 Audio.pan(instance : AudioInstance, pan : Num) : None
 ```
 > Sets the current `pan` value for the given `instance`.
@@ -183,7 +183,7 @@ Audio.pan(instance : AudioInstance, pan : Num) : None
 
 <endpoint module="luxe: audio" class="Audio" signature="pan_of(instance : AudioInstance)"></endpoint>
 ### Audio.pan_of(.)
-```lx
+```wren
 Audio.pan_of(instance : AudioInstance) : Num
 ```
 > Returns the current `pan` value for the given `instance`.
@@ -196,7 +196,7 @@ Audio.pan_of(instance : AudioInstance) : Num
 
 <endpoint module="luxe: audio" class="Audio" signature="volume(instance : AudioInstance, volume : Num)"></endpoint>
 ### Audio.volume(..)
-```lx
+```wren
 Audio.volume(instance : AudioInstance, volume : Num) : None
 ```
 > Sets the `volume` for a given `instance`.
@@ -211,7 +211,7 @@ Audio.volume(instance : AudioInstance, volume : Num) : None
 
 <endpoint module="luxe: audio" class="Audio" signature="volume_of(instance : AudioInstance)"></endpoint>
 ### Audio.volume_of(.)
-```lx
+```wren
 Audio.volume_of(instance : AudioInstance) : Num
 ```
 > Returns the current `volume` for the given `instance`.
@@ -223,7 +223,7 @@ Audio.volume_of(instance : AudioInstance) : Num
 
 <endpoint module="luxe: audio" class="Audio" signature="pitch(instance : AudioInstance, pitch : Num)"></endpoint>
 ### Audio.pitch(..)
-```lx
+```wren
 Audio.pitch(instance : AudioInstance, pitch : Num) : None
 ```
 > Adjusts the `pitch` of `instance`, making the sample sound higher or lower-pitched.
@@ -244,7 +244,7 @@ Audio.pitch(instance : AudioInstance, pitch : Num) : None
 
 <endpoint module="luxe: audio" class="Audio" signature="pitch_of(instance : AudioInstance)"></endpoint>
 ### Audio.pitch_of(.)
-```lx
+```wren
 Audio.pitch_of(instance : AudioInstance) : Num
 ```
 > Returns the current `pitch` for `instance`.
@@ -257,7 +257,7 @@ Audio.pitch_of(instance : AudioInstance) : Num
 
 <endpoint module="luxe: audio" class="Audio" signature="pause(instance : AudioInstance, paused : Bool)"></endpoint>
 ### Audio.pause(..)
-```lx
+```wren
 Audio.pause(instance : AudioInstance, paused : Bool) : None
 ```
 > Sets whether the audio `instance` is playing, pausing it when not.
@@ -270,7 +270,7 @@ Audio.pause(instance : AudioInstance, paused : Bool) : None
 
 <endpoint module="luxe: audio" class="Audio" signature="pause_of(instance : AudioInstance)"></endpoint>
 ### Audio.pause_of(.)
-```lx
+```wren
 Audio.pause_of(instance : AudioInstance) : Bool
 ```
 > Returns whether an `instance` is paused.
@@ -284,7 +284,7 @@ Audio.pause_of(instance : AudioInstance) : Bool
 
 <endpoint module="luxe: audio" class="Audio" signature="set3D(instance : AudioInstance, pos : Float3, vel : Float3, dopper_factor : Float, attenuation : AudioAttenuation, range : Float2, rolloff : Num)"></endpoint>
 ### Audio.set3D(.......)
-```lx
+```wren
 Audio.set3D(instance : AudioInstance, pos : Float3, vel : Float3, dopper_factor : Float, attenuation : AudioAttenuation, range : Float2, rolloff : Num) : None
 ```
 > Sets 3D parameters of the the audio `instance`.
@@ -303,21 +303,21 @@ Audio.set3D(instance : AudioInstance, pos : Float3, vel : Float3, dopper_factor 
 
 
 ## AudioAttenuation
-```lx
+```wren
 import "luxe: audio" for AudioAttenuation
 ```
 > Read more details with graphs here https://solhsa.com/soloud/concepts3d.html#attenuation
 
 <endpoint module="luxe: audio" class="AudioAttenuation" signature="none"></endpoint>
 ### AudioAttenuation.none
-```lx
+```wren
 AudioAttenuation.none : unknown
 ```
 > No attenuation based on distance. The default   
 
 <endpoint module="luxe: audio" class="AudioAttenuation" signature="inverse_distance"></endpoint>
 ### AudioAttenuation.inverse_distance
-```lx
+```wren
 AudioAttenuation.inverse_distance : unknown
 ```
 > The higher the rolloff factor, the more steeply the volume drops. 
@@ -330,7 +330,7 @@ AudioAttenuation.inverse_distance : unknown
 
 <endpoint module="luxe: audio" class="AudioAttenuation" signature="linear_distance"></endpoint>
 ### AudioAttenuation.linear_distance
-```lx
+```wren
 AudioAttenuation.linear_distance : unknown
 ```
 > The rolloff factor for linear distance simply sets the maximum volume reduction. 
@@ -340,7 +340,7 @@ AudioAttenuation.linear_distance : unknown
 
 <endpoint module="luxe: audio" class="AudioAttenuation" signature="exponential_distance"></endpoint>
 ### AudioAttenuation.exponential_distance
-```lx
+```wren
 AudioAttenuation.exponential_distance : unknown
 ```
 > The higher the rolloff factor, the more steeply the volume drops. 
@@ -353,28 +353,28 @@ AudioAttenuation.exponential_distance : unknown
 
 
 ## Bus
-```lx
+```wren
 import "luxe: audio" for Bus
 ```
 > no docs found
 
 <endpoint module="luxe: audio" class="Bus" signature="set_channels(bus : AudioBus, value : Num)"></endpoint>
 ### Bus.set_channels(..)
-```lx
+```wren
 Bus.set_channels(bus : AudioBus, value : Num) : None
 ```
 > Set the number of channels for the bus   
 
 <endpoint module="luxe: audio" class="Bus" signature="set_volume(bus : AudioBus, value : Num)"></endpoint>
 ### Bus.set_volume(..)
-```lx
+```wren
 Bus.set_volume(bus : AudioBus, value : Num) : None
 ```
 > Set the volume for the bus   
 
 <endpoint module="luxe: audio" class="Bus" signature="get_volume(bus : AudioBus)"></endpoint>
 ### Bus.get_volume(.)
-```lx
+```wren
 Bus.get_volume(bus : AudioBus) : Num
 ```
 > Get the volume for the bus   

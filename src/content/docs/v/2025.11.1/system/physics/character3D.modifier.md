@@ -12,41 +12,41 @@ slug: "v/2025.11.1/system/physics/character3D.modifier"
 
 
 ## BackFaceMode
-```lx
+```wren
 import "luxe: system/physics/character3D.modifier" for BackFaceMode
 ```
 > no docs found
 
 <endpoint module="luxe: system/physics/character3D.modifier" class="BackFaceMode" signature="ignore"></endpoint>
 ### BackFaceMode.ignore
-```lx
+```wren
 BackFaceMode.ignore : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/physics/character3D.modifier" class="BackFaceMode" signature="collide"></endpoint>
 ### BackFaceMode.collide
-```lx
+```wren
 BackFaceMode.collide : unknown
 ```
 > no docs found   
 
 
 ## Character3D
-```lx
+```wren
 import "luxe: system/physics/character3D.modifier" for Character3D
 ```
 > no docs found
 
 
 ## Data
-```lx
+```wren
 import "luxe: system/physics/character3D.modifier" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var target : Link = null
 var height : Num = 2
 var width : Num = 1
@@ -69,21 +69,21 @@ var penetration_recovery_speed : Num = 1
 ```
 
 ## System
-```lx
+```wren
 import "luxe: system/physics/character3D.modifier" for System
 ```
 > no docs found
 
 <endpoint module="luxe: system/physics/character3D.modifier" class="System" signature="new(world : World)"></endpoint>
 ### System.new(.)
-```lx
+```wren
 System.new(world : World) : System
 ```
 > no docs found   
 
 <endpoint module="luxe: system/physics/character3D.modifier" class="System" signature="init(world : World)"></endpoint>
 ### System.init(.)
-```lx
+```wren
 System.init(world : World) : unknown
 ```
 > no docs found   

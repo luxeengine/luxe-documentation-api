@@ -10,25 +10,25 @@ slug: "v/2025.11.1/system/vfx/ribbon.vfx_render"
 
 
 ## Inputs
-```lx
+```wren
 import "luxe: system/vfx/ribbon.vfx_render" for Inputs
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var samples : Num = 8
 var smoothing : Num = 0.5
 ```
 
 ## MeshRender
-```lx
+```wren
 import "luxe: system/vfx/ribbon.vfx_render" for MeshRender
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var display : String = "Ribbon"
 var desc : String = "Displays particles as a ribbon, connecting all particles to each other"
 var inputs : Inputs = Object

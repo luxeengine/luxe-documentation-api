@@ -9,13 +9,13 @@ slug: "v/2025.11.1/pose/two_bone_ik.pose_node"
 
 
 ## TwoBoneIKNode
-```lx
+```wren
 import "luxe: pose/two_bone_ik.pose_node" for TwoBoneIKNode
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var input_pose : Num = 0
 var target : Float3 = [0, 0, 1]
 var start_bone : String = null
@@ -29,7 +29,7 @@ var pole_vector : Float3 = [0, 0, 1]
 ```
 <endpoint module="luxe: pose/two_bone_ik.pose_node" class="TwoBoneIKNode" signature="id"></endpoint>
 ### TwoBoneIKNode.id
-```lx
+```wren
 TwoBoneIKNode.id : unknown
 ```
 > no docs found   

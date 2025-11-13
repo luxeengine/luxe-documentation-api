@@ -12,7 +12,7 @@ slug: "v/2025.11.1/game"
 
 
 ## Frame
-```lx
+```wren
 import "luxe: game" for Frame
 ```
 > Access to the frame and game loop. 
@@ -26,7 +26,7 @@ import "luxe: game" for Frame
 
 <endpoint module="luxe: game" class="Frame" signature="begin"></endpoint>
 ### Frame.begin
-```lx
+```wren
 Frame.begin : String
 ```
 > An enum value for the `begin` section in the loop.
@@ -38,7 +38,7 @@ Frame.begin : String
 
 <endpoint module="luxe: game" class="Frame" signature="init"></endpoint>
 ### Frame.init
-```lx
+```wren
 Frame.init : String
 ```
 > An enum value for the `init` section in the loop.
@@ -52,7 +52,7 @@ Frame.init : String
 
 <endpoint module="luxe: game" class="Frame" signature="sim"></endpoint>
 ### Frame.sim
-```lx
+```wren
 Frame.sim : String
 ```
 > An enum value for the `sim` section in the loop.
@@ -65,7 +65,7 @@ Frame.sim : String
 
 <endpoint module="luxe: game" class="Frame" signature="visual"></endpoint>
 ### Frame.visual
-```lx
+```wren
 Frame.visual : String
 ```
 > An enum value for the `visual` section in the loop.
@@ -78,7 +78,7 @@ Frame.visual : String
 
 <endpoint module="luxe: game" class="Frame" signature="debug"></endpoint>
 ### Frame.debug
-```lx
+```wren
 Frame.debug : String
 ```
 > An enum value for the `debug` section in the loop.
@@ -90,7 +90,7 @@ Frame.debug : String
 
 <endpoint module="luxe: game" class="Frame" signature="end"></endpoint>
 ### Frame.end
-```lx
+```wren
 Frame.end : String
 ```
 > An enum value for the `end` section in the loop.
@@ -102,7 +102,7 @@ Frame.end : String
 
 <endpoint module="luxe: game" class="Frame" signature="queue(fn : Fn)"></endpoint>
 ### Frame.queue(.)
-```lx
+```wren
 Frame.queue(fn : Fn) : None
 ```
 > **Once off**. Queue a function to be called after the current section has completed fully.
@@ -127,7 +127,7 @@ Frame.queue(fn : Fn) : None
 
 <endpoint module="luxe: game" class="Frame" signature="next(fn : Fn)"></endpoint>
 ### Frame.next(.)
-```lx
+```wren
 Frame.next(fn : Fn) : None
 ```
 > **Once off**. Queue a function to be called at the beginning of the next frame, 
@@ -147,7 +147,7 @@ Frame.next(fn : Fn) : None
 
 <endpoint module="luxe: game" class="Frame" signature="end(fn : Fn)"></endpoint>
 ### Frame.end(.)
-```lx
+```wren
 Frame.end(fn : Fn) : None
 ```
 > **Once off**. Queue a function to be called at the end of the current frame,
@@ -161,7 +161,7 @@ Frame.end(fn : Fn) : None
 
 <endpoint module="luxe: game" class="Frame" signature="schedule(time : Num, fn : Fn)"></endpoint>
 ### Frame.schedule(..)
-```lx
+```wren
 Frame.schedule(time : Num, fn : Fn) : Handle
 ```
 > Schedule a function to be called in future. 
@@ -170,7 +170,7 @@ Frame.schedule(time : Num, fn : Fn) : Handle
 
 <endpoint module="luxe: game" class="Frame" signature="schedule(time : Num, count : Num, fn : Fn)"></endpoint>
 ### Frame.schedule(...)
-```lx
+```wren
 Frame.schedule(time : Num, count : Num, fn : Fn) : Handle
 ```
 > Schedule a function to be called in future. 
@@ -179,14 +179,14 @@ Frame.schedule(time : Num, count : Num, fn : Fn) : Handle
 
 <endpoint module="luxe: game" class="Frame" signature="unschedule(handle : Handle)"></endpoint>
 ### Frame.unschedule(.)
-```lx
+```wren
 Frame.unschedule(handle : Handle) : None
 ```
 > Unschedule a function scheduled previously, using the handle returned from `schedule`.   
 
 <endpoint module="luxe: game" class="Frame" signature="off(handle : Handle)"></endpoint>
 ### Frame.off(.)
-```lx
+```wren
 Frame.off(handle : Handle) : Bool
 ```
 > Disconnect a function using the handle returned from one of the recurring functions.
@@ -202,7 +202,7 @@ Frame.off(handle : Handle) : Bool
 
 <endpoint module="luxe: game" class="Frame" signature="once(section : String, priority : Num, fn : Fn)"></endpoint>
 ### Frame.once(...)
-```lx
+```wren
 Frame.once(section : String, priority : Num, fn : Fn) : Handle
 ```
 > **Once off**. Queues a function to the specified section, with a given priority which will be executed _during_ the section.
@@ -217,7 +217,7 @@ Frame.once(section : String, priority : Num, fn : Fn) : Handle
 
 <endpoint module="luxe: game" class="Frame" signature="on(section : String, priority : Num, fn : Fn)"></endpoint>
 ### Frame.on(...)
-```lx
+```wren
 Frame.on(section : String, priority : Num, fn : Fn) : Handle
 ```
 > Connect a function to the specified section, with a given priority which will be executed _during_ the section.
@@ -232,7 +232,7 @@ Frame.on(section : String, priority : Num, fn : Fn) : Handle
 
 <endpoint module="luxe: game" class="Frame" signature="before(section : String, priority : Num, fn : Fn)"></endpoint>
 ### Frame.before(...)
-```lx
+```wren
 Frame.before(section : String, priority : Num, fn : Fn) : Handle
 ```
 > Connect a function to the specified section, with a given priority which will be executed _before_ the section.
@@ -247,7 +247,7 @@ Frame.before(section : String, priority : Num, fn : Fn) : Handle
 
 <endpoint module="luxe: game" class="Frame" signature="after(section : String, priority : Num, fn : Fn)"></endpoint>
 ### Frame.after(...)
-```lx
+```wren
 Frame.after(section : String, priority : Num, fn : Fn) : Handle
 ```
 > Connect a function to the specified section, with a given priority which will be executed _after_ the section.
@@ -262,7 +262,7 @@ Frame.after(section : String, priority : Num, fn : Fn) : Handle
 
 <endpoint module="luxe: game" class="Frame" signature="on(section : String, fn : Fn)"></endpoint>
 ### Frame.on(..)
-```lx
+```wren
 Frame.on(section : String, fn : Fn) : Handle
 ```
 > Connect a function to the specified section (with priority 0) which will be executed _during_ the section.
@@ -275,7 +275,7 @@ Frame.on(section : String, fn : Fn) : Handle
 
 <endpoint module="luxe: game" class="Frame" signature="once(section : String, fn : Fn)"></endpoint>
 ### Frame.once(..)
-```lx
+```wren
 Frame.once(section : String, fn : Fn) : Handle
 ```
 > **Once off**. Queue a function to the specified section (with priority 0) which will be executed _during_ the section.
@@ -287,7 +287,7 @@ Frame.once(section : String, fn : Fn) : Handle
 
 <endpoint module="luxe: game" class="Frame" signature="before(section : String, fn : Fn)"></endpoint>
 ### Frame.before(..)
-```lx
+```wren
 Frame.before(section : String, fn : Fn) : Handle
 ```
 > Connect a function to the specified section (with priority 0) which will be executed _before_ the section.
@@ -300,7 +300,7 @@ Frame.before(section : String, fn : Fn) : Handle
 
 <endpoint module="luxe: game" class="Frame" signature="after(section : String, fn : Fn)"></endpoint>
 ### Frame.after(..)
-```lx
+```wren
 Frame.after(section : String, fn : Fn) : Handle
 ```
 > Connect a function to the specified section (with priority 0) which will be executed _after_ the section.
@@ -313,7 +313,7 @@ Frame.after(section : String, fn : Fn) : Handle
 
 <endpoint module="luxe: game" class="Frame" signature="skip(count_frames : Num, fn : Fn)"></endpoint>
 ### Frame.skip(..)
-```lx
+```wren
 Frame.skip(count_frames : Num, fn : Fn) : unknown
 ```
 > **Once off**. Queue a function to be called at the beginning of the frame `count_frames` from now, 
@@ -327,42 +327,42 @@ Frame.skip(count_frames : Num, fn : Fn) : unknown
 
 <endpoint module="luxe: game" class="Frame" signature="mark(id : String, display : String)"></endpoint>
 ### Frame.mark(..)
-```lx
+```wren
 Frame.mark(id : String, display : String) : None
 ```
 > no docs found   
 
 <endpoint module="luxe: game" class="Frame" signature="get_marks(frame_index : Num)"></endpoint>
 ### Frame.get_marks(.)
-```lx
+```wren
 Frame.get_marks(frame_index : Num) : List
 ```
 > no docs found   
 
 <endpoint module="luxe: game" class="Frame" signature="index"></endpoint>
 ### Frame.index
-```lx
+```wren
 Frame.index : Num
 ```
 > no docs found   
 
 <endpoint module="luxe: game" class="Frame" signature="delta"></endpoint>
 ### Frame.delta
-```lx
+```wren
 Frame.delta : Num
 ```
 > no docs found   
 
 
 ## FrameSection
-```lx
+```wren
 import "luxe: game" for FrameSection
 ```
 > no docs found
 
 <endpoint module="luxe: game" class="FrameSection" signature="begin"></endpoint>
 ### FrameSection.begin
-```lx
+```wren
 FrameSection.begin : String
 ```
 > An enum value for the `begin` section in the loop.
@@ -374,7 +374,7 @@ FrameSection.begin : String
 
 <endpoint module="luxe: game" class="FrameSection" signature="init"></endpoint>
 ### FrameSection.init
-```lx
+```wren
 FrameSection.init : String
 ```
 > An enum value for the `init` section in the loop.
@@ -388,7 +388,7 @@ FrameSection.init : String
 
 <endpoint module="luxe: game" class="FrameSection" signature="sim"></endpoint>
 ### FrameSection.sim
-```lx
+```wren
 FrameSection.sim : String
 ```
 > An enum value for the `sim` section in the loop.
@@ -401,7 +401,7 @@ FrameSection.sim : String
 
 <endpoint module="luxe: game" class="FrameSection" signature="visual"></endpoint>
 ### FrameSection.visual
-```lx
+```wren
 FrameSection.visual : String
 ```
 > An enum value for the `visual` section in the loop.
@@ -414,7 +414,7 @@ FrameSection.visual : String
 
 <endpoint module="luxe: game" class="FrameSection" signature="debug"></endpoint>
 ### FrameSection.debug
-```lx
+```wren
 FrameSection.debug : String
 ```
 > An enum value for the `debug` section in the loop.
@@ -426,7 +426,7 @@ FrameSection.debug : String
 
 <endpoint module="luxe: game" class="FrameSection" signature="end"></endpoint>
 ### FrameSection.end
-```lx
+```wren
 FrameSection.end : String
 ```
 > An enum value for the `end` section in the loop.
@@ -438,84 +438,84 @@ FrameSection.end : String
 
 <endpoint module="luxe: game" class="FrameSection" signature="name(value : Any)"></endpoint>
 ### FrameSection.name(.)
-```lx
+```wren
 FrameSection.name(value : Any) : unknown
 ```
 > no docs found   
 
 
 ## FrameWhen
-```lx
+```wren
 import "luxe: game" for FrameWhen
 ```
 > no docs found
 
 <endpoint module="luxe: game" class="FrameWhen" signature="unknown"></endpoint>
 ### FrameWhen.unknown
-```lx
+```wren
 FrameWhen.unknown : String
 ```
 > no docs found   
 
 <endpoint module="luxe: game" class="FrameWhen" signature="before"></endpoint>
 ### FrameWhen.before
-```lx
+```wren
 FrameWhen.before : String
 ```
 > no docs found   
 
 <endpoint module="luxe: game" class="FrameWhen" signature="on"></endpoint>
 ### FrameWhen.on
-```lx
+```wren
 FrameWhen.on : String
 ```
 > no docs found   
 
 <endpoint module="luxe: game" class="FrameWhen" signature="after"></endpoint>
 ### FrameWhen.after
-```lx
+```wren
 FrameWhen.after : String
 ```
 > no docs found   
 
 <endpoint module="luxe: game" class="FrameWhen" signature="name(value : Any)"></endpoint>
 ### FrameWhen.name(.)
-```lx
+```wren
 FrameWhen.name(value : Any) : unknown
 ```
 > no docs found   
 
 
 ## Ready
-```lx
+```wren
 import "luxe: game" for Ready
 ```
 > The base class for a luxe game.
 
 <endpoint module="luxe: game" class="Ready" signature="ready()"></endpoint>
 ### Ready.ready(.)
-```lx
+```wren
 Ready.ready() : None
 ```
 > Called via `super()` inside your `ready` function. Must be called.   
 
 <endpoint module="luxe: game" class="Ready" signature="ready(message : String)"></endpoint>
 ### Ready.ready(.)
-```lx
+```wren
 Ready.ready(message : String) : None
 ```
 > Called via `super(message)` inside your `ready` function. Must be called.   
 
 <endpoint module="luxe: game" class="Ready" signature="tick(delta : Num)"></endpoint>
 ### Ready.tick(.)
-```lx
+```wren
 Ready.tick(delta : Num) : None
 ```
 > A default implementation for tick.   
 
 <endpoint module="luxe: game" class="Ready" signature="destroy()"></endpoint>
 ### Ready.destroy(.)
-```lx
+```wren
 Ready.destroy() : None
 ```
 > A default implementation for destroy.   

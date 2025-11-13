@@ -10,7 +10,7 @@ slug: "v/2025.11.1/string"
 
 
 ## Loc
-```lx
+```wren
 import "luxe: string" for Loc
 ```
 > Interface for the localisation system.
@@ -47,140 +47,140 @@ import "luxe: string" for Loc
 
 <endpoint module="luxe: string" class="Loc" signature="default_space"></endpoint>
 ### Loc.default_space
-```lx
+```wren
 Loc.default_space : unknown
 ```
 > The default space for localisations, \"game\".   
 
 <endpoint module="luxe: string" class="Loc" signature="missing_string"></endpoint>
 ### Loc.missing_string
-```lx
+```wren
 Loc.missing_string : unknown
 ```
 > The missing string fallback for the engine, typically \"MISSING.STRING\".   
 
 <endpoint module="luxe: string" class="Loc" signature="set_primary(language : String)"></endpoint>
 ### Loc.set_primary(.)
-```lx
+```wren
 Loc.set_primary(language : String) : None
 ```
 > Set the primary language that is used as fallback if a key can't be found in another language.   
 
 <endpoint module="luxe: string" class="Loc" signature="get_primary()"></endpoint>
 ### Loc.get_primary(.)
-```lx
+```wren
 Loc.get_primary() : unknown
 ```
 > Get the primary language.   
 
 <endpoint module="luxe: string" class="Loc" signature="set_language(language : String)"></endpoint>
 ### Loc.set_language(.)
-```lx
+```wren
 Loc.set_language(language : String) : None
 ```
 > Set the current language that strings are gotten for unless specified otherwise.   
 
 <endpoint module="luxe: string" class="Loc" signature="get_language()"></endpoint>
 ### Loc.get_language(.)
-```lx
+```wren
 Loc.get_language() : unknown
 ```
 > Get the current language.   
 
 <endpoint module="luxe: string" class="Loc" signature="add_language(language : String, plural_form : String)"></endpoint>
 ### Loc.add_language(..)
-```lx
+```wren
 Loc.add_language(language : String, plural_form : String) : unknown
 ```
 > Add a language with the given `id` and `plural_form` expression string (just the expression part, not the whole header).   
 
 <endpoint module="luxe: string" class="Loc" signature="add(language : String, space : String, key : String, string : String)"></endpoint>
 ### Loc.add(....)
-```lx
+```wren
 Loc.add(language : String, space : String, key : String, string : String) : None
 ```
 > Add a string to the localisation system.   
 
 <endpoint module="luxe: string" class="Loc" signature="add_plural(language : String, space : String, key : String, strings : List)"></endpoint>
 ### Loc.add_plural(....)
-```lx
+```wren
 Loc.add_plural(language : String, space : String, key : String, strings : List) : None
 ```
 > Add a plural string to the localisation system.   
 
 <endpoint module="luxe: string" class="Loc" signature="get(language : String, space : String, key : String)"></endpoint>
 ### Loc.get(...)
-```lx
+```wren
 Loc.get(language : String, space : String, key : String) : String
 ```
 > Get the string for a key (or fallback in primary language) from the localisation system for a specific language/space.   
 
 <endpoint module="luxe: string" class="Loc" signature="has(language : String, space : String, key : String)"></endpoint>
 ### Loc.has(...)
-```lx
+```wren
 Loc.has(language : String, space : String, key : String) : Bool
 ```
 > Check if the string for a key exists in the localisation system for a specific language/space.   
 
 <endpoint module="luxe: string" class="Loc" signature="get_plural(language : String, space : String, key : String, count : Num)"></endpoint>
 ### Loc.get_plural(....)
-```lx
+```wren
 Loc.get_plural(language : String, space : String, key : String, count : Num) : String
 ```
 > Get the string for a key from the localisation system for a specific language/space, with the plural count.   
 
 <endpoint module="luxe: string" class="Loc" signature="get(space : String, key : String)"></endpoint>
 ### Loc.get(..)
-```lx
+```wren
 Loc.get(space : String, key : String) : String
 ```
 > Get the string for a key (or fallback in primary language) from the localisation system in the current language and in a specific space.   
 
 <endpoint module="luxe: string" class="Loc" signature="get(key : String)"></endpoint>
 ### Loc.get(.)
-```lx
+```wren
 Loc.get(key : String) : String
 ```
 > Get the string for a key (or fallback in primary language) from the localisation system in the current language and in the default space.   
 
 <endpoint module="luxe: string" class="Loc" signature="has(key : String)"></endpoint>
 ### Loc.has(.)
-```lx
+```wren
 Loc.has(key : String) : Bool
 ```
 > Check if the string for a key exists in the localisation system for the current language and default space   
 
 <endpoint module="luxe: string" class="Loc" signature="load_primary(asset_id : String)"></endpoint>
 ### Loc.load_primary(.)
-```lx
+```wren
 Loc.load_primary(asset_id : String) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Loc" signature="load_language(asset_id : String)"></endpoint>
 ### Loc.load_language(.)
-```lx
+```wren
 Loc.load_language(asset_id : String) : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Loc" signature="load_language(asset_id : String, primary : Bool)"></endpoint>
 ### Loc.load_language(..)
-```lx
+```wren
 Loc.load_language(asset_id : String, primary : Bool) : Bool
 ```
 > no docs found   
 
 
 ## Str
-```lx
+```wren
 import "luxe: string" for Str
 ```
 > Utility class for String functions.
 
 <endpoint module="luxe: string" class="Str" signature="split_lines(string : String)"></endpoint>
 ### Str.split_lines(.)
-```lx
+```wren
 Str.split_lines(string : String) : List
 ```
 > Split a string into its lines.
@@ -200,7 +200,7 @@ Str.split_lines(string : String) : List
 
 <endpoint module="luxe: string" class="Str" signature="split(string : String, delim : String)"></endpoint>
 ### Str.split(..)
-```lx
+```wren
 Str.split(string : String, delim : String) : List
 ```
 > **Deprecated** use `string.split(delim)`
@@ -214,7 +214,7 @@ Str.split(string : String, delim : String) : List
 
 <endpoint module="luxe: string" class="Str" signature="indent_strip(string : String)"></endpoint>
 ### Str.indent_strip(.)
-```lx
+```wren
 Str.indent_strip(string : String) : String
 ```
 > Removes indentation from the first line of a string, and the same amount from subsequent lines if any. 
@@ -232,7 +232,7 @@ Str.indent_strip(string : String) : String
 
 <endpoint module="luxe: string" class="Str" signature="indent(string : String)"></endpoint>
 ### Str.indent(.)
-```lx
+```wren
 Str.indent(string : String) : Num
 ```
 > returns how much indentation characters (whitespace or tabs) a string has.
@@ -245,7 +245,7 @@ Str.indent(string : String) : Num
 
 <endpoint module="luxe: string" class="Str" signature="trim(string : String)"></endpoint>
 ### Str.trim(.)
-```lx
+```wren
 Str.trim(string : String) : String
 ```
 > Trims whitespace characters (" ", "\n", "\t") from front and end of an string.
@@ -259,7 +259,7 @@ Str.trim(string : String) : String
 
 <endpoint module="luxe: string" class="Str" signature="compare(a : String, b : String)"></endpoint>
 ### Str.compare(..)
-```lx
+```wren
 Str.compare(a : String, b : String) : Num
 ```
 > Comparison function for strings. Order is based on the unicode number of the first non-equal codepoint or length.
@@ -277,7 +277,7 @@ Str.compare(a : String, b : String) : Num
 
 <endpoint module="luxe: string" class="Str" signature="replace(string : String, sub : String, repl : String)"></endpoint>
 ### Str.replace(...)
-```lx
+```wren
 Str.replace(string : String, sub : String, repl : String) : String
 ```
 > Replace all occurances of one substring with another.
@@ -291,7 +291,7 @@ Str.replace(string : String, sub : String, repl : String) : String
 
 <endpoint module="luxe: string" class="Str" signature="is_alphanumeric(str : String)"></endpoint>
 ### Str.is_alphanumeric(.)
-```lx
+```wren
 Str.is_alphanumeric(str : String) : Bool
 ```
 > Get whether all characters in a string are alphanumeric (uppercase or lowercase latin characters or arabic numerals)
@@ -305,7 +305,7 @@ Str.is_alphanumeric(str : String) : Bool
 
 <endpoint module="luxe: string" class="Str" signature="is_numeric(str : String)"></endpoint>
 ### Str.is_numeric(.)
-```lx
+```wren
 Str.is_numeric(str : String) : Bool
 ```
 > Get whether all characters in a string are numeric (arabic numerals)
@@ -319,28 +319,28 @@ Str.is_numeric(str : String) : Bool
 
 <endpoint module="luxe: string" class="Str" signature="increment_end(string : String)"></endpoint>
 ### Str.increment_end(.)
-```lx
+```wren
 Str.increment_end(string : String) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Str" signature="vec(value : Vec)"></endpoint>
 ### Str.vec(.)
-```lx
+```wren
 Str.vec(value : Vec) : String
 ```
 > Get the string representation of a vector. (uses 6 digits after decimal point and spaces between numbers)   
 
 <endpoint module="luxe: string" class="Str" signature="vec(value : Vec, precision : Num)"></endpoint>
 ### Str.vec(..)
-```lx
+```wren
 Str.vec(value : Vec, precision : Num) : String
 ```
 > Get the string representation of a vector with the specified digits after the decimal point. (puts spaces between numbers)   
 
 <endpoint module="luxe: string" class="Str" signature="vec(value : Vec, precision : Num, sep : String)"></endpoint>
 ### Str.vec(...)
-```lx
+```wren
 Str.vec(value : Vec, precision : Num, sep : String) : String
 ```
 > Get the string representation of a vector.
@@ -355,21 +355,21 @@ Str.vec(value : Vec, precision : Num, sep : String) : String
 
 <endpoint module="luxe: string" class="Str" signature="fixed(number : Num, precision : Num)"></endpoint>
 ### Str.fixed(..)
-```lx
+```wren
 Str.fixed(number : Num, precision : Num) : String
 ```
 > Get the string representation of a number with a specified amount of digits after the decimal point.   
 
 <endpoint module="luxe: string" class="Str" signature="fixed(number : Num)"></endpoint>
 ### Str.fixed(.)
-```lx
+```wren
 Str.fixed(number : Num) : String
 ```
 > Get the string representation of a number with 6 digits after the decimal points.   
 
 <endpoint module="luxe: string" class="Str" signature="fixed(number : Num, precision : Num, padded : Bool)"></endpoint>
 ### Str.fixed(...)
-```lx
+```wren
 Str.fixed(number : Num, precision : Num, padded : Bool) : String
 ```
 > Get the string representation of a number with a specified amount of digits after the decimal point.
@@ -377,28 +377,28 @@ Str.fixed(number : Num, precision : Num, padded : Bool) : String
 
 <endpoint module="luxe: string" class="Str" signature="url_encode(string : String)"></endpoint>
 ### Str.url_encode(.)
-```lx
+```wren
 Str.url_encode(string : String) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Str" signature="hex(number : Num)"></endpoint>
 ### Str.hex(.)
-```lx
+```wren
 Str.hex(number : Num) : String
 ```
 > Get string representation of number in base-16/hexadecimal.   
 
 <endpoint module="luxe: string" class="Str" signature="binary(number : Num)"></endpoint>
 ### Str.binary(.)
-```lx
+```wren
 Str.binary(number : Num) : String
 ```
 > Get string representation of number in base-2/binary.   
 
 <endpoint module="luxe: string" class="Str" signature="binary(number : Num, bit_width : Num)"></endpoint>
 ### Str.binary(..)
-```lx
+```wren
 Str.binary(number : Num, bit_width : Num) : String
 ```
 > Get string representation of (positive integer) number in base-2/binary.
@@ -406,203 +406,203 @@ Str.binary(number : Num, bit_width : Num) : String
 
 <endpoint module="luxe: string" class="Str" signature="path_is_absolute(path : String)"></endpoint>
 ### Str.path_is_absolute(.)
-```lx
+```wren
 Str.path_is_absolute(path : String) : Bool
 ```
 > Get whether a path is absolute (instead of relative).   
 
 <endpoint module="luxe: string" class="Str" signature="path_directory(path : String)"></endpoint>
 ### Str.path_directory(.)
-```lx
+```wren
 Str.path_directory(path : String) : String
 ```
 > Get the directory path of a path pointing to a file.   
 
 <endpoint module="luxe: string" class="Str" signature="path_filename(path : String)"></endpoint>
 ### Str.path_filename(.)
-```lx
+```wren
 Str.path_filename(path : String) : String
 ```
 > Get the filename (including extension) of a path pointing to a file.   
 
 <endpoint module="luxe: string" class="Str" signature="path_extension(path : String)"></endpoint>
 ### Str.path_extension(.)
-```lx
+```wren
 Str.path_extension(path : String) : String
 ```
 > Get the extension of a path pointing to a file.   
 
 <endpoint module="luxe: string" class="Str" signature="path_extensionless(path : String)"></endpoint>
 ### Str.path_extensionless(.)
-```lx
+```wren
 Str.path_extensionless(path : String) : String
 ```
 > Get the filename (excluding extension) of a path pointing to a file.   
 
 <endpoint module="luxe: string" class="Str" signature="bytes_formatted(byte_count : Num)"></endpoint>
 ### Str.bytes_formatted(.)
-```lx
+```wren
 Str.bytes_formatted(byte_count : Num) : String
 ```
 > Get a byte size as bytes/KB/MB/GB/TB (whichever is the biggest unit that is at least 1) with 3 digits after the decimal place.   
 
 <endpoint module="luxe: string" class="Str" signature="bytes_formatted(byte_count : Num, precision : Num)"></endpoint>
 ### Str.bytes_formatted(..)
-```lx
+```wren
 Str.bytes_formatted(byte_count : Num, precision : Num) : String
 ```
 > Get a byte size as bytes/KB/MB/GB/TB (whichever is the biggest unit that is at least 1) with `precision` digits after the decimal place.   
 
 <endpoint module="luxe: string" class="Str" signature="upper(string : String)"></endpoint>
 ### Str.upper(.)
-```lx
+```wren
 Str.upper(string : String) : String
 ```
 > Converts a string to all uppercase.   
 
 <endpoint module="luxe: string" class="Str" signature="lower(string : String)"></endpoint>
 ### Str.lower(.)
-```lx
+```wren
 Str.lower(string : String) : String
 ```
 > Converts a string to all lowercase.   
 
 <endpoint module="luxe: string" class="Str" signature="wrap(string : String, column : Num)"></endpoint>
 ### Str.wrap(..)
-```lx
+```wren
 Str.wrap(string : String, column : Num) : String
 ```
 > Wraps text on spaces to keep line length within column width. Does not break words that are longer than column width.   
 
 <endpoint module="luxe: string" class="Str" signature="path(path : String)"></endpoint>
 ### Str.path(.)
-```lx
+```wren
 Str.path(path : String) : String
 ```
 > Normalize a path.   
 
 <endpoint module="luxe: string" class="Str" signature="strip_markup(string : String)"></endpoint>
 ### Str.strip_markup(.)
-```lx
+```wren
 Str.strip_markup(string : String) : String
 ```
 > Strips the luxe markup formatting from the given string, returning the raw value   
 
 <endpoint module="luxe: string" class="Str" signature="path_normalize(string : String)"></endpoint>
 ### Str.path_normalize(.)
-```lx
+```wren
 Str.path_normalize(string : String) : String
 ```
 > Normalizes the path also resolving ../ and ./ and so on   
 
 <endpoint module="luxe: string" class="Str" signature="format(string : String, arg0 : Any)"></endpoint>
 ### Str.format(..)
-```lx
+```wren
 Str.format(string : String, arg0 : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Str" signature="format(string : String, arg0 : Any, arg1 : Any)"></endpoint>
 ### Str.format(...)
-```lx
+```wren
 Str.format(string : String, arg0 : Any, arg1 : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Str" signature="format(string : String, arg0 : Any, arg1 : Any, arg2 : Any)"></endpoint>
 ### Str.format(....)
-```lx
+```wren
 Str.format(string : String, arg0 : Any, arg1 : Any, arg2 : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Str" signature="format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any)"></endpoint>
 ### Str.format(.....)
-```lx
+```wren
 Str.format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Str" signature="format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any)"></endpoint>
 ### Str.format(......)
-```lx
+```wren
 Str.format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Str" signature="format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any)"></endpoint>
 ### Str.format(.......)
-```lx
+```wren
 Str.format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Str" signature="format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any)"></endpoint>
 ### Str.format(........)
-```lx
+```wren
 Str.format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Str" signature="format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any, arg7 : Any)"></endpoint>
 ### Str.format(.........)
-```lx
+```wren
 Str.format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any, arg7 : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Str" signature="format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any, arg7 : Any, arg8 : Any)"></endpoint>
 ### Str.format(..........)
-```lx
+```wren
 Str.format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any, arg7 : Any, arg8 : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Str" signature="format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any, arg7 : Any, arg8 : Any, arg9 : Any)"></endpoint>
 ### Str.format(...........)
-```lx
+```wren
 Str.format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any, arg7 : Any, arg8 : Any, arg9 : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Str" signature="format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any, arg7 : Any, arg8 : Any, arg9 : Any, arg10 : Any)"></endpoint>
 ### Str.format(............)
-```lx
+```wren
 Str.format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any, arg7 : Any, arg8 : Any, arg9 : Any, arg10 : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Str" signature="format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any, arg7 : Any, arg8 : Any, arg9 : Any, arg10 : Any, arg11 : Any)"></endpoint>
 ### Str.format(.............)
-```lx
+```wren
 Str.format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any, arg7 : Any, arg8 : Any, arg9 : Any, arg10 : Any, arg11 : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Str" signature="format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any, arg7 : Any, arg8 : Any, arg9 : Any, arg10 : Any, arg11 : Any, arg12 : Any)"></endpoint>
 ### Str.format(..............)
-```lx
+```wren
 Str.format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any, arg7 : Any, arg8 : Any, arg9 : Any, arg10 : Any, arg11 : Any, arg12 : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Str" signature="format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any, arg7 : Any, arg8 : Any, arg9 : Any, arg10 : Any, arg11 : Any, arg12 : Any, arg13 : Any)"></endpoint>
 ### Str.format(...............)
-```lx
+```wren
 Str.format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any, arg7 : Any, arg8 : Any, arg9 : Any, arg10 : Any, arg11 : Any, arg12 : Any, arg13 : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Str" signature="format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any, arg7 : Any, arg8 : Any, arg9 : Any, arg10 : Any, arg11 : Any, arg12 : Any, arg13 : Any, arg14 : Any)"></endpoint>
 ### Str.format(................)
-```lx
+```wren
 Str.format(string : String, arg0 : Any, arg1 : Any, arg2 : Any, arg3 : Any, arg4 : Any, arg5 : Any, arg6 : Any, arg7 : Any, arg8 : Any, arg9 : Any, arg10 : Any, arg11 : Any, arg12 : Any, arg13 : Any, arg14 : Any) : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string" class="Str" signature="format_list(string : String, args : List)"></endpoint>
 ### Str.format_list(..)
-```lx
+```wren
 Str.format_list(string : String, args : List) : String
 ```
 > Format the string, replacing placeholder with other text.
@@ -617,14 +617,14 @@ Str.format_list(string : String, args : List) : String
 
 <endpoint module="luxe: string" class="Str" signature="valid(string : String)"></endpoint>
 ### Str.valid(.)
-```lx
+```wren
 Str.valid(string : String) : Bool
 ```
 > Check if string is null or empty   
 
 <endpoint module="luxe: string" class="Str" signature="template(string : String, key_value_context : Map)"></endpoint>
 ### Str.template(..)
-```lx
+```wren
 Str.template(string : String, key_value_context : Map) : unknown
 ```
 > A simple templating helper. Replace parts of the text with data from a given context map, by simple (non nested) string keys.

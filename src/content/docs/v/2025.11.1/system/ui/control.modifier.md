@@ -13,195 +13,195 @@ slug: "v/2025.11.1/system/ui/control.modifier"
 
 
 ## Behave
-```lx
+```wren
 import "luxe: system/ui/control.modifier" for Behave
 ```
 > no docs found
 
 <endpoint module="luxe: system/ui/control.modifier" class="Behave" signature="left"></endpoint>
 ### Behave.left
-```lx
+```wren
 Behave.left : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Behave" signature="top"></endpoint>
 ### Behave.top
-```lx
+```wren
 Behave.top : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Behave" signature="right"></endpoint>
 ### Behave.right
-```lx
+```wren
 Behave.right : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Behave" signature="bottom"></endpoint>
 ### Behave.bottom
-```lx
+```wren
 Behave.bottom : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Behave" signature="hfill"></endpoint>
 ### Behave.hfill
-```lx
+```wren
 Behave.hfill : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Behave" signature="vfill"></endpoint>
 ### Behave.vfill
-```lx
+```wren
 Behave.vfill : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Behave" signature="hcenter"></endpoint>
 ### Behave.hcenter
-```lx
+```wren
 Behave.hcenter : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Behave" signature="vcenter"></endpoint>
 ### Behave.vcenter
-```lx
+```wren
 Behave.vcenter : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Behave" signature="center"></endpoint>
 ### Behave.center
-```lx
+```wren
 Behave.center : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Behave" signature="fill"></endpoint>
 ### Behave.fill
-```lx
+```wren
 Behave.fill : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Behave" signature="break_line"></endpoint>
 ### Behave.break_line
-```lx
+```wren
 Behave.break_line : unknown
 ```
 > no docs found   
 
 
 ## Contain
-```lx
+```wren
 import "luxe: system/ui/control.modifier" for Contain
 ```
 > no docs found
 
 <endpoint module="luxe: system/ui/control.modifier" class="Contain" signature="row"></endpoint>
 ### Contain.row
-```lx
+```wren
 Contain.row : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Contain" signature="column"></endpoint>
 ### Contain.column
-```lx
+```wren
 Contain.column : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Contain" signature="layout"></endpoint>
 ### Contain.layout
-```lx
+```wren
 Contain.layout : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Contain" signature="flex"></endpoint>
 ### Contain.flex
-```lx
+```wren
 Contain.flex : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Contain" signature="nowrap"></endpoint>
 ### Contain.nowrap
-```lx
+```wren
 Contain.nowrap : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Contain" signature="wrap"></endpoint>
 ### Contain.wrap
-```lx
+```wren
 Contain.wrap : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Contain" signature="start"></endpoint>
 ### Contain.start
-```lx
+```wren
 Contain.start : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Contain" signature="middle"></endpoint>
 ### Contain.middle
-```lx
+```wren
 Contain.middle : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Contain" signature="end"></endpoint>
 ### Contain.end
-```lx
+```wren
 Contain.end : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Contain" signature="justify"></endpoint>
 ### Contain.justify
-```lx
+```wren
 Contain.justify : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Contain" signature="vfit"></endpoint>
 ### Contain.vfit
-```lx
+```wren
 Contain.vfit : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="Contain" signature="hfit"></endpoint>
 ### Contain.hfit
-```lx
+```wren
 Contain.hfit : unknown
 ```
 > no docs found   
 
 
 ## Control
-```lx
+```wren
 import "luxe: system/ui/control.modifier" for Control
 ```
 > no docs found
 
 
 ## Data
-```lx
+```wren
 import "luxe: system/ui/control.modifier" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var ui : Link = null
 var width : Num = 0
 var height : Num = 0
@@ -219,13 +219,13 @@ var children : List = []
 ```
 
 ## System
-```lx
+```wren
 import "luxe: system/ui/control.modifier" for System
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var press : Wire = Wire.create
 var release : Wire = Wire.create
 var enter : Wire = Wire.create
@@ -235,70 +235,70 @@ var style : null = PathStyle.new
 ```
 <endpoint module="luxe: system/ui/control.modifier" class="System" signature="new(world : Any)"></endpoint>
 ### System.new(.)
-```lx
+```wren
 System.new(world : Any) : System
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="System" signature="editor_init(world : World)"></endpoint>
 ### System.editor_init(.)
-```lx
+```wren
 System.editor_init(world : World) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="System" signature="init(world : World)"></endpoint>
 ### System.init(.)
-```lx
+```wren
 System.init(world : World) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="System" signature="editor_attach(entity : Entity, ctrl : Data)"></endpoint>
 ### System.editor_attach(..)
-```lx
+```wren
 System.editor_attach(entity : Entity, ctrl : Data) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="System" signature="attach(entity : Entity, ctrl : Data)"></endpoint>
 ### System.attach(..)
-```lx
+```wren
 System.attach(entity : Entity, ctrl : Data) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="System" signature="editor_detach(entity : Entity, ctrl : Data)"></endpoint>
 ### System.editor_detach(..)
-```lx
+```wren
 System.editor_detach(entity : Entity, ctrl : Data) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="System" signature="detach(entity : Entity, ctrl : Data)"></endpoint>
 ### System.detach(..)
-```lx
+```wren
 System.detach(entity : Entity, ctrl : Data) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="System" signature="draw_canvas(ui : Any, x : Any, y : Any, w : Any, h : Any)"></endpoint>
 ### System.draw_canvas(.....)
-```lx
+```wren
 System.draw_canvas(ui : Any, x : Any, y : Any, w : Any, h : Any) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="System" signature="editor_tick(delta : Num)"></endpoint>
 ### System.editor_tick(.)
-```lx
+```wren
 System.editor_tick(delta : Num) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/ui/control.modifier" class="System" signature="tick(delta : Num)"></endpoint>
 ### System.tick(.)
-```lx
+```wren
 System.tick(delta : Num) : unknown
 ```
 > no docs found   

@@ -9,13 +9,13 @@ slug: "v/2025.11.1/system/physics/cast_ray.block"
 
 
 ## CastRayResult
-```lx
+```wren
 import "luxe: system/physics/cast_ray.block" for CastRayResult
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var body_entity : Num = 0
 var collider_entity : Num = 0
 var pos : Double3 = [0, 0, 0]

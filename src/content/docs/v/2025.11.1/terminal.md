@@ -9,70 +9,70 @@ slug: "v/2025.11.1/terminal"
 
 
 ## Terminal
-```lx
+```wren
 import "luxe: terminal" for Terminal
 ```
 > no docs found
 
 <endpoint module="luxe: terminal" class="Terminal" signature="new()"></endpoint>
 ### Terminal.new(.)
-```lx
+```wren
 Terminal.new() : Terminal
 ```
 > no docs found   
 
 <endpoint module="luxe: terminal" class="Terminal" signature="red"></endpoint>
 ### Terminal.red
-```lx
+```wren
 Terminal.red : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: terminal" class="Terminal" signature="cyan"></endpoint>
 ### Terminal.cyan
-```lx
+```wren
 Terminal.cyan : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: terminal" class="Terminal" signature="reset"></endpoint>
 ### Terminal.reset
-```lx
+```wren
 Terminal.reset : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: terminal" class="Terminal" signature="pink"></endpoint>
 ### Terminal.pink
-```lx
+```wren
 Terminal.pink : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: terminal" class="Terminal" signature="purple"></endpoint>
 ### Terminal.purple
-```lx
+```wren
 Terminal.purple : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: terminal" class="Terminal" signature="lime"></endpoint>
 ### Terminal.lime
-```lx
+```wren
 Terminal.lime : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: terminal" class="Terminal" signature="dim"></endpoint>
 ### Terminal.dim
-```lx
+```wren
 Terminal.dim : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: terminal" class="Terminal" signature="green"></endpoint>
 ### Terminal.green
-```lx
+```wren
 Terminal.green : unknown
 ```
 > no docs found   

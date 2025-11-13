@@ -11,13 +11,13 @@ slug: "v/2025.11.1/system/physics/contact.block"
 
 
 ## Contact
-```lx
+```wren
 import "luxe: system/physics/contact.block" for Contact
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var kind : ContactKind = ContactKind.none
 var body : Num = 0
 var collider : Num = 0
@@ -30,56 +30,56 @@ var overlap : Num = 0
 ```
 
 ## ContactHelper
-```lx
+```wren
 import "luxe: system/physics/contact.block" for ContactHelper
 ```
 > no docs found
 
 <endpoint module="luxe: system/physics/contact.block" class="ContactHelper" signature="get_other(body : Entity, contact : Contact)"></endpoint>
 ### ContactHelper.get_other(..)
-```lx
+```wren
 ContactHelper.get_other(body : Entity, contact : Contact) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/physics/contact.block" class="ContactHelper" signature="get_other_collider(collider : Entity, contact : Contact)"></endpoint>
 ### ContactHelper.get_other_collider(..)
-```lx
+```wren
 ContactHelper.get_other_collider(collider : Entity, contact : Contact) : unknown
 ```
 > no docs found   
 
 
 ## ContactKind
-```lx
+```wren
 import "luxe: system/physics/contact.block" for ContactKind
 ```
 > no docs found
 
 <endpoint module="luxe: system/physics/contact.block" class="ContactKind" signature="none"></endpoint>
 ### ContactKind.none
-```lx
+```wren
 ContactKind.none : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/physics/contact.block" class="ContactKind" signature="begin"></endpoint>
 ### ContactKind.begin
-```lx
+```wren
 ContactKind.begin : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/physics/contact.block" class="ContactKind" signature="end"></endpoint>
 ### ContactKind.end
-```lx
+```wren
 ContactKind.end : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/physics/contact.block" class="ContactKind" signature="active"></endpoint>
 ### ContactKind.active
-```lx
+```wren
 ContactKind.active : unknown
 ```
 > no docs found   

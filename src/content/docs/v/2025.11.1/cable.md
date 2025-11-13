@@ -9,13 +9,13 @@ slug: "v/2025.11.1/cable"
 
 
 ## Cable
-```lx
+```wren
 import "luxe: cable" for Cable
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var fixed_size : Bool = false
 var flex_amount : Num = 0.1
 var damping : Num = 0.96
@@ -29,35 +29,35 @@ var nodes : List = []
 ```
 <endpoint module="luxe: cable" class="Cable" signature="new()"></endpoint>
 ### Cable.new(.)
-```lx
+```wren
 Cable.new() : Cable
 ```
 > no docs found   
 
 <endpoint module="luxe: cable" class="Cable" signature="pre_warm(warm_iterations : Num)"></endpoint>
 ### Cable.pre_warm(.)
-```lx
+```wren
 Cable.pre_warm(warm_iterations : Num) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: cable" class="Cable" signature="simulate()"></endpoint>
 ### Cable.simulate(.)
-```lx
+```wren
 Cable.simulate() : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: cable" class="Cable" signature="apply_constraints()"></endpoint>
 ### Cable.apply_constraints(.)
-```lx
+```wren
 Cable.apply_constraints() : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: cable" class="Cable" signature="tick()"></endpoint>
 ### Cable.tick(.)
-```lx
+```wren
 Cable.tick() : unknown
 ```
 > no docs found   

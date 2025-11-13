@@ -9,13 +9,13 @@ slug: "v/2025.11.1/pose/clip.pose_node"
 
 
 ## ClipNode
-```lx
+```wren
 import "luxe: pose/clip.pose_node" for ClipNode
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var clip : Num = 0
 var offset : Num = 0
 var rate : Num = 1
@@ -23,7 +23,7 @@ var time : Num = 0
 ```
 <endpoint module="luxe: pose/clip.pose_node" class="ClipNode" signature="id"></endpoint>
 ### ClipNode.id
-```lx
+```wren
 ClipNode.id : unknown
 ```
 > no docs found   

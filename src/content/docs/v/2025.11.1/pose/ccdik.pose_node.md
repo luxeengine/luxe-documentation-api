@@ -9,13 +9,13 @@ slug: "v/2025.11.1/pose/ccdik.pose_node"
 
 
 ## CCDIKNode
-```lx
+```wren
 import "luxe: pose/ccdik.pose_node" for CCDIKNode
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var input_pose : Num = 0
 var target : Float3 = [0, 0, 1]
 var start_bone : String = null
@@ -28,7 +28,7 @@ var weight : Num = 1
 ```
 <endpoint module="luxe: pose/ccdik.pose_node" class="CCDIKNode" signature="id"></endpoint>
 ### CCDIKNode.id
-```lx
+```wren
 CCDIKNode.id : unknown
 ```
 > no docs found   

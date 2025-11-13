@@ -9,7 +9,7 @@ slug: "v/2025.11.1/editor"
 
 
 ## Editor
-```lx
+```wren
 import "luxe: editor" for Editor
 ```
 > Access to information about the editor, _if the game is currently running in the editor_.
@@ -17,14 +17,14 @@ import "luxe: editor" for Editor
 
 <endpoint module="luxe: editor" class="Editor" signature="get"></endpoint>
 ### Editor.get
-```lx
+```wren
 Editor.get : unknown
 ```
 > Returns the editor API for access to the editor   
 
 <endpoint module="luxe: editor" class="Editor" signature="get(context_id : Any)"></endpoint>
 ### Editor.get(.)
-```lx
+```wren
 Editor.get(context_id : Any) : unknown
 ```
 > Returns the editor context with the given ID.

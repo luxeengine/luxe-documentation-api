@@ -13,24 +13,24 @@ slug: "v/2025.11.1/system/values.modifier"
 
 
 ## Data
-```lx
+```wren
 import "luxe: system/values.modifier" for Data
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var values : List = []
 ```
 
 ## Value
-```lx
+```wren
 import "luxe: system/values.modifier" for Value
 ```
 > no docs found
 
 ### Variables
-```lx
+```wren
 var kind : ValuesKind = ValuesKind.number
 var name : String = "value"
 var number : Num = 0
@@ -43,7 +43,7 @@ var color : Color = [1, 1, 1, 1]
 ```
 
 ## Values
-```lx
+```wren
 import "luxe: system/values.modifier" for Values
 ```
 > Values is a modifier that lets you store Key -> Value pairs. Store values like numbers, 
@@ -68,7 +68,7 @@ import "luxe: system/values.modifier" for Values
 
 <endpoint module="luxe: system/values.modifier" class="Values" signature="create(entity : Entity)"></endpoint>
 ### Values.create(.)
-```lx
+```wren
 Values.create(entity : Entity) : None
 ```
 > Attach a `Values` modifier to `entity`.
@@ -80,7 +80,7 @@ Values.create(entity : Entity) : None
 
 <endpoint module="luxe: system/values.modifier" class="Values" signature="destroy(entity : Entity)"></endpoint>
 ### Values.destroy(.)
-```lx
+```wren
 Values.destroy(entity : Entity) : None
 ```
 > Detach and destroy the `Values` attached to `entity`
@@ -91,7 +91,7 @@ Values.destroy(entity : Entity) : None
 
 <endpoint module="luxe: system/values.modifier" class="Values" signature="has(entity : Entity)"></endpoint>
 ### Values.has(.)
-```lx
+```wren
 Values.has(entity : Entity) : Bool
 ```
 > Returns true if `entity` has a `Values` modifier attached.
@@ -104,7 +104,7 @@ Values.has(entity : Entity) : Bool
 
 <endpoint module="luxe: system/values.modifier" class="Values" signature="has_key(entity : Entity, key : String)"></endpoint>
 ### Values.has_key(..)
-```lx
+```wren
 Values.has_key(entity : Entity, key : String) : Bool
 ```
 > Returns true the entity's Values modifier has a value with the given 'key'
@@ -117,7 +117,7 @@ Values.has_key(entity : Entity, key : String) : Bool
 
 <endpoint module="luxe: system/values.modifier" class="Values" signature="remove_key(entity : Entity, key : String)"></endpoint>
 ### Values.remove_key(..)
-```lx
+```wren
 Values.remove_key(entity : Entity, key : String) : None
 ```
 > Removes a value by key from 'entity's Values modifier, if it exists
@@ -128,7 +128,7 @@ Values.remove_key(entity : Entity, key : String) : None
 
 <endpoint module="luxe: system/values.modifier" class="Values" signature="get_keys(entity : Entity)"></endpoint>
 ### Values.get_keys(.)
-```lx
+```wren
 Values.get_keys(entity : Entity) : List
 ```
 > Get a List of all the String keys for values on 'entity's Values modifier
@@ -142,7 +142,7 @@ Values.get_keys(entity : Entity) : List
 
 <endpoint module="luxe: system/values.modifier" class="Values" signature="get(entity : Entity, key : String, default : Any)"></endpoint>
 ### Values.get(...)
-```lx
+```wren
 Values.get(entity : Entity, key : String, default : Any) : Any
 ```
 > Get the current value stored with `key` on the Values modifier on `entity`,
@@ -155,7 +155,7 @@ Values.get(entity : Entity, key : String, default : Any) : Any
 
 <endpoint module="luxe: system/values.modifier" class="Values" signature="set(entity : Entity, key : String, value : Any)"></endpoint>
 ### Values.set(...)
-```lx
+```wren
 Values.set(entity : Entity, key : String, value : Any) : None
 ```
 > Set the value stored at the 'key' on the Values modifier on 'entity'.
@@ -168,119 +168,119 @@ Values.set(entity : Entity, key : String, value : Any) : None
 
 
 ## ValuesKind
-```lx
+```wren
 import "luxe: system/values.modifier" for ValuesKind
 ```
 > no docs found
 
 <endpoint module="luxe: system/values.modifier" class="ValuesKind" signature="number"></endpoint>
 ### ValuesKind.number
-```lx
+```wren
 ValuesKind.number : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/values.modifier" class="ValuesKind" signature="string"></endpoint>
 ### ValuesKind.string
-```lx
+```wren
 ValuesKind.string : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/values.modifier" class="ValuesKind" signature="boolean"></endpoint>
 ### ValuesKind.boolean
-```lx
+```wren
 ValuesKind.boolean : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/values.modifier" class="ValuesKind" signature="float2"></endpoint>
 ### ValuesKind.float2
-```lx
+```wren
 ValuesKind.float2 : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/values.modifier" class="ValuesKind" signature="float3"></endpoint>
 ### ValuesKind.float3
-```lx
+```wren
 ValuesKind.float3 : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/values.modifier" class="ValuesKind" signature="float4"></endpoint>
 ### ValuesKind.float4
-```lx
+```wren
 ValuesKind.float4 : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/values.modifier" class="ValuesKind" signature="color"></endpoint>
 ### ValuesKind.color
-```lx
+```wren
 ValuesKind.color : unknown
 ```
 > no docs found   
 
 
 ## ValuesType
-```lx
+```wren
 import "luxe: system/values.modifier" for ValuesType
 ```
 > no docs found
 
 <endpoint module="luxe: system/values.modifier" class="ValuesType" signature="unknown"></endpoint>
 ### ValuesType.unknown
-```lx
+```wren
 ValuesType.unknown : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/values.modifier" class="ValuesType" signature="bool"></endpoint>
 ### ValuesType.bool
-```lx
+```wren
 ValuesType.bool : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/values.modifier" class="ValuesType" signature="number"></endpoint>
 ### ValuesType.number
-```lx
+```wren
 ValuesType.number : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/values.modifier" class="ValuesType" signature="string"></endpoint>
 ### ValuesType.string
-```lx
+```wren
 ValuesType.string : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/values.modifier" class="ValuesType" signature="float2"></endpoint>
 ### ValuesType.float2
-```lx
+```wren
 ValuesType.float2 : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/values.modifier" class="ValuesType" signature="float3"></endpoint>
 ### ValuesType.float3
-```lx
+```wren
 ValuesType.float3 : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/values.modifier" class="ValuesType" signature="float4"></endpoint>
 ### ValuesType.float4
-```lx
+```wren
 ValuesType.float4 : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: system/values.modifier" class="ValuesType" signature="name(value : Any)"></endpoint>
 ### ValuesType.name(.)
-```lx
+```wren
 ValuesType.name(value : Any) : unknown
 ```
 > no docs found   

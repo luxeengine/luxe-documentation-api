@@ -10,7 +10,7 @@ slug: "v/2025.11.1/containers"
 
 
 ## Lists
-```lx
+```wren
 import "luxe: containers" for Lists
 ```
 > The `Lists` API works with the built in Wren `List` type,
@@ -18,7 +18,7 @@ import "luxe: containers" for Lists
 
 <endpoint module="luxe: containers" class="Lists" signature="first(list : Sequence)"></endpoint>
 ### Lists.first(.)
-```lx
+```wren
 Lists.first(list : Sequence) : Any
 ```
 > Returns the first element of a Sequence, null if the sequence is empty.
@@ -30,7 +30,7 @@ Lists.first(list : Sequence) : Any
 
 <endpoint module="luxe: containers" class="Lists" signature="first(list : Sequence, callback : Fn)"></endpoint>
 ### Lists.first(..)
-```lx
+```wren
 Lists.first(list : Sequence, callback : Fn) : Any
 ```
 > Searches for the first element in a sequence that fulfills a requirement and returns it.
@@ -43,7 +43,7 @@ Lists.first(list : Sequence, callback : Fn) : Any
 
 <endpoint module="luxe: containers" class="Lists" signature="binary_search(list : List, value : Any)"></endpoint>
 ### Lists.binary_search(..)
-```lx
+```wren
 Lists.binary_search(list : List, value : Any) : Num
 ```
 > Searches for `value` in `list` using a binary search. 
@@ -60,7 +60,7 @@ Lists.binary_search(list : List, value : Any) : Num
 
 <endpoint module="luxe: containers" class="Lists" signature="binary_search_first(list : List, value : Any, fn : Fn)"></endpoint>
 ### Lists.binary_search_first(...)
-```lx
+```wren
 Lists.binary_search_first(list : List, value : Any, fn : Fn) : Num
 ```
 > Similar to `binary_search` but handles comparison via a callback.
@@ -80,7 +80,7 @@ Lists.binary_search_first(list : List, value : Any, fn : Fn) : Num
 
 <endpoint module="luxe: containers" class="Lists" signature="equal(a : List, b : List)"></endpoint>
 ### Lists.equal(..)
-```lx
+```wren
 Lists.equal(a : List, b : List) : Bool
 ```
 > Compares two flat lists, returning true if the contents are the same and in the same order.
@@ -95,7 +95,7 @@ Lists.equal(a : List, b : List) : Bool
 
 <endpoint module="luxe: containers" class="Lists" signature="equalish(a : List, b : List)"></endpoint>
 ### Lists.equalish(..)
-```lx
+```wren
 Lists.equalish(a : List, b : List) : Bool
 ```
 > Similar to `equal` but values don't need to be in the same order.
@@ -109,7 +109,7 @@ Lists.equalish(a : List, b : List) : Bool
 
 <endpoint module="luxe: containers" class="Lists" signature="flatten(list : List)"></endpoint>
 ### Lists.flatten(.)
-```lx
+```wren
 Lists.flatten(list : List) : List
 ```
 > Converts a nested list of lists to a single flat list of values.
@@ -121,7 +121,7 @@ Lists.flatten(list : List) : List
 
 <endpoint module="luxe: containers" class="Lists" signature="add_unique(list : List, value : Any)"></endpoint>
 ### Lists.add_unique(..)
-```lx
+```wren
 Lists.add_unique(list : List, value : Any) : Bool
 ```
 > Add an item to a list if the value doesn't already exist in the list.
@@ -137,7 +137,7 @@ Lists.add_unique(list : List, value : Any) : Bool
 
 <endpoint module="luxe: containers" class="Lists" signature="append(into : List, list : List)"></endpoint>
 ### Lists.append(..)
-```lx
+```wren
 Lists.append(into : List, list : List) : None
 ```
 > Append `list` at the end of `into` without allocating a new list. 
@@ -154,7 +154,7 @@ Lists.append(into : List, list : List) : None
 
 <endpoint module="luxe: containers" class="Lists" signature="prepend(into : List, list : List)"></endpoint>
 ### Lists.prepend(..)
-```lx
+```wren
 Lists.prepend(into : List, list : List) : None
 ```
 > Similar to `append`, but adds the items from `list` to the front of `into`.
@@ -168,7 +168,7 @@ Lists.prepend(into : List, list : List) : None
 
 <endpoint module="luxe: containers" class="Lists" signature="remove_where(list : List, value : Any, fn : Fn)"></endpoint>
 ### Lists.remove_where(...)
-```lx
+```wren
 Lists.remove_where(list : List, value : Any, fn : Fn) : Any
 ```
 > Similar to `list.remove` but uses a function for the find/equality check.
@@ -187,7 +187,7 @@ Lists.remove_where(list : List, value : Any, fn : Fn) : Any
 
 <endpoint module="luxe: containers" class="Lists" signature="remove_where(list : List, fn : Fn)"></endpoint>
 ### Lists.remove_where(..)
-```lx
+```wren
 Lists.remove_where(list : List, fn : Fn) : Any
 ```
 > Similar to `list.remove` but uses a function for the find/equality check.
@@ -206,7 +206,7 @@ Lists.remove_where(list : List, fn : Fn) : Any
 
 <endpoint module="luxe: containers" class="Lists" signature="contains(list : Any, item : Any)"></endpoint>
 ### Lists.contains(..)
-```lx
+```wren
 Lists.contains(list : Any, item : Any) : unknown
 ```
 > Deprecated. Use list.contains(item)
@@ -214,7 +214,7 @@ Lists.contains(list : Any, item : Any) : unknown
 
 <endpoint module="luxe: containers" class="Lists" signature="remove(list : Any, to_remove : Any)"></endpoint>
 ### Lists.remove(..)
-```lx
+```wren
 Lists.remove(list : Any, to_remove : Any) : unknown
 ```
 > Deprecated. Use list.remove(item)
@@ -222,7 +222,7 @@ Lists.remove(list : Any, to_remove : Any) : unknown
 
 <endpoint module="luxe: containers" class="Lists" signature="index_of(list : Any, item : Any)"></endpoint>
 ### Lists.index_of(..)
-```lx
+```wren
 Lists.index_of(list : Any, item : Any) : unknown
 ```
 > Deprecated. Use list.indexOf(item)
@@ -230,7 +230,7 @@ Lists.index_of(list : Any, item : Any) : unknown
 
 <endpoint module="luxe: containers" class="Lists" signature="index_of_where(list : List, fn : Fn)"></endpoint>
 ### Lists.index_of_where(..)
-```lx
+```wren
 Lists.index_of_where(list : List, fn : Fn) : Num
 ```
 > Returns the index of `value` in `list` or `-1` if not found,
@@ -243,7 +243,7 @@ Lists.index_of_where(list : List, fn : Fn) : Num
 
 <endpoint module="luxe: containers" class="Lists" signature="index_of_where(list : List, value : Any, fn : Fn)"></endpoint>
 ### Lists.index_of_where(...)
-```lx
+```wren
 Lists.index_of_where(list : List, value : Any, fn : Fn) : Num
 ```
 > Returns the index of `item` in `list` or `-1` if not found,
@@ -256,7 +256,7 @@ Lists.index_of_where(list : List, value : Any, fn : Fn) : Num
 
 <endpoint module="luxe: containers" class="Lists" signature="bubble_sort(list : List, compare : Fn)"></endpoint>
 ### Lists.bubble_sort(..)
-```lx
+```wren
 Lists.bubble_sort(list : List, compare : Fn) : None
 ```
 > In-place sorting of `list` using the `compare` function. Modifies `list`. Uses bubble sort.
@@ -273,7 +273,7 @@ Lists.bubble_sort(list : List, compare : Fn) : None
 
 <endpoint module="luxe: containers" class="Lists" signature="quicksort(list : List, compare : Fn)"></endpoint>
 ### Lists.quicksort(..)
-```lx
+```wren
 Lists.quicksort(list : List, compare : Fn) : List
 ```
 > In-place sorting of `list` using the `compare` function. Modifies `list`. Uses quick sort.
@@ -290,7 +290,7 @@ Lists.quicksort(list : List, compare : Fn) : List
 
 <endpoint module="luxe: containers" class="Lists" signature="quicksort(list : List, low : Num, high : Num, compare : Fn)"></endpoint>
 ### Lists.quicksort(....)
-```lx
+```wren
 Lists.quicksort(list : List, low : Num, high : Num, compare : Fn) : List
 ```
 > Same as `quicksort` but a low and high index can be specified to sort just a portion of a list.
@@ -305,7 +305,7 @@ Lists.quicksort(list : List, low : Num, high : Num, compare : Fn) : List
 
 
 ## MapOrdered
-```lx
+```wren
 import "luxe: containers" for MapOrdered
 ```
 > A `Map` wrapper that keeps the order of the keys the same in which they're added.
@@ -313,7 +313,7 @@ import "luxe: containers" for MapOrdered
 
 <endpoint module="luxe: containers" class="MapOrdered" signature="keys"></endpoint>
 ### MapOrdered.keys
-```lx
+```wren
 MapOrdered.keys : List
 ```
 > Returns the list of `keys` in the Map.
@@ -328,7 +328,7 @@ MapOrdered.keys : List
 
 <endpoint module="luxe: containers" class="MapOrdered" signature="map"></endpoint>
 ### MapOrdered.map
-```lx
+```wren
 MapOrdered.map : Map
 ```
 > Access to the underlying Wren `Map` data.
@@ -343,7 +343,7 @@ MapOrdered.map : Map
 
 <endpoint module="luxe: containers" class="MapOrdered" signature="new()"></endpoint>
 ### MapOrdered.new(.)
-```lx
+```wren
 MapOrdered.new() : MapOrdered
 ```
 > Create a new ordered map.
@@ -354,7 +354,7 @@ MapOrdered.new() : MapOrdered
 
 <endpoint module="luxe: containers" class="MapOrdered" signature="get(key : Any)"></endpoint>
 ### MapOrdered.get(.)
-```lx
+```wren
 MapOrdered.get(key : Any) : unknown
 ```
 > Return the value associated with `key`, or `null` if not found.
@@ -369,7 +369,7 @@ MapOrdered.get(key : Any) : unknown
 
 <endpoint module="luxe: containers" class="MapOrdered" signature="set(key : Any, value : Any)"></endpoint>
 ### MapOrdered.set(..)
-```lx
+```wren
 MapOrdered.set(key : Any, value : Any) : unknown
 ```
 > Set a `value` for a given `key`.
@@ -382,7 +382,7 @@ MapOrdered.set(key : Any, value : Any) : unknown
 
 <endpoint module="luxe: containers" class="MapOrdered" signature="containsKey(key : Any)"></endpoint>
 ### MapOrdered.containsKey(.)
-```lx
+```wren
 MapOrdered.containsKey(key : Any) : unknown
 ```
 > Returns true if `key` is found in the map.
@@ -396,7 +396,7 @@ MapOrdered.containsKey(key : Any) : unknown
 
 <endpoint module="luxe: containers" class="MapOrdered" signature="[key : Any]"></endpoint>
 ### MapOrdered [key : Any](.)
-```lx
+```wren
 MapOrdered [key : Any] : unknown
 ```
 > Return the value associated with `key`, or `null` if not found.
@@ -410,21 +410,21 @@ MapOrdered [key : Any] : unknown
 
 <endpoint module="luxe: containers" class="MapOrdered" signature="[key : Any]=(value : Any)"></endpoint>
 ### MapOrdered [key : Any](.)
-```lx
+```wren
 MapOrdered [key : Any]=(value : Any) : unknown
 ```
 >    
 
 <endpoint module="luxe: containers" class="MapOrdered" signature="iterate(iterator : Any)"></endpoint>
 ### MapOrdered.iterate(.)
-```lx
+```wren
 MapOrdered.iterate(iterator : Any) : unknown
 ```
 > Implementation details for the Wren iterator protocol.   
 
 <endpoint module="luxe: containers" class="MapOrdered" signature="iteratorValue(iterator : Any)"></endpoint>
 ### MapOrdered.iteratorValue(.)
-```lx
+```wren
 MapOrdered.iteratorValue(iterator : Any) : unknown
 ```
 > Implementation details for the Wren iterator protocol.   

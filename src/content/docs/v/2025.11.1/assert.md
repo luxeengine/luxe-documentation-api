@@ -9,7 +9,7 @@ slug: "v/2025.11.1/assert"
 
 
 ## Assert
-```lx
+```wren
 import "luxe: assert" for Assert
 ```
 > Simple assertions.
@@ -25,7 +25,7 @@ import "luxe: assert" for Assert
 
 <endpoint module="luxe: assert" class="Assert" signature="is_true(condition : Bool)"></endpoint>
 ### Assert.is_true(.)
-```lx
+```wren
 Assert.is_true(condition : Bool) : None
 ```
 > Assert that a particular condition is true.
@@ -38,7 +38,7 @@ Assert.is_true(condition : Bool) : None
 
 <endpoint module="luxe: assert" class="Assert" signature="is_true(condition : Bool, message : String)"></endpoint>
 ### Assert.is_true(..)
-```lx
+```wren
 Assert.is_true(condition : Bool, message : String) : None
 ```
 > Assert that a particular condition is true, and display a message on abort.
@@ -51,7 +51,7 @@ Assert.is_true(condition : Bool, message : String) : None
 
 <endpoint module="luxe: assert" class="Assert" signature="is_false(condition : Bool)"></endpoint>
 ### Assert.is_false(.)
-```lx
+```wren
 Assert.is_false(condition : Bool) : None
 ```
 > Assert that a particular condition is false.
@@ -62,7 +62,7 @@ Assert.is_false(condition : Bool) : None
 
 <endpoint module="luxe: assert" class="Assert" signature="is_false(condition : Bool, message : String)"></endpoint>
 ### Assert.is_false(..)
-```lx
+```wren
 Assert.is_false(condition : Bool, message : String) : None
 ```
 > Assert that a particular condition is false, and display a message on abort.
@@ -73,7 +73,7 @@ Assert.is_false(condition : Bool, message : String) : None
 
 <endpoint module="luxe: assert" class="Assert" signature="not_null(value : Any)"></endpoint>
 ### Assert.not_null(.)
-```lx
+```wren
 Assert.not_null(value : Any) : None
 ```
 > Assert that a particular statement is not null.
@@ -85,7 +85,7 @@ Assert.not_null(value : Any) : None
 
 <endpoint module="luxe: assert" class="Assert" signature="not_null(value : Any, message : String)"></endpoint>
 ### Assert.not_null(..)
-```lx
+```wren
 Assert.not_null(value : Any, message : String) : None
 ```
 > Assert that a particular statement is not null.
@@ -96,7 +96,7 @@ Assert.not_null(value : Any, message : String) : None
 
 <endpoint module="luxe: assert" class="Assert" signature="is_null(value : Any)"></endpoint>
 ### Assert.is_null(.)
-```lx
+```wren
 Assert.is_null(value : Any) : None
 ```
 > Assert that a particular statement is null.
@@ -108,7 +108,7 @@ Assert.is_null(value : Any) : None
 
 <endpoint module="luxe: assert" class="Assert" signature="is_null(value : Any, message : String)"></endpoint>
 ### Assert.is_null(..)
-```lx
+```wren
 Assert.is_null(value : Any, message : String) : None
 ```
 > Assert that a particular statement is null, and display a message on abort.
@@ -119,7 +119,7 @@ Assert.is_null(value : Any, message : String) : None
 
 <endpoint module="luxe: assert" class="Assert" signature="equal(one : Any, other : Any)"></endpoint>
 ### Assert.equal(..)
-```lx
+```wren
 Assert.equal(one : Any, other : Any) : None
 ```
 > Assert that a two values are the same.
@@ -131,7 +131,7 @@ Assert.equal(one : Any, other : Any) : None
 
 <endpoint module="luxe: assert" class="Assert" signature="equal(one : Any, other : Any, message : String)"></endpoint>
 ### Assert.equal(...)
-```lx
+```wren
 Assert.equal(one : Any, other : Any, message : String) : None
 ```
 > Assert that a two values are the same, and display a message on abort.

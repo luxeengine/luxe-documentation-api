@@ -13,217 +13,217 @@ slug: "v/2025.11.1/string/po"
 
 
 ## PO
-```lx
+```wren
 import "luxe: string/po" for PO
 ```
 > no docs found
 
 <endpoint module="luxe: string/po" class="PO" signature="parse_header(lines : List)"></endpoint>
 ### PO.parse_header(.)
-```lx
+```wren
 PO.parse_header(lines : List) : Result
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="PO" signature="parse_elements(lines : List)"></endpoint>
 ### PO.parse_elements(.)
-```lx
+```wren
 PO.parse_elements(lines : List) : List
 ```
 > converts the lines into chunks separated by lines   
 
 <endpoint module="luxe: string/po" class="PO" signature="parse(asset_id : String, bytes : String)"></endpoint>
 ### PO.parse(..)
-```lx
+```wren
 PO.parse(asset_id : String, bytes : String) : Result
 ```
 > no docs found   
 
 
 ## POData
-```lx
+```wren
 import "luxe: string/po" for POData
 ```
 > no docs found
 
 <endpoint module="luxe: string/po" class="POData" signature="language"></endpoint>
 ### POData.language
-```lx
+```wren
 POData.language : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POData" signature="headers"></endpoint>
 ### POData.headers
-```lx
+```wren
 POData.headers : Map
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POData" signature="elements"></endpoint>
 ### POData.elements
-```lx
+```wren
 POData.elements : Map
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POData" signature="new(asset_id : String, language : String, headers : Map)"></endpoint>
 ### POData.new(...)
-```lx
+```wren
 POData.new(asset_id : String, language : String, headers : Map) : POData
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POData" signature="to_string()"></endpoint>
 ### POData.to_string(.)
-```lx
+```wren
 POData.to_string() : unknown
 ```
 > no docs found   
 
 
 ## POElement
-```lx
+```wren
 import "luxe: string/po" for POElement
 ```
 > An element inside the PO file
 
 <endpoint module="luxe: string/po" class="POElement" signature="id"></endpoint>
 ### POElement.id
-```lx
+```wren
 POElement.id : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POElement" signature="key"></endpoint>
 ### POElement.key
-```lx
+```wren
 POElement.key : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POElement" signature="file_index"></endpoint>
 ### POElement.file_index
-```lx
+```wren
 POElement.file_index : Num
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POElement" signature="plural_id"></endpoint>
 ### POElement.plural_id
-```lx
+```wren
 POElement.plural_id : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POElement" signature="comments"></endpoint>
 ### POElement.comments
-```lx
+```wren
 POElement.comments : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POElement" signature="is_plural"></endpoint>
 ### POElement.is_plural
-```lx
+```wren
 POElement.is_plural : Bool
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POElement" signature="strings"></endpoint>
 ### POElement.strings
-```lx
+```wren
 POElement.strings : List
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POElement" signature="new(file_index : Num, key : String, plural_id : String, id : String, strings : List, comments : List)"></endpoint>
 ### POElement.new(......)
-```lx
+```wren
 POElement.new(file_index : Num, key : String, plural_id : String, id : String, strings : List, comments : List) : POElement
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POElement" signature="update_id(id : String)"></endpoint>
 ### POElement.update_id(.)
-```lx
+```wren
 POElement.update_id(id : String) : unknown
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POElement" signature="update_comments(comments : List)"></endpoint>
 ### POElement.update_comments(.)
-```lx
+```wren
 POElement.update_comments(comments : List) : unknown
 ```
 > no docs found   
 
 
 ## POHeader
-```lx
+```wren
 import "luxe: string/po" for POHeader
 ```
 > a single header line
 
 <endpoint module="luxe: string/po" class="POHeader" signature="key"></endpoint>
 ### POHeader.key
-```lx
+```wren
 POHeader.key : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POHeader" signature="value"></endpoint>
 ### POHeader.value
-```lx
+```wren
 POHeader.value : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POHeader" signature="file_index"></endpoint>
 ### POHeader.file_index
-```lx
+```wren
 POHeader.file_index : Num
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POHeader" signature="new(file_index : Num, key : String, value : String)"></endpoint>
 ### POHeader.new(...)
-```lx
+```wren
 POHeader.new(file_index : Num, key : String, value : String) : POHeader
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POHeader" signature="update_value(value : String)"></endpoint>
 ### POHeader.update_value(.)
-```lx
+```wren
 POHeader.update_value(value : String) : unknown
 ```
 > no docs found   
 
 
 ## POString
-```lx
+```wren
 import "luxe: string/po" for POString
 ```
 > a single msgstr, with an optional [index]
 
 <endpoint module="luxe: string/po" class="POString" signature="value"></endpoint>
 ### POString.value
-```lx
+```wren
 POString.value : String
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POString" signature="index"></endpoint>
 ### POString.index
-```lx
+```wren
 POString.index : Num
 ```
 > no docs found   
 
 <endpoint module="luxe: string/po" class="POString" signature="new(value : String, index : Num)"></endpoint>
 ### POString.new(..)
-```lx
+```wren
 POString.new(value : String, index : Num) : POString
 ```
 > no docs found   

@@ -9,7 +9,7 @@ slug: "v/2025.11.1/events"
 
 
 ## Events
-```lx
+```wren
 import "luxe: events" for Events
 ```
 > A simple event system for listening to and emitting events.
@@ -20,7 +20,7 @@ import "luxe: events" for Events
 
 <endpoint module="luxe: events" class="Events" signature="new()"></endpoint>
 ### Events.new(.)
-```lx
+```wren
 Events.new() : Events
 ```
 > Create a new `Events` instance to use.
@@ -31,7 +31,7 @@ Events.new() : Events
 
 <endpoint module="luxe: events" class="Events" signature="once(tags : List, fn : Fn)"></endpoint>
 ### Events.once(..)
-```lx
+```wren
 Events.once(tags : List, fn : Fn) : String
 ```
 > Connect a function to the given tags, that is automatically removed after the event is emitted.
@@ -52,7 +52,7 @@ Events.once(tags : List, fn : Fn) : String
 
 <endpoint module="luxe: events" class="Events" signature="listen(tags : List, fn : Fn)"></endpoint>
 ### Events.listen(..)
-```lx
+```wren
 Events.listen(tags : List, fn : Fn) : String
 ```
 > Connect a function to the given tags. The function will be called each time the event is
@@ -75,7 +75,7 @@ Events.listen(tags : List, fn : Fn) : String
 
 <endpoint module="luxe: events" class="Events" signature="unlisten(tags : List, fn : Fn)"></endpoint>
 ### Events.unlisten(..)
-```lx
+```wren
 Events.unlisten(tags : List, fn : Fn) : None
 ```
 > Removes a connected function for the specified tags (if one exists), 
@@ -87,7 +87,7 @@ Events.unlisten(tags : List, fn : Fn) : None
 
 <endpoint module="luxe: events" class="Events" signature="unlisten_id(tags : List, id : String)"></endpoint>
 ### Events.unlisten_id(..)
-```lx
+```wren
 Events.unlisten_id(tags : List, id : String) : None
 ```
 > Removes a connected function for the specified tags (if one exists).
@@ -99,7 +99,7 @@ Events.unlisten_id(tags : List, id : String) : None
 
 <endpoint module="luxe: events" class="Events" signature="unlisten(tags : List)"></endpoint>
 ### Events.unlisten(.)
-```lx
+```wren
 Events.unlisten(tags : List) : None
 ```
 > Removes ALL functions from the specified tags, clearing them.
@@ -110,7 +110,7 @@ Events.unlisten(tags : List) : None
 
 <endpoint module="luxe: events" class="Events" signature="emit(tags : List)"></endpoint>
 ### Events.emit(.)
-```lx
+```wren
 Events.emit(tags : List) : None
 ```
 > Emit the event tags so that any connected functions will be called.
@@ -122,7 +122,7 @@ Events.emit(tags : List) : None
 
 <endpoint module="luxe: events" class="Events" signature="emit(tags : List, data : Any)"></endpoint>
 ### Events.emit(..)
-```lx
+```wren
 Events.emit(tags : List, data : Any) : None
 ```
 > Emit the event tags so that any connected functions will be called.
