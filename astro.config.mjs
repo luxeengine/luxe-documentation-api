@@ -9,17 +9,28 @@ import luxeGrammar from "./src/grammars/luxe.tmLanguage.json";
 
 // https://astro.build/config
 export default defineConfig({
-  markdown: {
-    shikiConfig: {
+	markdown: {
+		shikiConfig: {
 			langs: [{
-        ...luxeGrammar,
+				...luxeGrammar,
 				aliases: ["lx", "wren"],
-      }]
-    },
+			}]
+		},
 	},
 	integrations: [
 		starlight({
 			title: 'luxe API',
+			head: [
+				{
+					tag: 'script',
+					attrs: {
+						// Tweaks to the script URL or attributes can be made here.
+						src: 'https://stats.anypercent.studio/script.js',
+						'data-website-id': 'f606ae51-5dc7-4613-81c9-40201fc7451b',
+						defer: true,
+					},
+				},
+			],
 			expressiveCode: {
 				useStarlightDarkModeSwitch: true,
 				useStarlightUiThemeColors: true,
@@ -44,8 +55,8 @@ export default defineConfig({
 			plugins: [
 				starlightAutoSidebar(),
 				catppuccin({
-          dark: { flavor: "frappe", accent: "mauve" },
-          light: { flavor: "latte", accent: "pink" }
+					dark: { flavor: "frappe", accent: "mauve" },
+					light: { flavor: "latte", accent: "pink" }
 				}),
 				starlightKbd({
 					types: [
